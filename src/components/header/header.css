@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 header {
-    height: 120vh;
+    height: 110vh;
     margin-top: -2.5rem;
     padding-top: 0.1rem;
     overflow: hidden;
@@ -10,7 +10,7 @@ header {
 .fname {
     font-size: 25rem;
     font-family: 'Anton', sans-serif;
-    
+    margin-top: -1rem;
 }
 
 .name__post {
@@ -25,6 +25,7 @@ header {
     text-align: left;
     margin-left: 14.3rem;
     font-size: 1.2rem;
+    width: 45rem;
 }
 
 .header__container {
@@ -39,11 +40,11 @@ header {
 
 /*===========BUTTONS==========*/
 .cv {
-    margin-top: 2.5rem;
+    margin-top: 3rem;
     display: flex;
     gap: 1.2rem;
     justify-content: center;
-    margin-left: -45rem;
+    margin-left: -46rem;
 }
 
 /*===========BUTTONS==========*/
@@ -55,6 +56,7 @@ header {
     position: fixed;
     right: 4%;
     bottom: 3rem;
+    
 }
 
 .scroll__down{
@@ -105,7 +107,7 @@ header {
     }
 
     .cv {
-        margin-top: 1rem;
+        margin-top: 0.8rem;
         display: flex;
         gap: 1.2rem;
         justify-content: center;
