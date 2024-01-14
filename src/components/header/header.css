@@ -1,0 +1,89 @@
+header {
+    height: 100vh;
+    padding-top: 0.5rem;
+    overflow: hidden;
+}
+
+.fname {
+    font-size: 20rem;
+    
+}
+
+.header__container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+/*===========BUTTONS==========*/
+.cv {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+/*===========BUTTONS==========*/
+.social_links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: fixed;
+    right: 4%;
+    bottom: 3rem;
+}
+
+.scroll__down{
+
+}
+
+/*===========PICTURE==========*/
+.me {
+    width: 25rem;
+    height: 32rem;
+    position: fixed;
+    right: 8%;
+    padding: 0.5rem;
+    bottom: 0rem;
+}
+
+
+/*===========FOR RESPONSIVENESS (SMALL DEVICES)==============*/
+
+@media  screen and (max-width: 1024px) {
+    /* .container {
+        background-color: blue;
+    } */
+    header {
+        height: 68vh;
+    }
+}
+
+/*===========FOR RESPONSIVENESS (SMALL DEVICES)==============*/
+
+@media  screen and (max-width: 600px) {
+    /* .container {
+        background-color: red;
+    } */
+    header {
+        height: 100vh;
+    }
+
+    .fname {
+        font-size: large;
+    }
+
+    .social_links, .scroll__down {
+        display: none;
+    }
+
+    .me {
+        width: 20rem;
+        height: 27rem;
+        position: fixed;
+        right: 8%;
+        padding: 0.5rem;
+        bottom: 0rem;
+    }
+}
