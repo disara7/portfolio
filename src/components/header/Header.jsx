@@ -9,8 +9,8 @@ const Header = () => {
     <header>
       <div className="container header__container">
         <h1 className='fname'>DISARA</h1>
-        <h5>Full Stack Developer</h5>
-        <h5 className="text-light">I'm a multidesciplinary Software Engineering Undergraduate</h5>
+        <h5 className='name__post'>Full Stack Developer</h5>
+        <h5 className="text-light name__description">I'm a multidesciplinary Software Engineering Undergraduate with an eye for bright colors and patterns</h5>
         <CV />
         <Socials />
 
@@ -18,7 +18,7 @@ const Header = () => {
           <img src={ME} alt="" />
         </div>
 
-        <a href="#contact" className='scroll__down'>Scroll Down</a>
+        
       </div>
     </header>
   )
