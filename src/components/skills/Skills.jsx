@@ -8,7 +8,7 @@ const Skills = () => {
       <div className="skill_table">
         <table>
           <tr>
-            <td>React JS</td>
+            <td>HTML</td>
             <td className='skill_box'>
               <div class="shape shape-square"></div>
               <div class="shape shape-square"></div>
@@ -18,7 +18,17 @@ const Skills = () => {
             </td>
           </tr>
           <tr>
-            <td>React JS</td>
+            <td>CSS</td>
+            <td className='skill_box'>
+              <div class="shape shape-square"></div>
+              <div class="shape shape-square"></div>
+              <div class="shape shape-square"></div>
+              <div class="shape shape-square"></div>
+              <div class="shape shape-square"></div> 
+            </td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
             <td className='skill_box'>
               <div class="shape shape-square"></div>
               <div class="shape shape-square"></div>
@@ -26,7 +36,34 @@ const Skills = () => {
             </td>
           </tr>
           <tr>
-            <td>React JS</td>
+            <td>React</td>
+            <td className='skill_box'>
+              <div class="shape shape-square"></div>
+              <div class="shape shape-square"></div>
+              <div class="shape shape-square"></div> 
+            </td>
+          </tr>
+        </table>
+
+        <table>
+          <tr>
+            <td>Flutter</td>
+            <td className='skill_box'>
+              <div class="shape shape-square"></div>
+              <div class="shape shape-square"></div>
+              <div class="shape shape-square"></div> 
+            </td>
+          </tr>
+          <tr>
+            <td>Dart</td>
+            <td className='skill_box'>
+              <div class="shape shape-square"></div>
+              <div class="shape shape-square"></div>
+              <div class="shape shape-square"></div> 
+            </td>
+          </tr>
+          <tr>
+            <td>Java</td>
             <td className='skill_box'>
               <div class="shape shape-square"></div>
               <div class="shape shape-square"></div>
@@ -44,8 +81,9 @@ const Skills = () => {
         </table>
 
         <table>
+          
           <tr>
-            <td>React JS</td>
+            <td>Git</td>
             <td className='skill_box'>
               <div class="shape shape-square"></div>
               <div class="shape shape-square"></div>
@@ -53,7 +91,41 @@ const Skills = () => {
             </td>
           </tr>
           <tr>
-            <td>React JS</td>
+            <td>Node.js</td>
+            <td className='skill_box'>
+              <div class="shape shape-square"></div>
+              <div class="shape shape-square"></div>
+              <div class="shape shape-square"></div> 
+            </td>
+          </tr>
+        </table>
+
+        
+      </div>
+      <div className="skill_table">
+      <table>
+          <tr>
+            <td>HTML</td>
+            <td className='skill_box'>
+              <div class="shape shape-square"></div>
+              <div class="shape shape-square"></div>
+              <div class="shape shape-square"></div> 
+              <div class="shape shape-square"></div>
+              <div class="shape shape-square"></div>
+            </td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td className='skill_box'>
+              <div class="shape shape-square"></div>
+              <div class="shape shape-square"></div>
+              <div class="shape shape-square"></div>
+              <div class="shape shape-square"></div>
+              <div class="shape shape-square"></div> 
+            </td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
             <td className='skill_box'>
               <div class="shape shape-square"></div>
               <div class="shape shape-square"></div>
@@ -61,15 +133,7 @@ const Skills = () => {
             </td>
           </tr>
           <tr>
-            <td>React JS</td>
-            <td className='skill_box'>
-              <div class="shape shape-square"></div>
-              <div class="shape shape-square"></div>
-              <div class="shape shape-square"></div> 
-            </td>
-          </tr>
-          <tr>
-            <td>React JS</td>
+            <td>React</td>
             <td className='skill_box'>
               <div class="shape shape-square"></div>
               <div class="shape shape-square"></div>
