@@ -1,9 +1,9 @@
 import React from 'react'
-import './services.css'
+import './awards.css'
 
-const Services = () => {
+const Awards = () => {
   return (
-    <section id='services' className='timestyle'>
+    <section id='awards' className='timestyle'>
       <h2>Awards</h2>
 
       <div class="timeline-block timeline-block-left">
@@ -196,4 +196,4 @@ const Services = () => {
   )
 }
 
-export default Services
+export default Awards

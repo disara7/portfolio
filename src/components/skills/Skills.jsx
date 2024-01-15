@@ -4,6 +4,8 @@ import './skills.css'
 const Skills = () => {
   return (
     <section id='skills'>
+      <br />
+      <br />
       <h2>Skills</h2>
       <div className="skill_table">
         <table>
@@ -105,7 +107,7 @@ const Skills = () => {
       <div className="skill_table">
       <table>
           <tr>
-            <td>HTML</td>
+            <td>UX Research</td>
             <td className='skill_box'>
               <div class="shape shape-square"></div>
               <div class="shape shape-square"></div>
@@ -115,7 +117,7 @@ const Skills = () => {
             </td>
           </tr>
           <tr>
-            <td>CSS</td>
+            <td>Figma</td>
             <td className='skill_box'>
               <div class="shape shape-square"></div>
               <div class="shape shape-square"></div>
@@ -125,7 +127,7 @@ const Skills = () => {
             </td>
           </tr>
           <tr>
-            <td>JavaScript</td>
+            <td>Adobe XD</td>
             <td className='skill_box'>
               <div class="shape shape-square"></div>
               <div class="shape shape-square"></div>
