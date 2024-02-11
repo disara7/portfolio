@@ -59,8 +59,7 @@ h1 {
 }
 
 section {
-    margin-top: 8rem;
-    height: 100vh;
+    height: fit-content;
 }
 
 section > h2, 
