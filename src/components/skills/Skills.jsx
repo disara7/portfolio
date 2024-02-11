@@ -143,6 +143,46 @@ const Skills = () => {
             </td>
           </tr>
         </table>
+
+        <table>
+        <tr>
+            <td>Leadership</td>
+            <td className='skill_box'>
+              <div class="shape shape-square"></div>
+              <div class="shape shape-square"></div>
+              <div class="shape shape-square"></div> 
+            </td>
+          </tr>
+          <tr>
+            <td>Teamwork</td>
+            <td className='skill_box'>
+              <div class="shape shape-square"></div>
+              <div class="shape shape-square"></div>
+              <div class="shape shape-square"></div> 
+            </td>
+          </tr>
+          <tr>
+            <td>Communication</td>
+            <td className='skill_box'>
+              <div class="shape shape-square"></div>
+              <div class="shape shape-square"></div>
+              <div class="shape shape-square"></div> 
+              <div class="shape shape-square"></div>
+              <div class="shape shape-square"></div>
+            </td>
+          </tr>
+          <tr>
+            <td>Collaboration</td>
+            <td className='skill_box'>
+              <div class="shape shape-square"></div>
+              <div class="shape shape-square"></div>
+              <div class="shape shape-square"></div>
+              <div class="shape shape-square"></div>
+              <div class="shape shape-square"></div> 
+            </td>
+          </tr>
+          
+        </table>
       </div>
 
     </section>
