@@ -16,13 +16,15 @@ const About = () => {
           </p>
           <p className='about__style'>Education</p>
           <p className='about__style'>
-            <ul>
-              <li>BSc. (Hons) in Software Engineering</li>
-              <li>Sabaragamuwa University of Sri Lanka</li>
-              <li>Diploma in Business Management</li>
-              <li>ESOFT Metro Campus, Kandy</li>
-              <li>Girls' High School, Kandy</li>
+            <ul className='educard'>
+              <li>BSc. (Hons) in Software Engineering <br />
+              Sabaragamuwa University of Sri Lanka</li> <br />
+              <li>Diploma in Business Management <br />
+              ESOFT Metro Campus, Kandy</li> <br />
+              <li>ICT, Combined Mathematics, Physics <br />
+              Girls' High School, Kandy</li>
             </ul>
+         
           </p>
           <div className="cardset">
           <div class="card">

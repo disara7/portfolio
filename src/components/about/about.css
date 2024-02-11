@@ -110,6 +110,13 @@
     animation: spin 2.5s linear infinite;
   }
   
+  .educard li{
+    background-color: rgba(255, 255, 255, 0.203);
+    padding: 1rem;
+    border-radius: 0.8rem;
+    width: fit-content;
+  }
+
   @keyframes spin {
     0% {
       --rotate: 0deg;
