@@ -24,11 +24,19 @@
 .section__title {
     margin-top: 4rem;
     font-size: 2rem;
+    text-align: left;
+    margin-left: 10.2rem;
+    color: rgb(148, 5, 148);
 }
 
 .about__style {
-    margin-left: 14.3rem;
+    margin-left: 10.2rem;
     margin-bottom: 2rem;
+    
+}
+
+.about__style h4{
+  font-weight: bold;
 }
 
 .cardset {
@@ -112,8 +120,8 @@
   
   .educard li{
     background-color: rgba(255, 255, 255, 0.203);
-    padding: 1rem;
-    border-radius: 0.8rem;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
     width: fit-content;
   }
 

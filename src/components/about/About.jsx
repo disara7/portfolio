@@ -12,17 +12,14 @@ const About = () => {
             Disara Mapalagama
           </h3>
           <p className='about__style'>
-          A random paragraph can also be an excellent way for a writer to tackle writers' block. Writing block can often happen due to being stuck with a current project that the writer is trying to complete. By inserting a completely random paragraph from which to begin
+          I am a Software Engineering undergraduate. For a writer to tackle writers' block. Writing block can often happen due to being stuck with a current project that the writer is trying to complete. By inserting a completely random paragraph from which to begin
           </p>
-          <p className='about__style'>Education</p>
+          <h4 className='about__style'>Education</h4>
           <p className='about__style'>
             <ul className='educard'>
-              <li>BSc. (Hons) in Software Engineering <br />
-              Sabaragamuwa University of Sri Lanka</li> <br />
-              <li>Diploma in Business Management <br />
-              ESOFT Metro Campus, Kandy</li> <br />
-              <li>ICT, Combined Mathematics, Physics <br />
-              Girls' High School, Kandy</li>
+              <li>BSc. (Hons) in Software Engineering - Sabaragamuwa University of Sri Lanka</li> <br />
+              <li>Diploma in Business Management - ESOFT Metro Campus, Kandy</li> <br />
+              <li>GCE (A/L) ICT, Combined Mathematics, Physics - Girls' High School, Kandy</li>
             </ul>
          
           </p>
