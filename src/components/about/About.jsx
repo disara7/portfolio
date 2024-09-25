@@ -25,16 +25,16 @@ const About = () => {
           </p>
           <div className="cardset">
           <div class="card">
-            <h2 className='number'>5+</h2>
+            <h2 className='number'>8+</h2>
             <p className='number_description'>Years of Experience</p>
           </div>
           <div class="card">
-            <h2 className='number'>5+</h2>
-            <p className='number_description'>Years of Experience</p>
+            <h2 className='number'>15+</h2>
+            <p className='number_description'>Projects</p>
           </div>
           <div class="card">
-            <h2 className='number'>5+</h2>
-            <p className='number_description'>Years of Experience</p>
+            <h2 className='number'>25+</h2>
+            <p className='number_description'>Awards and Honors</p>
           </div>
 
           </div>

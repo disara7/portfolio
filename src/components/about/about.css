@@ -43,7 +43,8 @@
     display: flex;
     flex-direction: row;
     gap: 2rem;
-    margin-left: 14.3rem;
+    margin-left: 10.2rem;
+    
 }
 @property --rotate {
     syntax: "<angle>";
@@ -67,7 +68,7 @@
     align-items: center;
     text-align: center;
     display: flex;
-    font-size: 1.5em;
+    font-size: 1.3em;
     
     flex-direction: column;
     
