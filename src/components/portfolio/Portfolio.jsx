@@ -22,9 +22,13 @@ const Portfolio = () => {
         </div>
         <div className='carousel'>
         <img src={p2} alt="" />
+        <h4>ShopSense - Online Clothing Shopping for Blind People</h4>
+        <p>“Trophy” is a non-monetary token-based loyalty mobile application solution to maintain your company’s employees’ sense of community and improve the team member experience in the office with more interactivity, inclusivity, and motivation.</p>
         </div>
         <div className='carousel'>
         <img src={p3} alt="" />
+        <h4>Trophy - Employee Loyalty Rewarding System</h4>
+        <p>“Trophy” is a non-monetary token-based loyalty mobile application solution to maintain your company’s employees’ sense of community and improve the team member experience in the office with more interactivity, inclusivity, and motivation.</p>
         </div>
       </Carousel>
         
@@ -34,12 +38,51 @@ const Portfolio = () => {
     
     <div className="project_card">
         <h3>Web Applications</h3>
+        <Carousel>
+        <div className='carousel'>
+        <img src={p1} alt="" />
+        <h4>UniStore - Online Store for Preloved University Essentials</h4>
+        <p>“Trophy” is a non-monetary token-based loyalty mobile application solution to maintain your company’s employees’ sense of community and improve the team member experience in the office with more interactivity, inclusivity, and motivation.</p>
+        </div>
+        <div className='carousel'>
+        <img src={p2} alt="" />
+        <h4>My Portfolio</h4>
+        <p>“Trophy” is a non-monetary token-based loyalty mobile application solution to maintain your company’s employees’ sense of community and improve the team member experience in the office with more interactivity, inclusivity, and motivation.</p>
+        </div>
+        <div className='carousel'>
+        <img src={p3} alt="" />
+        <h4>IEEE WIE Sri Lanka Section - Website Redesign</h4>
+        <p>“Trophy” is a non-monetary token-based loyalty mobile application solution to maintain your company’s employees’ sense of community and improve the team member experience in the office with more interactivity, inclusivity, and motivation.</p>
+        </div>
+      </Carousel>
       
     </div>
       </div>
       <div className="casestudies">
       <div className="project_card">
         <h3>UI/UX Case Studies</h3>
+        <Carousel>
+        <div className='carousel'>
+        <img src={p1} alt="" />
+        <h4>Trophy - Employee Loyalty Rewarding System</h4>
+        <p>“Trophy” is a non-monetary token-based loyalty mobile application solution to maintain your company’s employees’ sense of community and improve the team member experience in the office with more interactivity, inclusivity, and motivation.</p>
+        </div>
+        <div className='carousel'>
+        <img src={p2} alt="" />
+        <h4>Sentry - A Solution to Human-Elephant Conflicts</h4>
+        <p>“Trophy” is a non-monetary token-based loyalty mobile application solution to maintain your company’s employees’ sense of community and improve the team member experience in the office with more interactivity, inclusivity, and motivation.</p>
+        </div>
+        <div className='carousel'>
+        <img src={p3} alt="" />
+        <h4>ResQ - Disaster Management System</h4>
+        <p>“Trophy” is a non-monetary token-based loyalty mobile application solution to maintain your company’s employees’ sense of community and improve the team member experience in the office with more interactivity, inclusivity, and motivation.</p>
+        </div>
+        <div className='carousel'>
+        <img src={p3} alt="" />
+        <h4>Watts - Gamified Power Saving</h4>
+        <p>“Trophy” is a non-monetary token-based loyalty mobile application solution to maintain your company’s employees’ sense of community and improve the team member experience in the office with more interactivity, inclusivity, and motivation.</p>
+        </div>
+      </Carousel>
       
     </div>
       </div>
