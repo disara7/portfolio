@@ -4,8 +4,9 @@ import './awards.css'
 const Awards = () => {
   return (
     <section id='awards' className='timestyle'>
-      <h2>Awards</h2>
+      <h2 className='section__title'>Awards</h2>
 
+      <div className="scrollsection">
       <div class="timeline-block timeline-block-left">
         <div class="marker"></div>
           <div class="timeline-content">
@@ -190,6 +191,7 @@ const Awards = () => {
          <p>Issued by CSSL and ESOFT Metro Campus. Passed the written test held at ESOFT Metro Campus Kandy, leading the team of three and got selected for the first round of the competition that aired on ITN.</p>
       </div>
    </div>
+      </div>
 
 
     </section>

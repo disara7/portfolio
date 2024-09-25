@@ -46,6 +46,7 @@
   font-size: 22px;
   font-weight: 500;
   color: white;
+  width: 19.5rem;
   
 }
 
@@ -55,14 +56,21 @@
 }
 
 .timeline-content p {
-  font-size: 14px;
+  margin-top: 1rem;
+  font-size: 12px;
   line-height: 1.5em;
   word-spacing: 1px;
   color: #888;
-  width: 23rem;
+  width: 20rem;
 }
 
 .timestyle {
   overflow: scroll;
   left: 2rem;
+}
+
+
+.scrollsection {
+  height: 25rem;       
+  overflow-y: auto;   
 }
