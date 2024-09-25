@@ -24,7 +24,7 @@
   .skill_table {
     border: 1rem;
     border-color: white;
-    margin-left: 14rem;
+    margin-left: 10.2rem;
     display: flex;
     flex-direction: row;
     margin-bottom: 2.5rem;
@@ -36,4 +36,10 @@
     margin-right: 5rem;
   }
 
-  
+  .section__title {
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-align: left;
+    margin-left: 10.2rem;
+    color: rgb(148, 5, 148);
+}
