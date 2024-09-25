@@ -27,7 +27,7 @@ const Portfolio = () => {
         </div>
         <div className='carousel'>
         <img src={p3} alt="" />
-        <h4>Trophy - Employee Loyalty Rewarding System</h4>
+        <h4>Learning Management System</h4>
         <p>“Trophy” is a non-monetary token-based loyalty mobile application solution to maintain your company’s employees’ sense of community and improve the team member experience in the office with more interactivity, inclusivity, and motivation.</p>
         </div>
       </Carousel>
