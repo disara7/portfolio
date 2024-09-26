@@ -12,8 +12,7 @@ const About = () => {
             Disara Mapalagama
           </h3>
           <p className='about__style'>
-          I am a Software Engineering undergraduate. For a writer to tackle writers' block. Writing block can often happen due to being stuck with a current project that the writer is trying to complete. By inserting a completely random paragraph from which to begin
-          </p>
+          I am a 24 year old Software Engineering undergraduate who started my coding journey when I was 16. I have always wanted to think differently and apply my knowledge to give creative solutions to problems. </p>
           <h4 className='about__style'>Education</h4>
           <p className='about__style'>
             <ul className='educard'>
