@@ -89,6 +89,7 @@ const Skills = () => {
             <td className='skill_box'>
               <div class="shape shape-square"></div>
               <div class="shape shape-square"></div>
+              <div class="shape shape-square"></div>
               <div class="shape shape-square"></div> 
             </td>
           </tr>
@@ -96,6 +97,21 @@ const Skills = () => {
             <td>Node.js</td>
             <td className='skill_box'>
               <div class="shape shape-square"></div>
+              <div class="shape shape-square"></div>
+              <div class="shape shape-square"></div> 
+            </td>
+          </tr>
+          <tr>
+            <td>Springboot</td>
+            <td className='skill_box'>
+              <div class="shape shape-square"></div>
+              <div class="shape shape-square"></div>
+              <div class="shape shape-square"></div> 
+            </td>
+          </tr>
+          <tr>
+            <td>MongoDB</td>
+            <td className='skill_box'>
               <div class="shape shape-square"></div>
               <div class="shape shape-square"></div> 
             </td>
@@ -150,12 +166,16 @@ const Skills = () => {
             <td className='skill_box'>
               <div class="shape shape-square"></div>
               <div class="shape shape-square"></div>
+              <div class="shape shape-square"></div>
+              <div class="shape shape-square"></div>
               <div class="shape shape-square"></div> 
             </td>
           </tr>
           <tr>
             <td>Teamwork</td>
             <td className='skill_box'>
+              <div class="shape shape-square"></div>
+              <div class="shape shape-square"></div>
               <div class="shape shape-square"></div>
               <div class="shape shape-square"></div>
               <div class="shape shape-square"></div> 
