@@ -1,9 +1,10 @@
 .project_card{
     background-color: rgba(255, 255, 255, 0.203);
-    width: 40rem;
-    padding: 1rem;
+    width: 30rem;
+    padding: 1.5rem;
     border-radius: 1rem;
     margin-right: 1rem;
+    height: 33rem;
 }
 
 .project_card h3{
@@ -22,8 +23,7 @@
 }
 
 .carousel img{
-    width: 5rem; 
-    height: 15rem;
+    height: 10rem;
     border-radius: 0.5rem;
 }
 
