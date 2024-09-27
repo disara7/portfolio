@@ -5,6 +5,7 @@ import { Carousel } from 'react-responsive-carousel';
 import p1 from '../../assets/trophybanner.png';
 import p2 from '../../assets/Image2.png';
 import p3 from '../../assets/Image3.png';
+import { BsGithub } from "react-icons/bs";
 
 const Portfolio = () => {
   return (
@@ -21,6 +22,7 @@ const Portfolio = () => {
               <img src={p1} alt="Mobile App Project 1" />
               <h4>Trophy - Employee Loyalty Rewarding System</h4>
               <p>“Trophy” is a non-monetary token-based loyalty mobile application solution to maintain your company’s employees’ sense of community and improve the team member experience in the office with more interactivity, inclusivity, and motivation.</p>
+              <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><BsGithub /></a></div>
             </div>
             <div className='carousel'>
               <img src={p2} alt="Mobile App Project 2" />
