@@ -2,7 +2,7 @@ import React from 'react';
 import './portfolio.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carousel styles
 import { Carousel } from 'react-responsive-carousel';
-import p1 from '../../assets/Image1.png';
+import p1 from '../../assets/trophybanner.png';
 import p2 from '../../assets/Image2.png';
 import p3 from '../../assets/Image3.png';
 
