@@ -56,7 +56,21 @@ const Portfolio = () => {
                 <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><MdVideoLibrary /></a></div>
                 
               </div>
+              
             </div>
+            <div className='carousel'>
+              <img src={p3} alt="Mobile App Project 3" />
+              <h4>MyJourney</h4>
+              <p>An interactive LMS for educational institutions.</p>
+              <div className="links">
+                <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><BsGithub /></a></div>
+                <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><BiLogoAdobe /></a></div>
+                <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><FaMedium /></a></div>
+                <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><MdVideoLibrary /></a></div>
+                
+              </div>
+              </div>
+              
           </Carousel>
         </div>
 
@@ -91,6 +105,30 @@ const Portfolio = () => {
             <div className='carousel'>
               <img src={p3} alt="Web App Project 3" />
               <h4>IEEE WIE Sri Lanka Section - Website Redesign</h4>
+              <p>A redesigned website for the IEEE WIE Sri Lanka Section.</p>
+              <div className="links">
+                <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><BsGithub /></a></div>
+                <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><BiLogoAdobe /></a></div>
+                <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><FaMedium /></a></div>
+                <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><MdVideoLibrary /></a></div>
+                
+              </div>
+            </div>
+            <div className='carousel'>
+              <img src={p3} alt="Web App Project 3" />
+              <h4>TechGrid - ECommerce Website</h4>
+              <p>A redesigned website for the IEEE WIE Sri Lanka Section.</p>
+              <div className="links">
+                <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><BsGithub /></a></div>
+                <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><BiLogoAdobe /></a></div>
+                <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><FaMedium /></a></div>
+                <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><MdVideoLibrary /></a></div>
+                
+              </div>
+            </div>
+            <div className='carousel'>
+              <img src={p3} alt="Web App Project 3" />
+              <h4>Haven</h4>
               <p>A redesigned website for the IEEE WIE Sri Lanka Section.</p>
               <div className="links">
                 <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><BsGithub /></a></div>
