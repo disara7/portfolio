@@ -10,7 +10,7 @@ const Header = () => {
       <div className="container header__container">
         <h1 className='fname'>DISARA</h1>
         <h5 className='name__post'>Full Stack Developer</h5>
-        <h5 className="text-light name__description">I'm a multidesciplinary Software Engineering Undergraduate with an eye for bright colors and patterns</h5>
+        <h5 className="text-light name__description">I am a multidisciplinary software engineering undergraduate with a creative problem-solving approach and an artistic mindset. I have led successful national-level award winning hackathon projects, combining technical skills and design thinking to deliver impactful solutions. Passionate about building efficient, user-centred systems, I thrive in collaborative environments and enjoy tackling real-world challenges.</h5>
         <CV />
         <Socials />
 
