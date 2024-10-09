@@ -1,3 +1,12 @@
 .contactform {
     margin-left: 10rem;
 }
+
+.field{
+    background-color: rgba(255, 255, 255, 0.373);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin-left: 4rem;
+    color: white;
+    width: 25rem;
+}
