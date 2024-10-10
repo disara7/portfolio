@@ -74,3 +74,20 @@
   height: 25rem;       
   overflow-y: auto;   
 }
+
+ /*===========FOR RESPONSIVENESS (SMALL DEVICES)==============*/
+
+ @media screen and (max-width: 700px) {
+  .scrollsection{
+    margin-left: 30rem;
+    overflow-y:visible;
+  }
+
+  .timeline-content p{
+    width: 10rem;
+  }
+
+  .timeline-content h3{
+    width: 10rem;
+  }
+ }

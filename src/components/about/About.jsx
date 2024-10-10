@@ -1,12 +1,16 @@
 import React from 'react'
 import './about.css'
+import photo from '../../assets/disara_small.png';
 
 const About = () => {
   return (
     <section id='about'>
       <h2 className='section__title'>About Me</h2>
-      
+      <div className="photo">
+          <img src={photo} alt="Disara" />
+        </div>
       <div className="container about__container">
+        
         <div className="about__content">
           <h3 className='about__style fullname'>
             Disara Mapalagama
