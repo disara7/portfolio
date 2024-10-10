@@ -141,13 +141,19 @@
 
   /*===========FOR RESPONSIVENESS (SMALL DEVICES)==============*/
 
-@media  screen and (max-width: 700px){
+  @media screen and (max-width: 700px) {
+    /* .container {
+        background-color: red;
+    } */
+     .about__content{
+      margin-left: -15.5rem;
+     }
   .fullname{
-    margin-top: -1.5rem;
-    margin-bottom: 1rem;
-    font-size: 4rem;
-    margin-left: 1rem;
-}
+    margin-top: -2.5rem;
+    font-size: 2rem;
+    margin-left: 0;
+    text-align: left;
+  }
 
 .number {
     font-family: 'Anton', sans-serif;
@@ -159,17 +165,16 @@
     width: 50rem;
 }
 .section__title {
-    margin-top: 4rem;
-    font-size: 2rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
     text-align: left;
-    margin-left: 35%;
-    color: #d4a4ff;
+    margin-left: 17%;
 }
 
 .about__style {
     margin-left: 60%;
     margin-bottom: 2rem;
-    width: 40rem;
+    width: 22rem;
 }
 
 .about__style h4{
@@ -179,9 +184,23 @@
 .cardset {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 1.5rem;
     margin-left: 60%;
-    width: 35rem;
+    width: 10rem;
+    height: 10rem;
     
+}
+
+.card {
+  padding: 10px;
+  display: flex;
+  font-size: 0.8em;
+  flex-direction: column;
+  height: 10rem;
+  width: 20rem;
+}
+.number {
+  font-size: 3rem;
+  width: 5rem;
 }
 }
