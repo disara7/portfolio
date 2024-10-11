@@ -66,3 +66,15 @@
     margin-bottom: 1.8rem;
     text-align: center;
 }
+
+/*===========FOR RESPONSIVENESS (SMALL DEVICES)==============*/
+
+@media screen and (max-width: 700px) {
+    /* .container {
+        background-color: black;
+    } */
+    .pcarousel{
+        margin-left: 3rem;
+        width: 10rem;
+    }
+}
