@@ -48,5 +48,16 @@
     /* .container {
         background-color: black;
     } */
-    
+    .projects{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .portfolio_card{
+        margin-bottom: -1rem;
+    }
+
+    .portfolio_content{
+        margin-left: 6rem;
+    }
 }
