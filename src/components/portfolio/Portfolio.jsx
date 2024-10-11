@@ -3,7 +3,7 @@ import './portfolio.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carousel styles
 import { Carousel } from 'react-responsive-carousel';
 import p1 from '../../assets/trophybanner.png';
-import p2 from '../../assets/Image2.png';
+import p2 from '../../assets/shopsense_banner.png';
 import p3 from '../../assets/Image3.png';
 import { BsGithub } from "react-icons/bs";
 import { BiLogoAdobe } from "react-icons/bi";
@@ -29,7 +29,7 @@ const Portfolio = () => {
           </div>
         </div>
         <div className="portfolio_card">
-          <img src={p1} alt="Web App Project 1" />
+          <img src={p2} alt="Web App Project 1" />
           <h4>ShopSense - Online Clothing Shopping for Blind People</h4>
           <p>“ShopSense” provides online shopping accessibility for visually impaired people.</p>
           <div className="links">
@@ -102,8 +102,19 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
+        <br />
+        <br />
         <h3>UI/UX Research Case Studies</h3>
         <div className="portfolio_card">
+        <img src={p1} alt="Web App Project 1" />
+            <h4>UniStore - Online Store for Preloved University Essentials</h4>
+            <p>An e-commerce platform for university students to buy and sell second-hand items.</p>
+            <div className="links">
+                <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><BsGithub /></a></div>
+                <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><BiLogoAdobe /></a></div>
+                <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><FaMedium /></a></div>
+                <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><MdVideoLibrary /></a></div> 
+            </div>
 
         </div>
       </div>
