@@ -1,0 +1,80 @@
+.project_card{
+    background-color: rgba(255, 255, 255, 0.203);
+    width: 30rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    height: 30rem;
+    
+}
+
+.pcarousel{
+    margin-left: 10rem;
+}
+
+.bigcarousel{
+    width: 40rem;
+}
+.project_card h3{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.project_card p {
+    font-size: 0.7rem;
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.project_card h4{
+    margin-top: 1rem;
+}
+
+.carousel img{
+    height: 8rem;
+    border-radius: 0.5rem;
+}
+
+
+.project_card {
+    margin-left: 3rem;
+    margin-right: -10rem;
+    margin-top: 1rem;
+}
+
+.carousel .thumb {
+    width: 100px;   
+    height: 60px; 
+    object-fit: contain; 
+}
+
+/* Optionally, style the container around the thumbnails */
+.carousel .thumbs-wrapper {
+    height: auto; /* Adjust this if necessary */
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.relatedlinks {
+    margin-top: -2rem;
+    font-size: larger;
+    margin-bottom: 1.8rem;
+    text-align: center;
+}
+
+/*===========FOR RESPONSIVENESS (SMALL DEVICES)==============*/
+
+@media screen and (max-width: 700px) {
+    /* .container {
+        background-color: black;
+    } */
+    .pcarousel{
+        margin-left: 3rem;
+        width: 10rem;
+    }
+}
