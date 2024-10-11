@@ -41,6 +41,22 @@
 
 @media screen and (max-width: 700px) {
   .skill_table{
-    margin-left: 5rem;
+    margin-left: 6rem;
+    margin-bottom: 1rem;
   }
+
+  .skill_table table{
+    margin-bottom: 1rem;
+  }
+
+  .skill_table td{
+    width: 8rem;
+  }
+
+  .skill_table {
+    display: flex;
+    flex-direction: column;
+  }
+
+
 }
