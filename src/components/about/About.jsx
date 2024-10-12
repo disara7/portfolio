@@ -5,6 +5,7 @@ import photo from '../../assets/disara_small.png';
 const About = () => {
   return (
     <section id='about'>
+      <div className="about">
       <h2 className='section__title'>About Me</h2>
       <div className="photo">
           <img src={photo} alt="Disara" />
@@ -16,7 +17,10 @@ const About = () => {
             Disara Mapalagama
           </h3>
           <p className='about__style'>
-          I am a 24 year old Software Engineering undergraduate who started my coding journey when I was 16. I have always wanted to think differently and apply my knowledge to give creative solutions to problems. </p>
+          I am a 24 year old Software Engineering undergraduate who started my coding journey when I was 16. I have always wanted to think differently and apply my knowledge to give creative solutions to problems. 
+          <br /><br />
+          I have a creative problem-solving approach, an artistic mindset, and a proven ability to learn quickly. I have led award-winning hackathon projects, combining technical skills and design thinking. Passionate about efficient, user-focused systems, I excel in teamwork and solving real-world challenges.</p>
+          
           <h4 className='about__style'>Education:</h4>
           <p className='about__style'>
             <ul className='educard'>
@@ -44,6 +48,9 @@ const About = () => {
           
         </div>
       </div>
+
+      </div>
+      
     </section>
   )
 }

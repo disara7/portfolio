@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
+.about{
+  margin-top: -3rem;
+  padding-left: 5rem;
+}
 .about__container {
     display: grid;
     grid-template-columns: 60% 35%;
@@ -20,10 +24,12 @@
 .number {
     font-family: 'Anton', sans-serif;
     font-size: 4rem;
+    color: white;
 }
 
 .number__description {
-    font-size: 2rem; 
+    font-size: 2rem;
+    color: white; 
 }
 .section__title {
     margin-top: 4rem;
@@ -79,16 +85,18 @@
   }
   
   .card:hover {
-    color: rgb(88 199 250 / 100%);
+    color: white;
     transition: color 2s;
   }
   .card:hover:before, .card:hover:after {
     animation: none;
     opacity: 0;
+    color: white;
   }
   
   
   .card::before {
+    color: white;
     content: "";
     width: 104%;
     height: 102%;

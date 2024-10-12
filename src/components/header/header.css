@@ -27,6 +27,7 @@ header {
     font-size: 1rem;
     width: 65rem;
     margin-bottom: -1rem;
+    color: #101f36;
 }
 
 .header__container {
@@ -66,12 +67,13 @@ header {
 
 /*===========PICTURE==========*/
 .me {
-    width: 24rem;
+    width: 32rem;
     height: 30rem;
     position: fixed;
-    right: 8%;
+    right: 2%;
     padding: 0.5rem;
     bottom: 0rem;
+    
 }
 
 
