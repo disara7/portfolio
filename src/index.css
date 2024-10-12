@@ -137,6 +137,53 @@ img {
     object-fit: cover;
 }
 
+/* In index.css or App.css */
+
+/* index.css */
+#glow {
+    position: absolute;
+    width: 10px; 
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(138, 43, 178, 0.8); 
+    box-shadow: 
+      0 0 20px rgba(138, 43, 178, 0.7), 
+      0 0 40px rgba(138, 43, 178, 0.5), 
+      0 0 60px rgba(138, 43, 178, 0.3);
+    pointer-events: none; 
+    transform: translate(-50%, -50%);
+    z-index: 9999; 
+    transition: transform 0.1s ease-out; 
+    mix-blend-mode: screen;
+}
+
+.sparkle {
+    position: absolute;
+    width: 5px; /* Size of sparkles */
+    height: 5px;
+    background-color: rgba(184, 115, 213, 0.8); /* Purplish sparkles */
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 0; /* Initially invisible */
+    animation: sparkle 1s ease-out forwards;
+}
+
+@keyframes sparkle {
+    0% {
+        opacity: 1;
+        transform: translate(0, 0) scale(1); /* Start at the cursor */
+    }
+    100% {
+        opacity: 0;
+        transform: translate(30px, -30px) scale(0.3); /* Move and shrink */
+    }
+}
+
+
+  
+  
+  
+
 /*===========FOR RESPONSIVENESS (MEDIUM DEVICES)==============*/
 
 @media  screen and (max-width: 1024px) {

@@ -110,4 +110,7 @@
   .timeline-content h3{
     width: 10rem;
   }
+  .section__title h2{
+    margin-left: -6rem;
+  }
  }
