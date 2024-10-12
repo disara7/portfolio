@@ -80,6 +80,7 @@ header {
         background-color: blue;
     } */
     header {
+        
         height: 80vh;
         overflow: visible;
     }
@@ -112,6 +113,8 @@ header {
     }
 }
 
+
+
 /*===========FOR RESPONSIVENESS (SMALL DEVICES)==============*/
 
 @media screen and (max-width: 700px) {
@@ -119,6 +122,7 @@ header {
         background-color: red;
     } */
     header {
+        margin-top: 9rem;
         height: 60vh;
         overflow: visible;
     }
@@ -128,8 +132,12 @@ header {
     } */
 
     .me {
-      display: none;
-
+        width: 20rem; /* or a smaller width */
+        margin: 0 auto; /* Centers the element */
+        position: relative;
+        padding: 0.5rem;
+        top: -128%; /* Adjust this for vertical spacing */
+        z-index: -1; /* Ensure it's on top of other content */
     }
  
 

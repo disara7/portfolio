@@ -202,6 +202,11 @@ img {
 @media  screen and (max-width: 600px) {
     .container {
         width: var(--container-width-sm);
+        
+    }
+
+    body {
+        overflow-x: hidden; /* Ensure no horizontal overflow on small devices */
     }
 
     section {

@@ -1,6 +1,6 @@
 import React from 'react'
 import './about.css'
-import photo from '../../assets/disara_small.png';
+import photo from '../../assets/disara.png';
 
 const About = () => {
   return (
@@ -8,9 +8,9 @@ const About = () => {
       <div className="about">
       <h2 className='section__title'>About Me</h2>
       <br />
-      <div className="photo">
+      {/* <div className="photo">
           <img src={photo} alt="Disara" />
-        </div>
+        </div> */}
       <div className="container about__container">
         
         <div className="about__content">
