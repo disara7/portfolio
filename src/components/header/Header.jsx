@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './header.css';
 import CV from './cv';
 import ME from '../../assets/disara.png';   // Default image for large screens
-import DISARA_SMALL from '../../assets/disara_small.png'; // Image for small devices
+import DISARA_SMALL from '../../assets/disara.png'; // Image for small devices
 import Socials from './Socials';
 
 const Header = () => {
