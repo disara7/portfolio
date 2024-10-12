@@ -1,12 +1,98 @@
-.contactform {
+/* Import Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Form container */
+#contactForm {
+    width: 100%;
+    max-width: 550px;
     margin-left: 10rem;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
 }
 
-.field{
-    background-color: rgba(255, 255, 255, 0.373);
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    margin-left: 4rem;
-    color: white;
-    width: 25rem;
+/* Form labels */
+#contactForm span {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #555;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Input and textarea fields */
+.field {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    color: #333;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Field focus effect */
+.field:focus {
+    border-color: #8a2be2;
+    outline: none;
+    box-shadow: 0 0 8px rgba(138, 43, 178, 0.2);
+}
+
+/* Textarea field customization */
+textarea.field {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Submit button styling */
+.submit {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #8a2be2;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Submit button hover effect */
+.submit:hover {
+    background-color: #6828b2;
+    box-shadow: 0 0 10px rgba(104, 40, 178, 0.3);
+}
+
+/* Captcha span */
+#captcha {
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+/* Contact form section layout */
+.contact {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding: 1rem;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .contact {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    #contactForm {
+        padding: 1.5rem;
+        margin-left: 2rem;
+    }
 }
