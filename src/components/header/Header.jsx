@@ -11,7 +11,7 @@ const Header = () => {
   // Function to handle window resize and update image based on screen width
   const handleResize = () => {
     if (window.innerWidth <= 600) {
-      setImageSrc(DISARA_SMALL);  // Use disara-small.png for small screens
+      setImageSrc(ME);  // Use disara-small.png for small screens
     } else {
       setImageSrc(ME);  // Use disara.png for larger screens
     }
@@ -41,7 +41,7 @@ const Header = () => {
         <Socials />
 
         <div className="me">
-          <img src={imageSrc} alt="Disara" />
+          <img src={ME} alt="Disara" />
         </div>
       </div>
     </header>

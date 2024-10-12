@@ -14,7 +14,8 @@ import { MdVideoLibrary } from "react-icons/md";
 const Portfolio = () => {
   return (
     <section id='portfolio'>
-      <h2 className='section__title'>Portfolio</h2>
+      <div className="portfolio">
+      <h2 className='section__title'>Portfolio</h2><br />
       <div className="portfolio_content">
       <h3>Mobile Applications</h3>
       <div className="projects">
@@ -119,6 +120,9 @@ const Portfolio = () => {
 
         </div>
       </div>
+
+      </div>
+      
     </section>
   );
 }

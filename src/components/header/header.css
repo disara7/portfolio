@@ -61,10 +61,6 @@ header {
     
 }
 
-.scroll__down{
-
-}
-
 /*===========PICTURE==========*/
 .me {
     width: 32rem;
@@ -84,7 +80,7 @@ header {
         background-color: blue;
     } */
     header {
-        height: 60vh;
+        height: 80vh;
         overflow: visible;
     }
 
@@ -123,7 +119,7 @@ header {
         background-color: red;
     } */
     header {
-        height: 55vh;
+        height: 60vh;
         overflow: visible;
     }
 
