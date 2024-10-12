@@ -72,7 +72,7 @@ nav a.active {
         width: min-content;
         display: block;
         height: fit-content;
-        margin-left: -5rem;
+        margin-left: -4.5rem;
         top: 20%;
     }
 }
