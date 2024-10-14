@@ -174,5 +174,6 @@ header {
         gap: 1.2rem;
         justify-content: center;
         margin-left: 0rem;
+        padding-top: 1rem;
     }
 }
