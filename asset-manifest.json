@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.64470bc8.css",
+    "main.css": "/portfolio/static/css/main.ab9e7ae1.css",
     "main.js": "/portfolio/static/js/main.fbbf608f.js",
     "static/media/disara.png": "/portfolio/static/media/disara.5ea3947f1dc9865f9989.png",
     "static/media/trophybanner.png": "/portfolio/static/media/trophybanner.e3f3921352d391bd26f2.png",
@@ -9,11 +9,11 @@
     "static/media/shopsense_banner.png": "/portfolio/static/media/shopsense_banner.809b7bf6ae6e8ea68523.png",
     "static/media/myjourneybanner.png": "/portfolio/static/media/myjourneybanner.06f4a4c18e83c462602f.png",
     "index.html": "/portfolio/index.html",
-    "main.64470bc8.css.map": "/portfolio/static/css/main.64470bc8.css.map",
+    "main.ab9e7ae1.css.map": "/portfolio/static/css/main.ab9e7ae1.css.map",
     "main.fbbf608f.js.map": "/portfolio/static/js/main.fbbf608f.js.map"
   },
   "entrypoints": [
-    "static/css/main.64470bc8.css",
+    "static/css/main.ab9e7ae1.css",
     "static/js/main.fbbf608f.js"
   ]
 }
