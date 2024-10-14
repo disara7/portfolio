@@ -64,7 +64,8 @@
         background-color: black;
     } */
      .section__title{
-        margin-left: 6rem;
+        margin-left: -3rem;
+        text-align: center;
      }
 
     .portfolio{
@@ -80,6 +81,6 @@
     }
 
     .portfolio_content{
-        margin-left: 6rem;
+        margin-left: 4rem;
     }
 }
