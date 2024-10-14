@@ -69,10 +69,21 @@ nav a.active {
 
     nav {
         background: rgba(116, 116, 116, 0.54); 
-        width: min-content;
+        width: 2.5rem;
         display: block;
-        height: fit-content;
-        margin-left: -4.5rem;
-        top: 20%;
+        height: 14rem;
+        margin-left: -5rem;
+        top: 25%;
+        gap: 1rem;
+    }
+
+    nav a {
+        background: transparent;
+        padding: 0.3rem;
+        border-radius: 50%;
+        display: flex;
+        color: var(--color-light);
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
     }
 }
