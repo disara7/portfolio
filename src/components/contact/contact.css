@@ -87,7 +87,7 @@ textarea.field {
 /* Media query for responsiveness */
 @media (max-width: 768px) {
     .contact {
-        margin-left: 2rem;
+        margin-left: 0rem;
         margin-right: 2rem;
     }
 
