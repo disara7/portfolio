@@ -45,7 +45,7 @@
 
 @media screen and (max-width: 700px) {
   .skill_table{
-    margin-left: 6rem;
+    margin-left: 4rem;
     margin-bottom: 1rem;
   }
 
@@ -54,7 +54,7 @@
   }
 
   .skill_table td{
-    width: 8rem;
+    width: 9rem;
   }
 
   .skill_table {
