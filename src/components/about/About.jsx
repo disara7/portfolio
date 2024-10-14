@@ -6,6 +6,7 @@ const About = () => {
   return (
     <section id='about'>
       <div className="about">
+        
       <h2 className='section__title'>About Me</h2>
       <br />
       {/* <div className="photo">
