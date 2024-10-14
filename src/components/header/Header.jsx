@@ -37,6 +37,7 @@ const Header = () => {
         <h5 className="name__description">
           I am a multidisciplinary software engineering undergraduate with a creative problem-solving approach and an artistic mindset.
         </h5>
+        
         <CV />
         <Socials />
 

@@ -193,15 +193,21 @@
   .section__title {
       margin-top: 4rem;
       font-size: 2rem;
-      text-align: center; /* Center align section title */
+      text-align: left; 
+      padding-left: 2.5rem;/* Center align section title */
   }
   
   .about__style {
       margin-bottom: 2rem;
       text-align: center; /* Center align text */
       width: 100%; /* Full width to ensure centering */
-      max-width: 23rem; /* Limit max-width for better readability */
+      max-width: 20rem; /* Limit max-width for better readability */
       margin-left: 2rem;
+      
+  }
+
+ p{
+    font-size: 0.8rem;
   }
   
   .about__style h4 {
@@ -232,9 +238,7 @@
   }
   
   /* Adjust the paragraph font size inside .about__style */
-  .about__style p {
-      font-size: 0.8rem;
-  }
+  
   
 
   
