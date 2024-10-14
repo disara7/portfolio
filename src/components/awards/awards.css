@@ -99,18 +99,26 @@
 
  @media screen and (max-width: 700px) {
   .scrollsection{
-    margin-left: -10rem;
+    margin-left: -2rem;
     overflow-y:scroll;
+    width: 47rem;
   }
 
   .timeline-content p{
-    width: 10rem;
+    width: 8rem;
+    font-size: 0.5rem;
+    
   }
 
   .timeline-content h3{
-    width: 10rem;
+    width: 8rem;
+    font-size: 1rem;
   }
-  .section__title h2{
-    margin-left: -6rem;
-  }
+  /* .section__title{
+    text-align: center;
+    margin-left: 0;
+  } */
+   h2{
+    padding-left: 1rem;
+   }
  }
