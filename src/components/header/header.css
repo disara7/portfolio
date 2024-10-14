@@ -136,7 +136,7 @@ header {
         margin: 0 auto; /* Centers the element */
         position: relative;
         padding: 0.5rem;
-        top: -128%; /* Adjust this for vertical spacing */
+        bottom: 33rem; /* Adjust this for vertical spacing */
         z-index: -1; /* Ensure it's on top of other content */
     }
  
