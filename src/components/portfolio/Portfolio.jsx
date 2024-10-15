@@ -16,6 +16,7 @@ const Portfolio = () => {
     <section id='portfolio'>
       <div className="portfolio">
       <h2 className='section__title'>Portfolio</h2><br />
+      
       <div className="portfolio_content">
       <h3>Mobile Applications</h3>
       <div className="projects">

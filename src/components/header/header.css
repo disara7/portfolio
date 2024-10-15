@@ -1,33 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 header {
-    height: 110vh;
-    margin-top: -2.5rem;
-    padding-top: 0.1rem;
+    height: 100vh; /* Set to 100vh for full height */
+    margin: 0; /* Remove default margins */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center children vertically */
+    align-items: center; /* Center children horizontally */
     overflow: hidden;
 }
 
 .fname {
     font-size: 25rem;
     font-family: 'Anton', sans-serif;
-    margin-top: -1rem;
+    margin-top: -3rem;
 }
 
 .name__post {
-    margin-top: -9rem;
+    margin-top: -8rem;
+    margin-left: 0.8rem; /* Remove negative margin */
     font-family: 'Anton', sans-serif;
-    font-size: 2.7rem;
-    text-align: left;
-    padding-left: 16.5%;
+    font-size: 2rem;
+    text-align: left; /* Center text */
 }
 
 .name__description {
-    text-align: left;
-    padding-left: 16.5%;
+    text-align: center; /* Center text */
     font-size: 1rem;
     width: 65rem;
-    margin-bottom: -1rem;
-    color: #101f36;
+    margin: 0; /* Remove bottom margin */
+    color: white; /* Change 'w' to 'white' for a valid color */
 }
 
 .header__container {
@@ -118,13 +120,16 @@ header {
 /*===========FOR RESPONSIVENESS (SMALL DEVICES)==============*/
 
 @media screen and (max-width: 700px) {
-    /* .container {
-        background-color: red;
-    } */
+    .container {
+        /* height: 25rem; */
+        /* background-color: red; */
+        
+    }
     header {
-        margin-top: 9rem;
-        height: 60vh;
+        margin-top: 10rem;
+        height: 100vh;
         overflow: visible;
+        
     }
 
     /* .social_links, .scroll__down {
@@ -136,7 +141,7 @@ header {
         margin: 0 auto; /* Centers the element */
         position: relative;
         padding: 0.5rem;
-        bottom: 33rem; /* Adjust this for vertical spacing */
+        bottom: 34rem; /* Adjust this for vertical spacing */
         z-index: -1; /* Ensure it's on top of other content */
     }
  
@@ -149,16 +154,16 @@ header {
 
     .name__post {
         font-size: 2rem;
-        margin-top: -3rem;
+        margin-top: -2rem;
         text-align: center;
-        margin-left: -3rem;
+        margin-left: 1.5rem;
     }
 
     .name__description {
         font-size: 0.8rem;
         text-align: center;
-        width: 100%;
-        margin-left: -2rem;
+        width: 80%;
+        margin-left: 3rem;
     }
 
     .cv {

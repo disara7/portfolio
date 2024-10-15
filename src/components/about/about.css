@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
+.about h2{
+  margin-top: -18rem;
+  margin-left: -3rem;
+  /* padding-left: 1rem; */
+}
+
 .about{
-  margin-top: -3rem;
-  padding-left: 5rem;
+  margin-left: -2rem;
 }
 .about__container {
     display: grid;
@@ -27,7 +32,12 @@
     color: white;
 }
 
+.number h2{
+  margin-top: 10rem;
+}
+
 .number__description {
+  margin-top: 3rem;
     font-size: 2rem;
     color: white; 
 }
@@ -156,7 +166,8 @@
   @media screen and (max-width: 700px) {
     .container {
       /* background-color: red; */
-      text-align: center; /* Center align all text inside the container */
+      text-align: center;
+      height: 103vh; /* Center align all text inside the container */
   }
   
   .about {
@@ -181,9 +192,12 @@
   }
   
   .number {
-      font-size: 4rem;
-      text-align: center; /* Center text */
-  }
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 0; /* Remove any existing padding */
+    margin-top: 0; /* Remove any existing margin */
+    display: block; /* Ensure it behaves as a block element */
+}
   
   .number__description {
       font-size: 0.5rem;
@@ -227,19 +241,19 @@
   /* Optional: Ensure individual cards scale down */
   .cardset .card {
       width: 100%; /* Ensure the card takes the full width of its container */
-      max-width: 200px; /* Set a max-width for individual cards */
-      padding: 1rem; /* Add some padding for spacing */
+      max-width: 95px; /* Set a max-width for individual cards */
+      padding: 1rem; 
+      height: 10rem;/* Add some padding for spacing */
   }
-  
-  /* Ensure all sections have no unwanted margins */
-  .about, .other-section {
-      margin-left: 0; /* Remove left margin */
-      padding-left: 0; /* Reset padding if needed */
-  }
-  
-  /* Adjust the paragraph font size inside .about__style */
-  
   
 
+  
+  .card::before, .card::after {
+    display: none; /* Hide the background effects */
+  }
+
+  .card:hover::before, .card:hover::after {
+    display: none; /* Ensure hover effects are also disabled */
+  }
   
 }

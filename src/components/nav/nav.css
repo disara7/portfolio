@@ -1,7 +1,6 @@
 nav {
-    background: rgba(0, 0, 0, 0.3); 
+    background: rgba(0, 0, 0, 0.3); /* Slightly transparent background */
     width: max-content;
-    display: block;
     padding: 0.7rem 0.7rem;
     z-index: 2;
     position: fixed;
@@ -12,7 +11,9 @@ nav {
     flex-direction: column;
     gap: 0.8rem;
     border-radius: 3rem;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px); /* Apply blur for glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Light border for glass effect */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Slight shadow for depth */
 }
 
 nav a {
@@ -69,7 +70,7 @@ nav a.active {
 
     nav {
         background: rgba(116, 116, 116, 0.54); 
-        width: 2.5rem;
+        width: 2.6rem;
         display: block;
         height: 14rem;
         margin-left: -5rem;
@@ -83,7 +84,7 @@ nav a.active {
         border-radius: 50%;
         display: flex;
         color: var(--color-light);
-        font-size: 1.1rem;
+        font-size: 1rem;
         margin-bottom: 0.5rem;
     }
 }
