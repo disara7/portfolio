@@ -1,57 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 header {
-    height: 100vh; 
+    height: 100vh; /* Full viewport height */
     margin: 0;
-    display: flex; 
-    flex-direction: column; 
+    display: flex;
+    flex-direction: column;
     justify-content: center; 
     align-items: center; 
-    overflow: visible;
+    overflow: visible; 
 }
 
 .fname {
-    font-size: 25rem;
+    font-size: 22rem; /* Reduced for better fit on most screens */
     font-family: 'Anton', sans-serif;
-    margin-top: -3rem;
+    text-align: left;
+    margin-left: 20%;
+    transition: transform 0.3s ease;
+    color: white; 
+    margin-top: -2rem;
 }
 
 .name__post {
-    margin-top: -8rem;
-    margin-left: 0.8rem; 
+    margin-top: 58%; /* Reduce margin for better spacing */
     font-family: 'Anton', sans-serif;
-    font-size: 2.3rem;
+    font-size: 2rem;
     text-align: left; 
+    margin-left: -20%;
+    color: white;
 }
 
 .name__description {
-    text-align: left;
-    font-size: 1rem;
-    width: 50rem;
-    margin-left: 0.8rem; /* Remove bottom margin */
-    color: white; /* Change 'w' to 'white' for a valid color */
+    text-align: left; 
+    font-size: 1.2rem;
+    width: 40rem; 
+    margin-left: -20%;
+    margin-top: 1rem;
+    color: white; 
 }
 
 .header__container {
     text-align: center;
     height: 100%;
     position: relative;
+    padding-top: 5rem; /* Adjusted padding for better vertical centering */
 }
 
 .social__icons {
-    color: var(--color-white);
+    color: var(--color-white); /* Ensures icons use the defined color */
 }
 
 /*===========BUTTONS==========*/
 .cv {
-    margin-top: 3rem;
+    margin-top: 1.5rem;
     display: flex;
     gap: 1.2rem;
-    justify-content: center;
-    margin-left: -46rem;
+    margin-left: -20%;
 }
 
-/*===========BUTTONS==========*/
+/*===========SOCIAL LINKS==========*/
 .social_links {
     display: flex;
     flex-direction: column;
@@ -60,16 +66,14 @@ header {
     position: fixed;
     right: 4%;
     bottom: 3rem;
-    
 }
 
 /*===========PICTURE==========*/
 .me {
-    width: 32rem;
-    height: 30rem;
+    width: 30rem; /* Adjusted size for better fit */
+    height: auto;
     position: fixed;
     right: 2%;
-    padding: 0.5rem;
+    padding: 0.2rem;
     bottom: 0rem;
-    
 }

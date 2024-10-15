@@ -7,7 +7,8 @@ import Awards from './components/awards/Awards';
 import Portfolio from './components/portfolio/Portfolio';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
-import './index.css'; // Ensure to import your CSS file for styles
+import './index.css'; 
+import './background.css';
 
 const App = () => {
   useEffect(() => {
@@ -47,6 +48,7 @@ const App = () => {
 
   return (
     <>
+    <div class="moving-background"></div>
     <div id="glow"></div> {/* Add the glow effect div here */}
     
       <Header />
