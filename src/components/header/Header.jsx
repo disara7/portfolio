@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './header.css';
 import './hname.css';
+import './responsive.css';
 import CV from './cv';
 import ME from '../../assets/disara.png';   // Default image for large screens
 import DISARA_SMALL from '../../assets/disara.png'; // Image for small devices

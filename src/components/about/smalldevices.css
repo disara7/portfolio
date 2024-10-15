@@ -1,0 +1,96 @@
+/*===========FOR RESPONSIVENESS (SMALL DEVICES)==============*/
+
+@media screen and (max-width: 700px) {
+    .container {
+      /* background-color: red; */
+      text-align: center;
+      height: 103vh; /* Center align all text inside the container */
+  }
+  
+  .about {
+      margin-top: -3rem;
+      padding: 0; /* Ensure no margin/padding affects alignment */
+      text-align: center; /* Center the content inside .about */
+      width: 100%; /* Ensure .about takes the full width */
+  }
+  
+  .about__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center align children elements horizontally */
+      width: 100%; /* Ensure it takes full width */
+  }
+  
+  .fullname {
+      margin-top: -1.5rem;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      text-align: center; /* Center text */
+  }
+  
+  .number {
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 0; /* Remove any existing padding */
+    margin-top: 0; /* Remove any existing margin */
+    display: block; /* Ensure it behaves as a block element */
+}
+  
+  .number__description {
+      font-size: 0.5rem;
+      text-align: center; /* Center text */
+  }
+  
+  .section__title {
+      margin-top: 4rem;
+      font-size: 2rem;
+      text-align: left; 
+      padding-left: 2.5rem;/* Center align section title */
+  }
+  
+  .about__style {
+      margin-bottom: 2rem;
+      text-align: center; /* Center align text */
+      width: 100%; /* Full width to ensure centering */
+      max-width: 20rem; /* Limit max-width for better readability */
+      margin-left: 2rem;
+      
+  }
+
+ p{
+    font-size: 0.8rem;
+  }
+  
+  .about__style h4 {
+      font-weight: bold;
+      text-align: center; /* Center align text */
+  }
+  
+  .cardset {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; /* Center align the cards */
+      gap: 0.7rem;
+      max-width: 80%; /* Set a smaller max-width */
+      margin: 0 auto; /* Ensure it's centered */
+  }
+  
+  /* Optional: Ensure individual cards scale down */
+  .cardset .card {
+      width: 100%; /* Ensure the card takes the full width of its container */
+      max-width: 95px; /* Set a max-width for individual cards */
+      padding: 1rem; 
+      height: 10rem;/* Add some padding for spacing */
+  }
+  
+
+  
+  .card::before, .card::after {
+    display: none; /* Hide the background effects */
+  }
+
+  .card:hover::before, .card:hover::after {
+    display: none; /* Ensure hover effects are also disabled */
+  }
+  
+}

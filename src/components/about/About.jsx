@@ -1,6 +1,7 @@
 import React from 'react'
 import { useEffect } from 'react';
 import './about.css'
+import './smalldevices.css'
 import './animations.css'
 
 const About = () => {
