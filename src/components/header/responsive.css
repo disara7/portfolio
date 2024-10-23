@@ -102,14 +102,33 @@
 
 /* For phone screens */
 @media screen and (max-width: 670px) {
-
-    
     header {
         margin-top: -1rem;
         height: auto;
         width: 100%;
     }
-    
-    
 }
 
+/* For phone screens */
+@media screen and (max-width: 900px) {
+    header {
+        margin-top: -8rem;
+        height: auto;
+        width: 100%;
+    }
+}
+
+
+/* For phone screens */
+@media screen and (max-width: 740px) {
+    header {
+        margin-top: -4rem;
+        height: auto;
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+
+    .fname{
+        font-size: 7rem;
+    }
+}

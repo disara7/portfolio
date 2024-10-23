@@ -123,3 +123,63 @@
     }
 
 }
+
+/* For phone screens */
+@media screen and (max-width: 740px) {
+    .about {
+        margin-top: 10rem;
+        
+        
+       }
+
+    .about .section__title{
+        margin-bottom: 8rem;
+    }
+
+    .about__style {
+        margin-bottom: 2rem;
+        width: 80%; /* Full width to ensure centering */
+        max-width: 20rem; /* Limit max-width for better readability */
+        margin-left: 3rem;
+        padding-top: 0rem;
+        margin-top: 1rem;
+        
+    }
+
+    .about__container {
+        margin-top: 2rem;
+    }
+
+    .fullname{
+        margin-top: 10rem;
+        padding-top: 1rem;
+    }
+
+    
+}
+
+/* For phone screens */
+@media screen and (max-width: 900px) {
+    .about {
+        margin-top: -12rem;
+        margin-bottom: 0rem;
+        padding: 0.5rem;
+       }
+
+    .about__style {
+        margin-bottom: 2rem;
+        width: 80%; /* Full width to ensure centering */
+        max-width: 20rem; /* Limit max-width for better readability */
+        margin-left: 3rem;
+        padding-top: 0rem;
+        
+    }
+
+    .about__container {
+        margin-top: 1rem;
+    }
+
+    .fullname{
+        margin-top: 0rem;
+    }
+}

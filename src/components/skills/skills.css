@@ -77,4 +77,10 @@
     }
   }
 
+  @media screen and (max-width: 740px) {
+    .skills{
+      margin-top: -2rem;
+    }
+  }
+
 

@@ -125,3 +125,15 @@
     padding-left: 1rem;
    }
  }
+
+ @media screen and (max-width: 740px) {
+  .awards{
+    width: 14rem;
+  }
+  .scrollsection{
+    margin-top: 1rem;
+    margin-left: -2rem;
+    overflow-y:scroll;
+    width: 44rem;
+  }
+}
