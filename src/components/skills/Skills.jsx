@@ -6,6 +6,7 @@ const Skills = () => {
     <section id='skills'>
       <br />
       <br />
+      <div className="skills">
       <div className="skills__container">
       <h2 className='section__title'>Skills</h2>
       <br />
@@ -211,6 +212,7 @@ const Skills = () => {
         </table>
       </div>
     </div>
+      </div>
       
       
 

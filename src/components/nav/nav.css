@@ -76,7 +76,7 @@ nav a.active {
         margin-left: -5rem;
         top: 2%;
         gap: 1rem;
-        position: absolute;
+        position: fixed;
         
     }
 
