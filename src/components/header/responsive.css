@@ -132,3 +132,13 @@
         font-size: 7rem;
     }
 }
+
+/* For phone screens */
+@media screen and (max-width: 920px) {
+    header {
+        margin-top: -8rem;
+        height: auto;
+        width: 100%;
+        margin-bottom: 0rem;
+    }
+}
