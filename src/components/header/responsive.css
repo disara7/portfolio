@@ -99,3 +99,17 @@
         margin-left: 0;
     }
 }
+
+/* For phone screens */
+@media screen and (max-width: 670px) {
+
+    
+    header {
+        margin-top: -1rem;
+        height: auto;
+        width: 100%;
+    }
+    
+    
+}
+
