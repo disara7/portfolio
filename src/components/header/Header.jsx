@@ -28,15 +28,12 @@ const Header = () => {
   return (
     <header>
       <div className="container header__container">
+      <div className="me">
+          <img src={ME} alt="Disara" />
+        </div>
         <h1
           className="fname"
-          style={{
-            transform: `scale(${scale}) translate(${translateX}px, ${-translateY}px)`,
-            transformOrigin: 'top left',
-            position: 'fixed',
-            top: 0,  // Remove any margin at the top
-            left: 0, // Remove any margin at the left
-          }}
+          
         >
           DISARA
         </h1>
@@ -48,9 +45,7 @@ const Header = () => {
         <CV />
         <Socials />
 
-        <div className="me">
-          <img src={ME} alt="Disara" />
-        </div>
+        
       </div>
     </header>
   );
