@@ -1,49 +1,50 @@
 /* General fade-in animation on scroll */
 .fade-in {
-    opacity: 0;
-    transform: translateY(20px); /* Starts slightly below */
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-  }
-  
-  .fade-in.visible {
-    opacity: 1;
-    transform: translateY(0); /* Moves back into place */
-  }
-  
-  /* Parallax effect */
-  .about {
-    position: relative;
-    background-attachment: fixed; /* Creates a parallax effect */
-    background-size: cover;
-    background-position: center;
-    padding: 5rem 0;
-  }
-  
-  .about__container {
-    position: relative;
-    z-index: 2; /* Keeps the content on top of the parallax background */
-  }
-  
-  /* Card hover effect for smooth interaction */
-  .card {
-    position: relative;
-    background: rgba(255, 255, 255, 0.1); /* Transparent card */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Smooth shadow */
-    padding: 1rem;
-    border-radius: 12px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-  }
-  
-  .card:hover {
-    transform: translateY(-10px); /* Lift the card on hover */
-    background-color: rgba(255, 255, 255, 0.2); /* Slightly darker on hover */
-  }
-  
-  /* Cardset adjustments */
-  .cardset {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 2rem;
-  }
-  
+  opacity: 0;
+  transform: translateY(20px); /* Starts slightly below */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0); /* Moves back into place */
+}
+
+/* Parallax effect */
+.about {
+  position: relative;
+  background-attachment: fixed; /* Creates a parallax effect */
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 0;
+}
+
+.about__container {
+  position: relative;
+  z-index: 2; /* Keeps the content on top of the parallax background */
+}
+
+/* Card hover effect for smooth interaction */
+.card {
+  position: relative;
+  background: rgba(108, 108, 108, 0.786); /* Transparent card */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Smooth shadow */
+  padding: 1rem;
+  border-radius: 12px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  width: 10rem;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Lift the card on hover */
+  background-color: rgba(255, 255, 255, 0.2); /* Slightly darker on hover */
+}
+
+/* Cardset adjustments */
+.cardset {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+  margin-left: 1.5rem;
+}

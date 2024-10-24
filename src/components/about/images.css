@@ -1,0 +1,7 @@
+.aiesec {
+    top: -100%; /* Adjust this value to move the image above the button */
+    left: 0; /* Align to the left side */
+    z-index: 1000; /* Ensure the image appears above other elements */
+    margin-bottom: 10px; /* Optional: Add spacing below the image */
+    /* Add width, height, and other styles as needed */
+}

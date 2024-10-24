@@ -15,6 +15,7 @@
 .about{
   margin-left: 6rem;
   margin-top: -4rem;
+  
 }
 .about__container {
     display: grid;
@@ -60,11 +61,37 @@
   font-weight: bold;
 }
 
-.educard li{
-  background-color: rgba(181, 181, 181, 0.281);
+.educard li {
+  background-color: rgba(255, 255, 255, 0.2); /* White with transparency for the glass effect */
+  backdrop-filter: blur(10px); /* Blur effect */
   padding: 0.8rem;
   border-radius: 0.5rem;
   width: fit-content;
   font-size: small;
   margin-bottom: -0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Optional: Light border for more glass-like appearance */
 }
+
+.volunteering{
+  margin-top: 2rem;
+}
+
+.voluncard{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.voluncard p {
+  background-color: rgba(255, 255, 255, 0.2); /* White with transparency for the glass effect */
+  backdrop-filter: blur(10px); /* Blur effect */
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  width: fit-content;
+  height: min-content;
+  font-size: small;
+  margin-bottom: -0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Optional: Light border for more glass-like appearance */
+}
+
+
