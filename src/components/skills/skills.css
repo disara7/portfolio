@@ -1,4 +1,7 @@
-
+.skills{
+  margin-top: -10rem;
+  margin-left: 1rem;
+}
 .col {
     flex: 1;
     width: 30%;

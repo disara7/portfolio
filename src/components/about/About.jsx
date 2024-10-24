@@ -3,7 +3,7 @@ import './about.css';
 import './smalldevices.css';
 import './animations.css';
 import AIESEC from '../../assets/disara.png';
-import IEEE from '../../assets/disara.png';  // Add your images
+import IEEE from '../../assets/sac.png';  // Add your images
 import YP from '../../assets/disara.png';
 import SIGHT from '../../assets/disara.png';
 import WIE from '../../assets/disara.png';
@@ -100,16 +100,17 @@ const About = () => {
               </div>
             </div>
             <h4 className='about__style fade-in volunteering'>Volunteering:</h4>
-            <div className="pop">
-              {/* Image Popup */}
+            
+            
+            
+            <div className='voluncard fade-in about__style'>
+                {/* Image Popup */}
             {isImageVisible && currentImage && (
               <div className="image-popup">
               <button className="image-popup-close" onClick={handleClickOutside}></button>
               <img src={currentImage} alt="Volunteering" />
             </div>
             )}
-            </div>
-            <div className='voluncard fade-in about__style'>
               <p>IEEE
                 <ul>
                   <li style={{ cursor: 'pointer' }} onClick={(e) => handleItemClick(e, IEEE)}>IEEE Sri Lanka Section Student Activities Committee</li>

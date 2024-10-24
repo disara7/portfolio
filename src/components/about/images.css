@@ -4,14 +4,12 @@
   }
   
   .image-popup {
-    position: sticky;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1000; /* Ensures it appears on top of other elements */
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 30rem; /* Adjusted size for better fit */
+    height: auto;
+    position: fixed;
+    left: 2%;
+    padding: 0.2rem;
+    bottom: 5rem;
   }
   
   .image-popup img {
