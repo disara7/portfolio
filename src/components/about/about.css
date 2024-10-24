@@ -5,7 +5,7 @@
   font-size: 2rem;
   text-align: left;
   margin-left: 10.2rem;
-  color: #d4a4ff;
+  color: #929292;
 }
 
 .about h2{
@@ -13,7 +13,8 @@
 }
 
 .about{
-  margin-left: 5rem;
+  margin-left: 6rem;
+  margin-top: -4rem;
 }
 .about__container {
     display: grid;

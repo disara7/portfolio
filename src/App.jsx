@@ -9,48 +9,55 @@ import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 import './index.css'; 
 import './background.css';
+import './cursor.css'; 
 
 const App = () => {
   useEffect(() => {
-    const glow = document.getElementById('glow');
-    
-    const createSparkle = (x, y) => {
-      const sparkle = document.createElement('div');
-      sparkle.classList.add('sparkle');
-      document.body.appendChild(sparkle);
-      sparkle.style.left = `${x}px`;
-      sparkle.style.top = `${y}px`;
+    const circle = document.getElementById('circle');
 
-      // Randomize sparkle direction
-      const randomX = (Math.random() - 0.5) * 60;
-      const randomY = (Math.random() - 0.5) * 60;
-      sparkle.style.transform = `translate(${randomX}px, ${randomY}px)`;
-
-      // Remove sparkle after animation
-      setTimeout(() => {
-        sparkle.remove();
-      }, 1000);
-    };
-
-    const moveGlow = (e) => {
+    const moveCircle = (e) => {
       const { clientX: x, clientY: y } = e;
-      glow.style.left = `${x}px`;
-      glow.style.top = `${y}px`;
-
-      // Generate sparkles
-      createSparkle(x, y);
+      circle.style.left = `${x}px`;
+      circle.style.top = `${y}px`;
     };
 
-    document.addEventListener('mousemove', moveGlow);
+    const growCircle = () => {
+      circle.style.width = '50px';
+      circle.style.height = '50px';
+    };
 
-    return () => document.removeEventListener('mousemove', moveGlow);
+    const shrinkCircle = () => {
+      circle.style.width = '30px';
+      circle.style.height = '30px';
+    };
+
+    document.addEventListener('mousemove', moveCircle);
+    
+    const buttonsAndLinks = document.querySelectorAll('button, a');
+    
+    buttonsAndLinks.forEach(element => {
+      element.addEventListener('mouseenter', growCircle);
+      element.addEventListener('mouseleave', shrinkCircle);
+    });
+
+    return () => {
+      document.removeEventListener('mousemove', moveCircle);
+      buttonsAndLinks.forEach(element => {
+        element.removeEventListener('mouseenter', growCircle);
+        element.removeEventListener('mouseleave', shrinkCircle);
+      });
+    };
   }, []);
 
   return (
     <>
-    <div class="moving-background"></div>
-    <div id="glow"></div> {/* Add the glow effect div here */}
-    
+      <div className="moving-background"></div>
+      
+      {/* Outer circle with outline containing the inner white circle */}
+      <div id="circle">
+        <div></div> {/* Inner circle will be styled through CSS */}
+      </div>
+      
       <Header />
       <Nav />
       <About />
@@ -59,7 +66,7 @@ const App = () => {
       <Awards />
       <Contact />
       <Footer />
-      </>
+    </>
   );
 }
 

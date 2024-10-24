@@ -1,0 +1,32 @@
+/* circle.css */
+
+/* Styles for the outer circle with the outline */
+#circle {
+    width: 30px; /* Default size */
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.7); /* Outline with transparency */
+    position: fixed;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: width 0.2s ease, height 0.2s ease; /* Smooth transition */
+}
+
+/* Styles for the inner white circle */
+#circle div {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+/* Grow the outer circle when hovering over buttons or links */
+button:hover ~ #circle,
+a:hover ~ #circle {
+    width: 40px; /* Expanded size */
+    height: 40px; /* Expanded size */
+}

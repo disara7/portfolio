@@ -1,0 +1,17 @@
+.scroll-down-button {
+    margin-top: 2rem; /* Adjust spacing above the button */
+    padding: 0.8rem 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    height: 4.5rem;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, border-color 0.3s;
+}
+
+.scroll-down-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.7);
+}
