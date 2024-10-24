@@ -1,11 +1,16 @@
-import React, { useEffect, useState  } from 'react';
+import React, { useEffect, useState } from 'react';
 import './about.css';
 import './smalldevices.css';
 import './animations.css';
 import AIESEC from '../../assets/disara.png';
+import IEEE from '../../assets/disara.png';  // Add your images
+import YP from '../../assets/disara.png';
+import SIGHT from '../../assets/disara.png';
+import WIE from '../../assets/disara.png';
 
 const About = () => {
   const [isImageVisible, setIsImageVisible] = useState(false);
+  const [currentImage, setCurrentImage] = useState(null);  // To track which image to show
 
   useEffect(() => {
     const fadeElements = document.querySelectorAll('.fade-in');
@@ -36,13 +41,15 @@ const About = () => {
     };
   }, []);
 
-  const handleAIESECClick = (e) => {
+  const handleItemClick = (e, image) => {
     e.stopPropagation(); // Prevent event bubbling
     setIsImageVisible(true);
+    setCurrentImage(image);  // Set the image to be displayed
   };
 
   const handleClickOutside = () => {
     setIsImageVisible(false);
+    setCurrentImage(null);  // Reset the image
   };
 
   useEffect(() => {
@@ -93,23 +100,30 @@ const About = () => {
               </div>
             </div>
             <h4 className='about__style fade-in volunteering'>Volunteering:</h4>
-            <div className='voluncard fade-in about__style'>
-              <p >IEEE
-                <ul>
-                  <li>IEEE Sri Lanka Section Student Activities Committee</li>
-                  <li>IEEE Young Professionals</li>
-                  <li>IEEE Sri Lanka Section SIGHT</li>
-                  <li>IEEE Women in Engineering</li>
-                  <li>IEEE Student Branch of SUSL</li>
-                </ul>
-              </p>
-              <p>Society of Computer Sciences - SUSL</p>
-              <p style={{ cursor: 'pointer' }} onClick={handleAIESECClick}>AIESEC</p>{isImageVisible && (
-              <div className="image-popup aiesec">
-                <img src={AIESEC} alt="AIESEC" style={{ width: '200px', marginLeft: '10px' }} />
-              </div>
+            <div className="pop">
+              {/* Image Popup */}
+            {isImageVisible && currentImage && (
+              <div className="image-popup">
+              <button className="image-popup-close" onClick={handleClickOutside}></button>
+              <img src={currentImage} alt="Volunteering" />
+            </div>
             )}
             </div>
+            <div className='voluncard fade-in about__style'>
+              <p>IEEE
+                <ul>
+                  <li style={{ cursor: 'pointer' }} onClick={(e) => handleItemClick(e, IEEE)}>IEEE Sri Lanka Section Student Activities Committee</li>
+                  <li style={{ cursor: 'pointer' }} onClick={(e) => handleItemClick(e, YP)}>IEEE Young Professionals</li>
+                  <li style={{ cursor: 'pointer' }} onClick={(e) => handleItemClick(e, SIGHT)}>IEEE Sri Lanka Section SIGHT</li>
+                  <li style={{ cursor: 'pointer' }} onClick={(e) => handleItemClick(e, WIE)}>IEEE Women in Engineering</li>
+                  
+                </ul>
+              </p>
+              <p style={{ cursor: 'pointer' }} onClick={(e) => handleItemClick(e, WIE)}>Society of Computer Sciences - SUSL</p>
+              <p style={{ cursor: 'pointer' }} onClick={(e) => handleItemClick(e, WIE)}>AIESEC</p>
+            </div>
+
+            
             
           </div>
         </div>
