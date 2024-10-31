@@ -210,9 +210,26 @@
     }
 
     .fullname{
-        margin-top: 10rem;
+        margin-top: 15rem;
         padding-top: 1rem;
     }
 
-    
+    .cardsett{
+        margin-left: 3rem;
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .cardd{
+        width: 5.5rem;
+    }
+
+    .voluncard{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 12rem;
+        justify-items: center;
+    }
 }

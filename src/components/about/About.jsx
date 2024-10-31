@@ -85,16 +85,16 @@ const About = () => {
               <br /><li>GCE (A/L) ICT, Combined Mathematics, Physics - Girls' High School, Kandy</li>
             </ul>
             <br />
-            <div className="cardset fade-in">
-              <div className="card">
+            <div className="cardsett fade-in">
+              <div className="cardd">
                 <h2 className='number'>8+</h2>
                 <p className='number_description'>Years of Experience</p>
               </div>
-              <div className="card">
+              <div className="cardd">
                 <h2 className='number'>15+</h2>
                 <p className='number_description'>Projects</p>
               </div>
-              <div className="card">
+              <div className="cardd">
                 <h2 className='number'>25+</h2>
                 <p className='number_description'>Awards and Honors</p>
               </div>

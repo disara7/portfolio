@@ -99,4 +99,14 @@
   border: 1px solid rgba(255, 255, 255, 0.3); /* Optional: Light border for more glass-like appearance */
 }
 
+.cardd {
+  width: 6rem;
+  padding: 0.1rem; /* Adjust padding as needed */
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for glass effect */
+  border-radius: 8px; /* Rounded corners for smoothness */
+  backdrop-filter: blur(10px); /* Adds the glassy blur effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds depth */
+}
+
 
