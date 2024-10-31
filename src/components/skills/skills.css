@@ -80,9 +80,14 @@
     }
   }
 
-  @media screen and (max-width: 740px) {
+  @media screen and (max-width: 670px) {
     .skills{
-      margin-top: -2rem;
+      margin-top: 23rem;
+      margin-bottom: 23rem;
+    }
+
+    .skills h2{
+      margin-bottom: 0rem;
     }
   }
 

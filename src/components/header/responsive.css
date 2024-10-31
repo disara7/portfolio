@@ -1,53 +1,62 @@
-/*===========FOR RESPONSIVENESS (Medium DEVICES)==============*/
-
-@media  screen and (max-width: 1024px) {
-    /* .container {
-        background-color: blue;
-    } */
+/* For small screens up to 920px */
+@media screen and (max-width: 920px) {
     header {
+        top: 0;
+        height: min-content;
+        width: 100%;
+        margin-bottom: 0rem;
         
-        height: 80vh;
-        overflow: visible;
     }
-
-    .fname h1{
-        font-size: 20px;
+    .me {
+        width: 80%; 
+        margin: 0;
+        position: static; 
+        top: 0;
+        z-index: -1;
+        padding: 0rem;
+        margin-top: 1rem;
+        margin-bottom: 5rem;
+    }
+    .fname {
+        font-size: 7rem; 
+        margin: 0;
         text-align: center;
+        margin-left: 1rem;
+        margin-bottom: 12rem;
+        
+    }
+    .name__post{
+        margin-bottom: 30rem;
+        margin-left: 1rem;
+        
     }
     
-    .name__post {
-        margin-top: -6.5rem;
-        font-size: 2rem;
-        text-align: left;
-        margin-left: 7rem;
+    .creative {
+        font-family: 'Lobster', sans-serif;
+        font-size: 1.5rem;
+        margin-top: 0rem;
     }
     
-    .name__description {
-        text-align: left;
-        margin-left: 7rem;
+    .eng, .product {
+        font-family: sans-serif;
         font-size: 1rem;
-        width: 30rem;
+        font-weight: 600;
+        margin-top: 0.5rem;
     }
-
-    .cv {
-        margin-top: 0.8rem;
-        display: flex;
-        gap: 1.2rem;
-        justify-content: center;
-        margin-left: -22.5rem;
+    
+    .scroll-down-button {
+        display: none;
     }
 }
 
-
-
-/* For phone screens */
+/* For phone screens up to 768px */
 @media screen and (max-width: 768px) {
     .container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 80vh; /* Make sure container takes the full viewport height */
+        height: 80vh;
         text-align: center;
     }
     
@@ -58,20 +67,15 @@
     }
     
     .me {
-        width: 100%; /* Adjust width for better responsiveness */
-        margin: 0;
-        position: static; /* Remove the relative positioning for better centering */
-        top: 0;
-        z-index: -1;
-        padding: 0rem;
+        width: 100%;
+        position: static;
+        padding: 0;
         margin-top: -25%;
     }
     
     .fname {
         font-size: 8rem; 
-        margin: 0;
         text-align: center;
-        margin-left: 1rem;
         margin-top: -40%;
     }
     
@@ -79,127 +83,62 @@
         font-size: 2rem;
         margin-top: -2rem; 
         text-align: center;
-        margin-left: 1rem;
     }
     
     .name__description {
-        font-size: 0.8rem; 
-        width: 80%; 
-        margin: 0 auto;
-        margin-left: 2.5rem;
+        font-size: 0.8rem;
+        width: 80%;
         text-align: center;
+        margin: 0 auto;
     }
     
     .cv {
         margin-top: 1rem;
         display: flex;
         justify-content: center;
-        gap: 1rem; /* Increase gap between items */
+        gap: 1rem;
         flex-direction: row;
-        margin-left: 0;
     }
 }
 
-/* For phone screens */
+/* For extra small phone screens up to 667px */
 @media screen and (max-width: 667px) {
     header {
-        margin-top: 5rem;
+        
         height: auto;
         width: 100%;
-        margin-bottom: 0rem;
     }
-    .header__container{
+
+    .header__container {
         margin-top: 10rem;
-        margin-bottom: 0rem;
     }
+
     .me {
-        width: 80%; /* Adjust width for better responsiveness */
-        margin: 0;
-        position: static; /* Remove the relative positioning for better centering */
-        top: 0;
-        z-index: -1;
+        width: 80%;
         padding: 1rem;
+        margin-top: 22rem;
     }
+
     .fname {
         font-size: 7rem; 
-        margin: 0;
         text-align: center;
         margin-left: 1rem;
-        
+        margin-top: 13rem;
     }
-    .scroll-down-button{
+
+    .scroll-down-button {
         display: none;
-}
-}
-
-/* For phone screens */
-@media screen and (max-width: 900px) {
-    header {
-        margin-top: -8rem;
-        height: auto;
-        width: 100%;
     }
 }
 
-
-/* For phone screens */
+/* Additional screen width adjustments for smaller layouts */
 @media screen and (max-width: 740px) {
     header {
         margin-top: -4rem;
-        height: auto;
-        width: 100%;
         margin-bottom: 4rem;
     }
 
-    .fname{
-        font-size: 7rem;
-    }
-}
-
-/* For phone screens */
-@media screen and (max-width: 920px) {
-    header {
-        margin-top: -8rem;
-        height: auto;
-        width: 100%;
-        margin-bottom: 0rem;
-    }
-    .me {
-        width: 80%; /* Adjust width for better responsiveness */
-        margin: 0;
-        position: static; /* Remove the relative positioning for better centering */
-        top: 0;
-        z-index: -1;
-        padding: 0rem;
-        margin-top: -11rem;
-    }
     .fname {
-        font-size: 7rem; 
-        margin: 0;
-        text-align: center;
-        margin-left: 1rem;
-        
-    }
-    
-    .creative {
-        font-family: 'Lobster', sans-serif;
-        font-size: 2rem;
-        margin-top: 4rem;
-    }
-    
-    .eng {
-        margin-top: 4.5rem;
-        font-family: sans-serif;
-        font-size: 1.5rem;
-    }
-    
-    .product{
-        margin-top: 4.5rem;
-        font-family: sans-serif;
-        font-weight: 600;
-        font-size: 1rem;
-    }
-    .scroll-down-button{
-            display: none;
+        font-size: 7rem;
     }
 }

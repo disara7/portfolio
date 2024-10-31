@@ -137,3 +137,9 @@
     width: 44rem;
   }
 }
+
+@media screen and (max-width: 667px) {
+  .awards{
+    margin-bottom: 20rem;
+  }
+}

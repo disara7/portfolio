@@ -36,3 +36,10 @@
         align-items: flex-end; /* Ensure links stay aligned to the right */
     }
 }
+
+@media screen and (max-width: 920px) {
+    .cv a{
+        display: flex;
+        flex-direction: column;
+    }
+}
