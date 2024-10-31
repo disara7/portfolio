@@ -2,7 +2,7 @@
 @media screen and (max-width: 920px) {
     .container {
         text-align: center;
-        height: 100vh;
+        height: 80vh;
     }
     .about {
         margin-left: -1rem;
@@ -14,7 +14,7 @@
     .section__title {
         font-size: 2rem;
         padding-left: 2.5rem;
-        margin-bottom: 10rem;
+        margin-bottom: 0rem;
         margin-top: -20rem;
     }
     .about__container {
@@ -31,11 +31,12 @@
         max-width: 20rem; /* Max-width for readability */
         padding-top: 0rem;
         margin-left: 3rem;
+        margin-top: -5rem;
     }
 
     /* For Fullname, Number, and Number description */
     .fullname {
-        
+        margin-top: -2rem;
         font-size: 2rem;
         margin-bottom: 1rem;
         text-align: center;
