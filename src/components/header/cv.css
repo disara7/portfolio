@@ -1,3 +1,4 @@
+/* Base styles */
 .cv {
     display: flex;
     flex-direction: column;
@@ -5,7 +6,7 @@
     position: fixed;
     top: 3rem;
     right: 2rem;
-    align-items: end;  
+    align-items: flex-end;
 }
 
 .cv a {
@@ -25,5 +26,13 @@
 .cv a:hover {
     background: rgba(255, 255, 255, 0.2);
     border-color: rgba(255, 255, 255, 0.7);
-    color: white;
+}
+
+/* For screens with max-width 920px */
+@media screen and (max-width: 920px) {
+    .cv {
+        top: 0;
+        right: 1rem; /* Adjust to keep links closer to the right */
+        align-items: flex-end; /* Ensure links stay aligned to the right */
+    }
 }
