@@ -103,10 +103,33 @@
 /* For phone screens */
 @media screen and (max-width: 667px) {
     header {
-        margin-top: 10rem;
+        margin-top: 5rem;
         height: auto;
         width: 100%;
+        margin-bottom: 0rem;
     }
+    .header__container{
+        margin-top: 10rem;
+        margin-bottom: 0rem;
+    }
+    .me {
+        width: 80%; /* Adjust width for better responsiveness */
+        margin: 0;
+        position: static; /* Remove the relative positioning for better centering */
+        top: 0;
+        z-index: -1;
+        padding: 1rem;
+    }
+    .fname {
+        font-size: 7rem; 
+        margin: 0;
+        text-align: center;
+        margin-left: 1rem;
+        
+    }
+    .scroll-down-button{
+        display: none;
+}
 }
 
 /* For phone screens */
