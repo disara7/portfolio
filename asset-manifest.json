@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.044c1838.css",
-    "main.js": "/portfolio/static/js/main.5582fad7.js",
+    "main.css": "/portfolio/static/css/main.5e945fcc.css",
+    "main.js": "/portfolio/static/js/main.23d8c5f0.js",
     "static/media/disara.png": "/portfolio/static/media/disara.5ea3947f1dc9865f9989.png",
+    "static/media/sac.png": "/portfolio/static/media/sac.978f1707643f67d90716.png",
     "static/media/trophybanner.png": "/portfolio/static/media/trophybanner.e3f3921352d391bd26f2.png",
     "static/media/cv.pdf": "/portfolio/static/media/cv.ef3fbff42498b685e41e.pdf",
     "static/media/Image3.png": "/portfolio/static/media/Image3.8a3deda248caf53bcec2.png",
     "static/media/shopsense_banner.png": "/portfolio/static/media/shopsense_banner.809b7bf6ae6e8ea68523.png",
     "static/media/myjourneybanner.png": "/portfolio/static/media/myjourneybanner.06f4a4c18e83c462602f.png",
     "index.html": "/portfolio/index.html",
-    "main.044c1838.css.map": "/portfolio/static/css/main.044c1838.css.map",
-    "main.5582fad7.js.map": "/portfolio/static/js/main.5582fad7.js.map"
+    "main.5e945fcc.css.map": "/portfolio/static/css/main.5e945fcc.css.map",
+    "main.23d8c5f0.js.map": "/portfolio/static/js/main.23d8c5f0.js.map"
   },
   "entrypoints": [
-    "static/css/main.044c1838.css",
-    "static/js/main.5582fad7.js"
+    "static/css/main.5e945fcc.css",
+    "static/js/main.23d8c5f0.js"
   ]
 }
