@@ -21,8 +21,10 @@ const Portfolio = () => {
       <h3>Mobile Applications</h3>
       <div className="projects">
       <div className="portfolio_card">
+      <h3>GROUP PROJECT</h3>
           <img src={p1} alt="Web App Project 1" />
           <h4>Trophy - Employee Loyalty Rewarding System</h4>
+          
           <p>“Trophy” is a non-monetary token-based loyalty rewarding system to improve a company’s employees’ work experience.</p>
           <div className="links">
               <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><BsGithub /></a></div>
@@ -32,6 +34,7 @@ const Portfolio = () => {
           </div>
         </div>
         <div className="portfolio_card">
+        <h3>GROUP PROJECT</h3>
           <img src={p2} alt="Web App Project 1" />
           <h4>ShopSense - Online Clothing Shopping for Blind People</h4>
           <p>“ShopSense” provides online shopping accessibility for visually impaired people.</p>
@@ -43,6 +46,7 @@ const Portfolio = () => {
           </div>
         </div>
         <div className="portfolio_card">
+        <h3>GROUP PROJECT</h3>
           <img src={p1} alt="Web App Project 1" />
           <h4>Learning Management System</h4>
           <p>An interactive LMS for educational institutions.</p>
@@ -56,7 +60,9 @@ const Portfolio = () => {
         
       </div>
       <div className="portfolio_card">
+      <h3>GROUP PROJECT</h3>
           <img src={p4} alt="Web App Project 1" />
+          
           <h4>MYJOURNEY - AI Based Travel Planning</h4>
           <p>An interactive LMS for educational institutions.</p>
           <div className="links">
