@@ -4,7 +4,7 @@
     background-color: rgba(255, 255, 255, 0.2); /* Adjust opacity for glass effect */
     border-radius: 1rem;
     margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
     padding: 1.5rem;
     align-items: center;
     border: 1px solid rgba(255, 255, 255, 0.2); /* Light border for glass effect */
@@ -24,15 +24,21 @@
 .portfolio_content{
     margin-left: 10rem;
 }
+.portfolio_content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns content to the left */
+  }
 
 .portfolio{
     margin-left: 5rem;
 }
 
 .projects{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
-    margin-bottom: 0rem;
+    margin-bottom: 3rem;
 }
 
 .portfolio_card h4{
@@ -90,8 +96,7 @@
         margin-left: 0rem;
     }
     .projects{
-        display: flex;
-        flex-direction: column;
+        grid-template-columns: 1fr;
     }
 
     .portfolio_card{
@@ -116,5 +121,8 @@
     .portfolio_card{
         margin-bottom: -1rem;
         width: 16.5rem;
+    }
+    .projects{
+        grid-template-columns: 1fr;
     }
 }

@@ -7,6 +7,7 @@ import Awards from './components/awards/Awards';
 import Portfolio from './components/portfolio/Portfolio';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
+import Blog from './components/blog/Blog';
 import './index.css'; 
 import './background.css';
 import './cursor.css'; 
@@ -64,6 +65,7 @@ const App = () => {
       <Skills />
       <Portfolio />
       <Awards />
+      <Blog/>
       <Contact />
       <Footer />
     </>
