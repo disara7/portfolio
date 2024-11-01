@@ -145,6 +145,46 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
+        <br /><br />
+        <h3>Other Fun Projects</h3>
+        <div className="projects">
+        <div className="portfolio_card">
+          <h3>INDIVIDUAL PROJECT | COMPLETED</h3>
+          <img src={p7} alt="Web App Project 1" />
+            <h4>Tumor Identifying AI Model</h4>
+            <p>An AI model created using Tensorflow/Keras and scikit-learn. This AI model is trained on real data from breast cancer diagnosis.</p>
+            <div className="links">
+                <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><BsGithub /></a></div>
+                <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><BiLogoAdobe /></a></div>
+                <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><FaMedium /></a></div>
+                <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><MdVideoLibrary /></a></div> 
+            </div>
+          </div>
+          <div className="portfolio_card">
+          <h3>INDIVIDUAL PROJECT | COMPLETED</h3>
+          <img src={p7} alt="Web App Project 1" />
+            <h4>JARVIS - AI Model</h4>
+            <p>This AI uses speech recognition and speech to text, to communicate with ChatGPT and talk back with ChatGPT's responses.</p>
+            <div className="links">
+                <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><BsGithub /></a></div>
+                <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><BiLogoAdobe /></a></div>
+                <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><FaMedium /></a></div>
+                <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><MdVideoLibrary /></a></div> 
+            </div>
+          </div>
+          <div className="portfolio_card">
+          <h3>INDIVIDUAL PROJECT | COMPLETED</h3>
+          <img src={p7} alt="Web App Project 1" />
+            <h4>Simple Tic-Tac-Toe Game</h4>
+            <p>To learn different Flutter things.</p>
+            <div className="links">
+                <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><BsGithub /></a></div>
+                <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><BiLogoAdobe /></a></div>
+                <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><FaMedium /></a></div>
+                <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><MdVideoLibrary /></a></div> 
+            </div>
+          </div>
+        </div>
           
         <br />
         <br />
