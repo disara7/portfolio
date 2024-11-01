@@ -19,70 +19,66 @@ const Portfolio = () => {
   return (
     <section id='portfolio'>
       <div className="portfolio">
-      <h2 className='section__title'>Portfolio</h2><br />
-      
-      <div className="portfolio_content">
-      <h3>Mobile Applications</h3>
-      <div className="projects">
-      <div className="portfolio_card">
-      <h3>GROUP PROJECT</h3>
-          <img src={p1} alt="Web App Project 1" />
-          <h4>Trophy - Employee Loyalty Rewarding System</h4>
-          
-          <p>“Trophy” is a non-monetary token-based loyalty rewarding system to improve a company’s employees’ work experience.</p>
-          <div className="links">
-              <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><BsGithub /></a></div>
-              <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><BiLogoAdobe /></a></div>
-              <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><FaMedium /></a></div>
-              <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><MdVideoLibrary /></a></div> 
+        <h2 className='section__title'>Portfolio</h2><br />
+        <div className="portfolio_content">
+          <h3>Mobile Applications</h3>
+          <div className="projects">
+            <div className="portfolio_card">
+              <h3>GROUP PROJECT</h3>
+              <img src={p1} alt="Web App Project 1" />
+              <h4>Trophy - Employee Loyalty Rewarding System</h4>
+              <p>“Trophy” is a non-monetary token-based loyalty rewarding system to improve a company’s employees’ work experience.</p>
+              <div className="links">
+                  <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><BsGithub /></a></div>
+                  <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><BiLogoAdobe /></a></div>
+                  <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><FaMedium /></a></div>
+                  <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><MdVideoLibrary /></a></div> 
+              </div>
+            </div>
+            <div className="portfolio_card">
+              <h3>GROUP PROJECT</h3>
+              <img src={p2} alt="Web App Project 1" />
+              <h4>ShopSense - Online Clothing Shopping for Blind People</h4>
+              <p>“ShopSense” provides online shopping accessibility for visually impaired people.</p>
+              <div className="links">
+                  <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><BsGithub /></a></div>
+                  <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><BiLogoAdobe /></a></div>
+                  <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><FaMedium /></a></div>
+                  <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><MdVideoLibrary /></a></div> 
+              </div>
+            </div>
+            <div className="portfolio_card">
+              <h3>GROUP PROJECT</h3>
+              <img src={p5} alt="Web App Project 1" />
+              <h4>LMSSUSL - Learning Management System</h4>
+              <p>An interactive Learning Management System for educational institutions.</p>
+              <div className="links">
+                  <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><BsGithub /></a></div>
+                  <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><BiLogoAdobe /></a></div>
+                  <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><FaMedium /></a></div>
+                  <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><MdVideoLibrary /></a></div> 
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="portfolio_card">
-        <h3>GROUP PROJECT</h3>
-          <img src={p2} alt="Web App Project 1" />
-          <h4>ShopSense - Online Clothing Shopping for Blind People</h4>
-          <p>“ShopSense” provides online shopping accessibility for visually impaired people.</p>
-          <div className="links">
-              <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><BsGithub /></a></div>
-              <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><BiLogoAdobe /></a></div>
-              <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><FaMedium /></a></div>
-              <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><MdVideoLibrary /></a></div> 
+          <div className="portfolio_card">
+            <h3>GROUP PROJECT</h3>
+            <img src={p4} alt="Web App Project 1" />
+            <h4>MYJOURNEY - AI Based Travel Planning</h4>
+            <p>An interactive LMS for educational institutions.</p>
+            <div className="links">
+                <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><BsGithub /></a></div>
+                <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><BiLogoAdobe /></a></div>
+                <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><FaMedium /></a></div>
+                <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><MdVideoLibrary /></a></div> 
+            </div>
           </div>
-        </div>
-        <div className="portfolio_card">
-        <h3>GROUP PROJECT</h3>
-          <img src={p5} alt="Web App Project 1" />
-          <h4>LMSSUSL - Learning Management System</h4>
-          <p>An interactive Learning Management System for educational institutions.</p>
-          <div className="links">
-              <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><BsGithub /></a></div>
-              <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><BiLogoAdobe /></a></div>
-              <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><FaMedium /></a></div>
-              <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><MdVideoLibrary /></a></div> 
-          </div>
-        </div>
-        
-      </div>
-      <div className="portfolio_card">
-      <h3>GROUP PROJECT</h3>
-          <img src={p4} alt="Web App Project 1" />
-          
-          <h4>MYJOURNEY - AI Based Travel Planning</h4>
-          <p>An interactive LMS for educational institutions.</p>
-          <div className="links">
-              <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><BsGithub /></a></div>
-              <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><BiLogoAdobe /></a></div>
-              <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><FaMedium /></a></div>
-              <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><MdVideoLibrary /></a></div> 
-          </div>
-        </div>
         <br />
         <br />
         
         <h3>Web Applications</h3>
         <div className="projects">
           <div className="portfolio_card">
-          <h3>GROUP PROJECT</h3>
+            <h3>GROUP PROJECT</h3>
             <img src={p6} alt="Web App Project 1" />
             <h4>UniStore - Online Store for Preloved University Essentials</h4>
             <p>An e-commerce platform for university students to buy and sell second-hand items.</p>
@@ -94,8 +90,8 @@ const Portfolio = () => {
             </div>
           </div>
           <div className="portfolio_card">
-          <h3>GROUP PROJECT</h3>
-          <img src={p1} alt="Web App Project 1" />
+            <h3>GROUP PROJECT</h3>
+            <img src={p1} alt="Web App Project 1" />
             <h4>IEEE WIE Sri Lanka Section - Website Redesign</h4>
             <p>A redesigned website for the IEEE WIE Sri Lanka Section.</p>
             <div className="links">
@@ -106,8 +102,8 @@ const Portfolio = () => {
             </div>
           </div>
           <div className="portfolio_card">
-          <h3>INDIVIDUAL PROJECT</h3>
-          <img src={p7} alt="Web App Project 1" />
+            <h3>INDIVIDUAL PROJECT</h3>
+            <img src={p7} alt="Web App Project 1" />
             <h4>TechGrid - E-Commerce Web Application</h4>
             <p>An e-commerce website for tech gadgets, focusing on automated software testing</p>
             <div className="links">
@@ -176,6 +172,20 @@ const Portfolio = () => {
           <h3>INDIVIDUAL PROJECT | COMPLETED</h3>
           <img src={p7} alt="Web App Project 1" />
             <h4>Simple Tic-Tac-Toe Game</h4>
+            <p>To learn different Flutter things.</p>
+            <div className="links">
+                <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><BsGithub /></a></div>
+                <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><BiLogoAdobe /></a></div>
+                <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><FaMedium /></a></div>
+                <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><MdVideoLibrary /></a></div> 
+            </div>
+          </div>
+        </div>
+        <div className="projects">
+        <div className="portfolio_card">
+          <h3>GROUP PROJECT | COMPLETED</h3>
+          <img src={p7} alt="Web App Project 1" />
+            <h4>Shut - Car Racing Simulation Game</h4>
             <p>To learn different Flutter things.</p>
             <div className="links">
                 <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><BsGithub /></a></div>
