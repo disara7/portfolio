@@ -15,6 +15,7 @@ import { BsGithub } from "react-icons/bs";
 import { BiLogoAdobe } from "react-icons/bi";
 import { FaMedium } from "react-icons/fa6";
 import { MdVideoLibrary } from "react-icons/md";
+import { IoMdTrophy } from "react-icons/io";
 
 const Portfolio = () => {
   return (
@@ -25,7 +26,7 @@ const Portfolio = () => {
           <h3>Mobile Applications</h3>
           <div className="projects">
             <div className="portfolio_card">
-              <h3>GROUP PROJECT</h3>
+              <h3>GROUP PROJECT | COMPLETED</h3>
               <img src={p1} alt="Web App Project 1" />
               <h4>Trophy - Employee Loyalty Rewarding System</h4>
               <p>“Trophy” is a non-monetary token-based loyalty rewarding system to improve a company’s employees’ work experience.</p>
@@ -37,7 +38,10 @@ const Portfolio = () => {
               </div>
             </div>
             <div className="portfolio_card">
-              <h3>GROUP PROJECT</h3>
+              <div className="aw">
+                <div className="iconstyle"><IoMdTrophy /></div>
+                <h3>GROUP PROJECT | ONGOING</h3>
+              </div>
               <img src={p2} alt="Web App Project 1" />
               <h4>ShopSense - Online Clothing Shopping for Blind People</h4>
               <p>“ShopSense” provides online shopping accessibility for visually impaired people.</p>
@@ -49,7 +53,7 @@ const Portfolio = () => {
               </div>
             </div>
             <div className="portfolio_card">
-              <h3>GROUP PROJECT</h3>
+              <h3>GROUP PROJECT | COMPLETED</h3>
               <img src={p5} alt="Web App Project 1" />
               <h4>LMSSUSL - Learning Management System</h4>
               <p>An interactive Learning Management System for educational institutions.</p>
@@ -62,7 +66,10 @@ const Portfolio = () => {
             </div>
           </div>
           <div className="portfolio_card">
-            <h3>GROUP PROJECT</h3>
+            <div className="aw">
+                <div className="iconstyle"><IoMdTrophy /></div>
+                <h3>GROUP PROJECT | ONGOING</h3>
+              </div>
             <img src={p4} alt="Web App Project 1" />
             <h4>MYJOURNEY - AI Based Travel Planning</h4>
             <p>An interactive LMS for educational institutions.</p>
@@ -130,7 +137,10 @@ const Portfolio = () => {
             </div>
           </div>
           <div className="portfolio_card">
-          <h3>GROUP PROJECT | ONGOING</h3>
+          <div className="aw">
+                <div className="iconstyle"><IoMdTrophy /></div>
+                <h3>GROUP PROJECT | ONGOING</h3>
+              </div>
           <img src={p9} alt="Web App Project 1" />
             <h4>Haven - Mental health oasis</h4>
             <p>It is a comprehensive online web-based platform that leverages AI and VR.</p>
@@ -184,7 +194,10 @@ const Portfolio = () => {
         </div>
         <div className="projects">
         <div className="portfolio_card">
-          <h3>GROUP PROJECT | COMPLETED</h3>
+        <div className="aw">
+                <div className="iconstyle"><IoMdTrophy /></div>
+                <h3>GROUP PROJECT | COMPLETED</h3>
+              </div>
           <img src={p7} alt="Web App Project 1" />
             <h4>Shut - Car Racing Simulation Game</h4>
             <p>To learn different Flutter things.</p>
