@@ -31,7 +31,7 @@ const Portfolio = () => {
               <h4>Trophy - Employee Loyalty Rewarding System</h4>
               <p>“Trophy” is a non-monetary token-based loyalty rewarding system to improve a company’s employees’ work experience.</p>
               <div className="links">
-                  <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><BsGithub /></a></div>
+                  <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7/Trophy" target='_blank'><BsGithub /></a></div>
                   <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><BiLogoAdobe /></a></div>
                   <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><FaMedium /></a></div>
                   <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><MdVideoLibrary /></a></div> 
