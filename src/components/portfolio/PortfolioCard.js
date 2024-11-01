@@ -3,13 +3,14 @@ import { BsGithub } from 'react-icons/bs';
 import { BiLogoAdobe } from 'react-icons/bi';
 import { FaMedium } from 'react-icons/fa';
 import { MdVideoLibrary } from 'react-icons/md';
-import './portfolioCard.css';
+import { IoMdTrophy } from "react-icons/io";
+import './portfolio.css';
 
 const PortfolioCard = ({ project }) => {
   return (
     <div className="portfolio_card">
         <div className="aw">
-            <div className="iconstyle"><IoMdTrophy /></div>
+        {project.award === 'yes' && <div className="iconstyle"><IoMdTrophy /></div>}
             <h3>{project.type}</h3>
         </div>
       

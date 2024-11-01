@@ -10,6 +10,7 @@ import p9 from '../../assets/haven.png';
 
 const projects = [
   {
+    award: 'yes',
     type: 'GROUP PROJECT',
     image: p1,
     altText: 'Trophy Project',
