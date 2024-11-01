@@ -10,6 +10,7 @@ import p5 from '../../assets/lms.png';
 import p6 from '../../assets/unistore.png';
 import p7 from '../../assets/techgrid.png';
 import p8 from '../../assets/myportfolio.png';
+import p9 from '../../assets/haven.png';
 import { BsGithub } from "react-icons/bs";
 import { BiLogoAdobe } from "react-icons/bi";
 import { FaMedium } from "react-icons/fa6";
@@ -130,9 +131,9 @@ const Portfolio = () => {
           </div>
           <div className="portfolio_card">
           <h3>GROUP PROJECT | ONGOING</h3>
-          <img src={p7} alt="Web App Project 1" />
-            <h4>Haven - </h4>
-            <p>AI powered mental health oasis. It is a comprehensive online web-based platform that leverages AI and VR technologies.</p>
+          <img src={p9} alt="Web App Project 1" />
+            <h4>Haven - Mental health oasis</h4>
+            <p>It is a comprehensive online web-based platform that leverages AI and VR.</p>
             <div className="links">
                 <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><BsGithub /></a></div>
                 <div className="relatedlinks"><a className='social__icons' href="https://github.com/disara7" target='_blank'><BiLogoAdobe /></a></div>
