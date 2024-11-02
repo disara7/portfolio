@@ -21,6 +21,7 @@ const Portfolio = () => {
               <PortfolioCard key={index} project={project} />
             ))}
           </div>
+          {projects.showImage && <img src={projects.image} alt={projects.altText} />}
 
           <h3>Web Applications</h3>
           <div className="projects">
