@@ -6,7 +6,7 @@
   .image-popup {
     width: 30rem; /* Adjusted size for better fit */
     height: auto;
-    position: fixed;
+    position: absolute;
     left: 2%;
     padding: 0.2rem;
     bottom: 5rem;
