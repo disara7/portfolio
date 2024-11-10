@@ -7,6 +7,7 @@ import { IoMail } from "react-icons/io5";
 import { IoMdTrophy } from "react-icons/io";
 import { useState } from 'react';
 import { RiSlideshow2Fill } from "react-icons/ri";
+import { FaPen } from "react-icons/fa";
 
 const Nav = () => {
   const [activeNav, setActiveNav] = useState('#')
@@ -17,7 +18,7 @@ const Nav = () => {
       <a href="#skills" onClick={() => setActiveNav('#skills')} className={activeNav === '#skills' ? 'active' : ''}><HiMiniCheckBadge /></a>
       <a href="#portfolio" onClick={() => setActiveNav('#portfolio')} className={activeNav === '#portfolio' ? 'active' : ''}><RiSlideshow2Fill /></a>
       <a href="#awards" onClick={() => setActiveNav('#awards')} className={activeNav === '#awards' ? 'active' : ''}><IoMdTrophy /></a>
-      <a href="#blog" onClick={() => setActiveNav('#blog')} className={activeNav === '#blog' ? 'active' : ''}><IoMail /></a>
+      <a href="#blog" onClick={() => setActiveNav('#blog')} className={activeNav === '#blog' ? 'active' : ''}><FaPen /></a>
       <a href="#contact" onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}><IoMail /></a>
     </nav>
   )
