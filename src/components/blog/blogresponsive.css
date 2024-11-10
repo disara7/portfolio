@@ -1,0 +1,49 @@
+@media screen and (max-width: 670px) {
+    .blog{
+        margin-left: -5rem;
+    }
+
+    .section__title{
+        text-align: center;
+        margin-left: 3rem;
+    }
+
+    .blogcard{
+        margin-left: 9rem;
+        width: 16rem;
+        height: 20rem;
+        margin-top: 1.5rem;
+    }
+
+    .blogcard h1{
+        font-size: 1.3rem;
+    }
+
+    .blogcard p{
+        font-size: 0.7rem;
+    }
+
+    .blogcard a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color: #00bfff;
+        color: white;
+        border-radius: 50%;
+        font-size: 1.2rem;
+        text-decoration: none;
+        position: relative;
+    }
+
+    .blogcard a span {
+        display: none;
+    }
+
+    .blogcard a::before {
+        content: '➔'; 
+        font-size: 1rem;
+        position: absolute;
+    }
+}
