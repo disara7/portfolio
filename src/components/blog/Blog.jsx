@@ -3,8 +3,8 @@ import './blog.css'
 
 const Blog = () => {
   return (
-    <section id='contact'>
-      <div className="contact">
+    <section id='blog'>
+      <div className="blog">
 		<br />
 	  <h2 className='section__title'>Blog</h2>
     <div className="blogcard">
