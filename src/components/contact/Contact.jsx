@@ -1,5 +1,7 @@
 import React from 'react'
 import './contact.css'
+import './contactResponsive.css'
+
 
 const Contact = () => {
   return (

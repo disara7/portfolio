@@ -99,15 +99,8 @@ textarea.field {
 }
 
 
-/* Media query for responsiveness */
-@media (max-width: 768px) {
-    .contact {
-        margin-left: 0rem;
-        margin-right: 2rem;
-    }
 
-    #contactForm {
-        padding: 1.5rem;
-        margin-left: 2rem;
-    }
-}
+
+
+
+
