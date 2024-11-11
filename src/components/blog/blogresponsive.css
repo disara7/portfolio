@@ -1,6 +1,7 @@
 @media screen and (max-width: 670px) {
     .blog{
         margin-left: -5rem;
+        height: fit-content;
     }
 
     .section__title{
@@ -37,9 +38,9 @@
         position: relative;
     }
 
-    .blogcard a span {
+    /* .blogcard span {
         display: none;
-    }
+    } */
 
     .blogcard a::before {
         content: '➔'; 

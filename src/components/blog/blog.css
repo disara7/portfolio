@@ -37,12 +37,14 @@
   
   .blogcard a {
     display: inline-block;
-    color: rgb(185, 4, 185);
+    color: white;
     text-decoration: none;
     font-weight: bold;
     border-bottom: 2px solid transparent;
     transition: color 0.3s ease, border-bottom 0.3s ease;
-    margin-left: 27.5rem;
+    float: right;
+    margin-top: -2rem;
+    font-size: 2rem;
   }
   
   .blogcard a:hover {
@@ -50,3 +52,8 @@
     border-bottom: 2px solid purple;
   }
   
+  .headerbar{
+    display: flex;
+    gap: 1rem;
+    font-size: 1rem;
+  }
