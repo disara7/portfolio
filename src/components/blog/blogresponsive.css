@@ -1,4 +1,4 @@
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 667px) {
     .blog{
         margin-left: -5rem;
         height: fit-content;
@@ -11,7 +11,7 @@
 
     .blogcard{
         margin-left: 9rem;
-        width: 16rem;
+        width: 14rem;
         height: 20rem;
         margin-top: 1.5rem;
     }
@@ -24,27 +24,28 @@
         font-size: 0.7rem;
     }
 
-    .blogcard a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 2.5rem;
-        height: 2.5rem;
-        background-color: #00bfff;
-        color: white;
-        border-radius: 50%;
-        font-size: 1.2rem;
-        text-decoration: none;
-        position: relative;
-    }
-
-    /* .blogcard span {
-        display: none;
-    } */
-
-    .blogcard a::before {
-        content: '➔'; 
-        font-size: 1rem;
-        position: absolute;
+    .blogcard a{
+        margin-top: -1rem;
     }
 }
+
+
+
+@media screen and (max-width: 740px) {
+    .blogcard{
+        width: 16rem;
+    }
+}
+
+@media screen and (max-width: 915px) {
+    .blogcard{
+        width: 16rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .blogcard{
+        width: 16rem;
+    }
+}
+
