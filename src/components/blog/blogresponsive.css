@@ -2,6 +2,7 @@
     .blog{
         margin-left: -5rem;
         height: fit-content;
+        margin-bottom: 20rem;
     }
 
     .section__title{
@@ -43,15 +44,15 @@
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 380px) {
     .blogcard{
-        width: 16rem;
+        width: 14rem;
     }
 }
 
 @media screen and (max-width: 900px) {
     .blogcard{
-        width: 18rem;
+        width: 16rem;
     }
 }
 
