@@ -1,17 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import './about.css';
 import './smalldevices.css';
 import './animations.css';
-import AIESEC from '../../assets/disara.png';
-import IEEE from '../../assets/sac.png';  // Add your images
-import YP from '../../assets/disara.png';
-import SIGHT from '../../assets/disara.png';
-import WIE from '../../assets/disara.png';
+import VolunteerCard from './VolunteerCard';
+import volunteerData from './VolunteerData';
 
 const About = () => {
-  const [isImageVisible, setIsImageVisible] = useState(false);
-  const [currentImage, setCurrentImage] = useState(null);  // To track which image to show
-
   useEffect(() => {
     const fadeElements = document.querySelectorAll('.fade-in');
 
@@ -40,29 +34,6 @@ const About = () => {
       window.removeEventListener('scroll', debouncedScroll);
     };
   }, []);
-
-  const handleItemClick = (e, image) => {
-    e.stopPropagation(); // Prevent event bubbling
-    setIsImageVisible(true);
-    setCurrentImage(image);  // Set the image to be displayed
-  };
-
-  const handleClickOutside = () => {
-    setIsImageVisible(false);
-    setCurrentImage(null);  // Reset the image
-  };
-
-  useEffect(() => {
-    if (isImageVisible) {
-      window.addEventListener('click', handleClickOutside);
-    } else {
-      window.removeEventListener('click', handleClickOutside);
-    }
-
-    return () => {
-      window.removeEventListener('click', handleClickOutside);
-    };
-  }, [isImageVisible]);
 
   return (
     <section id='about'>
@@ -100,32 +71,15 @@ const About = () => {
               </div>
             </div>
             <h4 className='about__style fade-in volunteering'>Volunteering:</h4>
-            
-            
-            
-            <div className='voluncard fade-in about__style'>
-                {/* Image Popup */}
-            {isImageVisible && currentImage && (
-              <div className="image-popup">
-              <button className="image-popup-close" onClick={handleClickOutside}></button>
-              <img src={currentImage} alt="Volunteering" />
-            </div>
-            )}
-              <p>IEEE
-                <ul>
-                  <li style={{ cursor: 'pointer' }} onClick={(e) => handleItemClick(e, IEEE)}>IEEE Sri Lanka Section Student Activities Committee</li>
-                  <li style={{ cursor: 'pointer' }} onClick={(e) => handleItemClick(e, YP)}>IEEE Young Professionals</li>
-                  <li style={{ cursor: 'pointer' }} onClick={(e) => handleItemClick(e, SIGHT)}>IEEE Sri Lanka Section SIGHT</li>
-                  <li style={{ cursor: 'pointer' }} onClick={(e) => handleItemClick(e, WIE)}>IEEE Women in Engineering</li>
-                  
-                </ul>
-              </p>
-              <p style={{ cursor: 'pointer' }} onClick={(e) => handleItemClick(e, WIE)}>Society of Computer Sciences - SUSL</p>
-              <p style={{ cursor: 'pointer' }} onClick={(e) => handleItemClick(e, WIE)}>AIESEC</p>
-            </div>
 
-            
-            
+            {volunteerData.map((volunteer, index) => (
+              <VolunteerCard 
+                key={index}
+                title={volunteer.title}
+                image={volunteer.image}
+                description={volunteer.description}
+              />
+            ))}
           </div>
         </div>
       </div>
