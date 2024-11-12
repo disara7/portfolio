@@ -7,6 +7,7 @@ import p6 from '../../assets/unistore.png';
 import p7 from '../../assets/techgrid.png';
 import p8 from '../../assets/myportfolio.png';
 import p9 from '../../assets/haven.png';
+import p10 from '../../assets/gjrti.png';
 
 const projects = [
 
@@ -66,6 +67,19 @@ const projects = [
   },
 
   //Web projects
+  {
+    category: 'web',
+    award: 'no',
+    type: 'GROUP PROJECT | ONGOING',
+    image: p10,
+    altText: 'Management Information System for GJRTI',
+    title: 'Management Information System for GJRTI',
+    description: 'Complete MIS for Gem and Jewelry Research and Training Institute (GJRTI) - Ministry of Industries',
+    github: 'https://github.com/disara7',
+    adobe: 'https://adobe-link',
+    medium: 'https://medium-link',
+    video: 'https://video-link',
+  },
   {
     category: 'web',
     award: 'no',
