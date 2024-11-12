@@ -1,10 +1,9 @@
-// VolunteerCard.js
 import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-const VolunteerCard = ({ title, image, description, images }) => {
+const VolunteerCard = ({ title, image, description, images, logo1, logo2 }) => {
     const carouselSettings = {
       dots: true,
       infinite: true,
@@ -16,6 +15,14 @@ const VolunteerCard = ({ title, image, description, images }) => {
     return (
       <div className="voluncard fade-in">
         <div className="voluncard__content">
+          <div className="voluncard__logos">
+            <div className="voluncard__logo">
+              <img src={logo1} alt={`${title} logo 1`} className="voluncard__logo-image" />
+            </div>
+            <div className="voluncard__logo">
+              <img src={logo2} alt={`${title} logo 2`} className="voluncard__logo-image" />
+            </div>
+          </div>
           <h3 className="voluncard__title">{title}</h3>
           <p className="voluncard__description">{description}</p>
         </div>
@@ -34,6 +41,6 @@ const VolunteerCard = ({ title, image, description, images }) => {
         </div>
       </div>
     );
-  };
+};
 
 export default VolunteerCard;

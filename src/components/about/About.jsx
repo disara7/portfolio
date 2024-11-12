@@ -80,6 +80,8 @@ const About = () => {
                 image={volunteer.image}
                 description={volunteer.description}
                 images={volunteer.images}
+                logo1={volunteer.logo1} 
+                logo2={volunteer.logo2}
               />
             ))}
           </div>
