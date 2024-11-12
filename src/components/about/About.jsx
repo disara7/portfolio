@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import './about.css';
 import './smalldevices.css';
 import './animations.css';
+import './voluncard.css';
 import VolunteerCard from './VolunteerCard';
 import volunteerData from './VolunteerData';
 

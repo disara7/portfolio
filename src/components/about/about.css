@@ -78,35 +78,6 @@
   margin-top: 2rem;
 }
 
-/* volunteerCard.css */
-.voluncard {
-  padding: 20px;
-  background-color: #f8f8f8;
-  border-radius: 8px;
-  margin: 10px 0;
-  text-align: center;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  width: 20rem;
-  margin-left: 10rem;
-}
-
-.voluncard__image {
-  width: 100px;
-  height: auto;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-
-.voluncard__title {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 8px;
-}
-
-.voluncard__description {
-  font-size: 14px;
-  color: #555;
-}
 
 
 .cardd {
