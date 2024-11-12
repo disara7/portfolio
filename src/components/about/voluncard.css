@@ -8,7 +8,7 @@
     margin-bottom: 1em;
     margin-left: 10rem;
     height: 15rem;
-    width: 40rem;
+    width: 45rem;
     backdrop-filter: blur(10px); /* Creates the glass effect */
     -webkit-backdrop-filter: blur(10px); /* For Safari */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
@@ -20,19 +20,20 @@
 }
 
 .voluncard__title {
-    font-size: 1.2em;
-    margin-bottom: 0.5em;
-    color: #fff; /* Adjust color for better contrast on glass */
+    font-size: 1rem;
+    margin-bottom: 0.1em;
+    color: white;
 }
 
 .voluncard__description {
     font-size: 0.8em;
-    color: #fff; /* Adjust color for better contrast on glass */
+    color: #fff; 
+    margin-top: -0.8rem;
 }
 
 .voluncard__carousel {
     width: 220px; 
-    margin-left: 1em;
+    margin-left: 2em;
     margin-right: 2rem;
 }
 
@@ -46,19 +47,20 @@
 .voluncard__logos {
     display: flex;
     margin-bottom: 1em;
+    margin-top: -1rem;
   }
   
   .voluncard__logo {
-    width: 50px; /* Adjust the size of the logos */
-    height: 50px;
+    width: 100px; /* Adjust the size of the logos */
+    height: auto;
     margin-right: 1em;
+    margin-bottom: -1rem;
   }
   
   .voluncard__logo-image {
     width: 100%;
     height: 100%;
     object-fit: contain; /* Maintain aspect ratio */
-    border-radius: 50%; /* Optional: Makes logos circular */
   }
   
   .voluncard__title {
