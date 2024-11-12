@@ -8,6 +8,7 @@ import p7 from '../../assets/techgrid.png';
 import p8 from '../../assets/myportfolio.png';
 import p9 from '../../assets/haven.png';
 import p10 from '../../assets/gjrti.png';
+import p11 from '../../assets/wiebanner.png';
 
 const projects = [
 
@@ -97,7 +98,7 @@ const projects = [
     category: 'web',
     award: 'no',
     type: 'GROUP PROJECT | COMPLETED',
-    image: p6,
+    image: p11,
     altText: 'IEEE WIE Sri Lanka Section - Website Redesign',
     title: 'IEEE WIE Sri Lanka Section - Website Redesign',
     description: 'A redesigned website for the IEEE WIE Sri Lanka Section.',
