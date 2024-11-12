@@ -1,8 +1,8 @@
 // volunteerData.js
-import IEEEImage from '../../assets/sac.png';
-import AIESECImage from '../../assets/sac.png';
-import VolunteerImg1 from '../../assets/sac.png';
-import VolunteerImg2 from '../../assets/sac.png';
+import IEEEImage from '../../assets/disara.jpeg';
+import AIESECImage from '../../assets/disara.png';
+import VolunteerImg1 from '../../assets/disara.png';
+import VolunteerImg2 from '../../assets/disara.png';
 
 const volunteerData = [
   {

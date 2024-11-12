@@ -79,6 +79,7 @@ const About = () => {
                 title={volunteer.title}
                 image={volunteer.image}
                 description={volunteer.description}
+                images={volunteer.images}
               />
             ))}
           </div>

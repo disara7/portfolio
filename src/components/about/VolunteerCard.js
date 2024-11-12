@@ -4,7 +4,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-const VolunteerCard = ({ title, image, description, images = [] }) => {  // Default to an empty array
+const VolunteerCard = ({ title, image, description, images }) => {
     const carouselSettings = {
       dots: true,
       infinite: true,
@@ -21,16 +21,19 @@ const VolunteerCard = ({ title, image, description, images = [] }) => {  // Defa
         </div>
         <div className="voluncard__carousel">
           <Slider {...carouselSettings}>
-            {images.map((img, index) => (
-              <div key={index}>
-                <img src={img} alt={`${title} ${index + 1}`} className="voluncard__carousel-image" />
-              </div>
-            ))}
+            {images && images.length > 0 ? (
+              images.map((img, index) => (
+                <div key={index}>
+                  <img src={img} alt={title} className="voluncard__carousel-image" />
+                </div>
+              ))
+            ) : (
+              <div>No images available</div>
+            )}
           </Slider>
         </div>
       </div>
     );
   };
-  
 
 export default VolunteerCard;
