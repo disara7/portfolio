@@ -32,12 +32,12 @@
 /* Adjustments for tablets and smaller devices */
 @media screen and (max-width: 740px) {
     .volunteering{
-       
+  
     }
     .voluncard {
-        padding: 0.5em;
-        width: 16.5rem;
-        margin-left: 4rem;
+        padding: 1rem;
+        width: 15rem;
+        margin-left: 4.5rem;
         height: fit-content;
     }
 
