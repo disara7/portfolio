@@ -3,6 +3,7 @@ import './about.css';
 import './smalldevices.css';
 import './animations.css';
 import './voluncard.css';
+import './voluncardres.css';
 import VolunteerCard from './VolunteerCard';
 import volunteerData from './VolunteerData';
 

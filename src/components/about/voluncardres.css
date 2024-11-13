@@ -1,0 +1,76 @@
+@media screen and (max-width: 920px) {
+    .voluncard {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0.8em;
+    }
+
+    .voluncard__content {
+        margin-right: 0;
+        margin-bottom: 0.8em;
+    }
+
+    .voluncard__title {
+        font-size: 1.3em;
+    }
+
+    .voluncard__description {
+        font-size: 0.9em;
+    }
+
+    .voluncard__carousel {
+        width: 100%;
+    }
+
+    .voluncard__logo-image {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Adjustments for tablets and smaller devices */
+@media screen and (max-width: 740px) {
+    .voluncard {
+        padding: 0.5em;
+    }
+
+    .voluncard__title {
+        font-size: 1.2em;
+    }
+
+    .voluncard__description {
+        font-size: 0.85em;
+    }
+
+    .voluncard__logo-image {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* Further adjustments for phones */
+@media screen and (max-width: 670px) {
+    .voluncard {
+        padding: 0.5em;
+        background-color: rgba(255, 255, 255, 0.3); /* Increase transparency on smaller screens */
+        flex-direction: column;
+    }
+
+    .voluncard__title {
+        font-size: 1.1em;
+    }
+
+    .voluncard__description {
+        font-size: 0.8em;
+    }
+
+    .voluncard__carousel {
+        width: 90%; /* Reduce width for smaller screens */
+    }
+
+    .voluncard__logo-image {
+        width: 30px;
+        height: 30px;
+    }
+}
