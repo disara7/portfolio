@@ -9,13 +9,14 @@
         padding: 0.5rem;
         width: 100%; /* Full width for consistency */
         text-align: center; 
-        /* margin-top: -20rem; */
+        margin-top: -5rem;
+
     }
     .section__title {
         font-size: 2rem;
         padding-left: 2.5rem;
         margin-bottom: 0rem;
-        margin-top: -20rem;
+        /* margin-top: -20rem; */
     }
     .about__container {
         display: flex;
