@@ -31,8 +31,10 @@
 
 /* Adjustments for tablets and smaller devices */
 @media screen and (max-width: 740px) {
-    .volunteering{
-  
+    .volun{
+        height: 55vh;
+        overflow-y: scroll;
+        margin-bottom: 35rem;
     }
     .voluncard {
         padding: 1rem;

@@ -74,6 +74,7 @@ const About = () => {
             </div>
             <h4 className='about__style fade-in volunteering'>Volunteering:</h4>
 
+            <div className="volun">
             {volunteerData.map((volunteer, index) => (
               <VolunteerCard 
                 key={index}
@@ -85,6 +86,7 @@ const About = () => {
                 logo2={volunteer.logo2}
               />
             ))}
+            </div>
           </div>
         </div>
       </div>
