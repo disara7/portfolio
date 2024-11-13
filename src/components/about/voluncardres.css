@@ -31,21 +31,27 @@
 
 /* Adjustments for tablets and smaller devices */
 @media screen and (max-width: 740px) {
+    .volunteering{
+       
+    }
     .voluncard {
         padding: 0.5em;
+        width: 16.5rem;
+        margin-left: 4rem;
+        height: fit-content;
     }
 
     .voluncard__title {
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     .voluncard__description {
-        font-size: 0.85em;
+        font-size: 0.7rem;
     }
 
     .voluncard__logo-image {
-        width: 35px;
-        height: 35px;
+        width: 60px;
+        height: auto;
     }
 }
 
