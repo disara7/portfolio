@@ -1,134 +1,37 @@
-/*=========== BASE STYLES FOR SMALL DEVICES ===============*/
 @media screen and (max-width: 920px) {
-    .container {
-        text-align: center;
-        height: 100vh;
+    .about{
+        margin-top: -18rem;
+        margin-left: -6rem;
     }
-    .about {
-        margin-left: -1rem;
-        padding: 0.5rem;
-        width: 100%; /* Full width for consistency */
-        text-align: center; 
-        margin-top: -5rem;
-
+    .about__style{
+        width: 18rem;
+        font-size: small;
+        
     }
-    .section__title {
+    .fullname{
         font-size: 2rem;
-        padding-left: 2.5rem;
-        margin-bottom: 0rem;
-        /* margin-top: -20rem; */
-    }
-    .about__container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 2rem;
-        width: 100%;
     }
 
-    .about__style {
-        margin-bottom: 2rem;
-        width: 80%;
-        max-width: 20rem; /* Max-width for readability */
-        padding-top: 0rem;
-        margin-left: 3rem;
-        margin-top: -5rem;
+    .cardsett{
+        gap: 0.5rem;
     }
-
-    /* For Fullname, Number, and Number description */
-    .fullname {
-        margin-top: -2rem;
-        font-size: 2rem;
-        margin-bottom: 1rem;
-        text-align: center;
-    }
-
     .number {
-        font-size: 3rem;
+        font-size: 2.5rem;
         text-align: center;
         margin-top: 0;
         display: block;
     }
 
     .number__description {
-        font-size: 0.5rem;
+        font-size: small;
         text-align: center;
     }
 
-    /* Card and volunteer card styles */
-    .cardsett {
-        display: flex;
-        gap: 1rem;
-        margin-left: 3rem;
-        margin-bottom: 2rem;
+    .volun{
+        margin-left: 18rem;
+        justify-self: center;
+        overflow-y: scroll;
+        margin-bottom: 10rem;
     }
-
-    .cardd {
-        width: 5.5rem;
-        padding: 0.3rem;
-        background-color: rgba(255, 255, 255, 0.2); /* Glass effect */
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        backdrop-filter: blur(10px);
-    }
-
-   
+    
 }
-
-/* Separate adjustments for smaller screens (e.g., tablets and phones) */
-@media screen and (max-width: 740px) {
-    .about {
-        /* margin-top: 10rem; Override larger screens */
-    }
-
-    .about__style {
-        margin-left: 3rem;
-        margin-top: 1rem;
-    }
-
-    .about__container {
-        margin-top: 2rem;
-    }
-
-    .fullname {
-        margin-top: 10rem;
-        padding-top: 1rem;
-    }
-    .about .section__title {
-        font-size: 1.5rem;
-        padding-left: 2.5rem;
-        margin-bottom: 18rem;
-        margin-top: -25rem;
-    }
-
-}
-
-/* Further adjustments for very small screens (phones) */
-@media screen and (max-width: 670px) {
-    .container {
-        text-align: center;
-        /* height: 100vh; */
-    }
-    p {
-        font-size: 0.8rem;
-    }
-
-    .about{
-        /* margin-bottom: 14rem; */
-        margin-top: 60rem;
-    }
-
-    .about__style h4 {
-        font-weight: bold;
-        text-align: center;
-    }
-    .about .section__title {
-        font-size: 1.5rem;
-        padding-left: 2.5rem;
-        margin-bottom: 78rem;
-        margin-top: -75rem;
-        margin-left: -0.5rem;
-        
-    }
-
-}
-
