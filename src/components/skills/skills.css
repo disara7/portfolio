@@ -83,7 +83,7 @@
   @media screen and (max-width: 670px) {
     .skills{
       margin-top: 23rem;
-      margin-bottom: 23rem;
+      /* margin-bottom: 23rem; */
     }
 
     .skills h2{
