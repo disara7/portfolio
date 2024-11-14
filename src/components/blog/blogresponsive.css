@@ -54,5 +54,8 @@
     .blogcard{
         width: 16rem;
     }
+    .blog{
+        margin-bottom: -1rem;
+    }
 }
 
