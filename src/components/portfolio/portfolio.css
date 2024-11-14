@@ -17,9 +17,6 @@
     box-shadow: 0 0 15px 5px rgba(179, 41, 179, 0.699); /* Purple glowing border on hover */
 }
 
-.section__title{
-    margin-left: 10rem;
-}
 
 .portfolio_content{
     margin-left: 10rem;
@@ -31,7 +28,7 @@
   }
 
 .portfolio{
-    margin-left: 5rem;
+    margin-left: 6rem;
 }
 
 .projects{

@@ -186,7 +186,13 @@ html, body {
     overflow-x: hidden;
 }
 
-  
+.section__title {
+    margin-top: 4rem;
+    font-size: 2rem;
+    text-align: left;
+    margin-left: 10.2rem;
+    color: #929292;
+  }
   
   
 
