@@ -2,6 +2,7 @@
     .about{
         margin-top: -18rem;
         margin-left: -6rem;
+        margin-bottom: 20rem;
     }
     .about__style{
         width: 18rem;
@@ -31,7 +32,6 @@
         margin-left: 18rem;
         justify-self: center;
         overflow-y: scroll;
-        margin-bottom: 10rem;
     }
     
 }
