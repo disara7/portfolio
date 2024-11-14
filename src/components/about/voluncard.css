@@ -15,11 +15,14 @@
     border: 1px solid rgba(255, 255, 255, 0.3); /* Optional: light border */
 }
 
-.volun{
+
+
+.volun {
   height: 40vh;
   overflow-y: scroll;
   margin-bottom: 2rem;
-  scrollbar-width: 0;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
 }
 
 .voluncard__content {
