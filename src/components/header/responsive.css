@@ -110,7 +110,10 @@
     }
 
     .header__container {
-        margin-top: 10rem;
+        top: 0;
+        /* background-color: red; */
+        height: 100vh;
+        margin-bottom: 2rem;
     }
 
     .me {
