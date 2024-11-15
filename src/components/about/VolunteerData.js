@@ -7,18 +7,24 @@ import Nenasa from '../../assets/volunteering_logos/nenasa.png';
 import IEEESL from '../../assets/volunteering_logos/ieeesl.png';
 import XTREME from '../../assets/volunteering_logos/xtreme.png';
 import SLSAC from '../../assets/volunteering_logos/slsac.png';
+import AIESEC from '../../assets/volunteering_logos/aiesec.png';
 import blank from '../../assets/blank.png';
 import IEEE from '../../assets/disara.png';
 import AIESECImage from '../../assets/disara.png';
 import VolunteerImg1 from '../../assets/disara.png';
 import VolunteerImg2 from '../../assets/disara.png';
+import pic1 from '../../assets/volunteering/sight/nenasaoc.jpg';
+import sac1 from '../../assets/volunteering/slsac/sac1.jpg';
+import sac2 from '../../assets/volunteering/slsac/sac2.jpg';
+import sac3 from '../../assets/volunteering/slsac/sac3.JPG';
+import pic4 from '../../assets/volunteering/pic4.jpg';
 
 const volunteerData = [
 {
     title: "Secretary - Nenasa '24",
-    image: IEEEImage,
+    image: pic1,
     description: "Served as the Secretary of Nenasa, a project series by IEEE Sri Lanka Section SIGHT. Nenasa is a project aiming to promote STEM education among Sri Lankan school students.",
-    images: [IEEEImage, VolunteerImg1, VolunteerImg2],
+    images: [pic1, pic1, pic1],
     logo1: SIGHT,
     logo2: Nenasa,
     },
@@ -26,7 +32,7 @@ const volunteerData = [
         title: "Publicity Team Member - Member Activities (SLSAC)",
         image: IEEEImage,
         description: "Served as the Secretary of Nenasa, a project series by IEEE Sri Lanka Section SIGHT.",
-        images: [IEEEImage, VolunteerImg1, VolunteerImg2],
+        images: [sac1, sac2, sac3],
         logo1: IEEESL,
         logo2: SLSAC,
         },
@@ -42,16 +48,16 @@ const volunteerData = [
     title: "Ambassador - IEEEXtreme 16.0",
     image: AIESECImage,
     description: "Volunteer role focused on community development and leadership.",
-    images: [AIESECImage, VolunteerImg1, VolunteerImg2],
+    images: [pic4, pic4, pic4],
     logo1: XTREME,
     logo2: blank,
   },
   {
     title: "AIESEC Volunteer",
-    image: AIESECImage,
+    image: AIESEC,
     description: "Volunteer role focused on community development and leadership.",
     images: [AIESECImage, VolunteerImg1, VolunteerImg2],
-    logo1: IEEE,
+    logo1: AIESEC,
     logo2: blank,
   },
   {

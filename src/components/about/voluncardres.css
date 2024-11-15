@@ -61,24 +61,43 @@
 @media screen and (max-width: 670px) {
     .voluncard {
         padding: 0.5em;
-        background-color: rgba(255, 255, 255, 0.3); /* Increase transparency on smaller screens */
+        background-color: rgba(255, 255, 255, 0.3);
         flex-direction: column;
-    }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 7rem;
+      }
+      
 
     .voluncard__title {
-        font-size: 1.1em;
+        font-size: 1em;
+        width: 12rem;
+        margin-left: 1.5rem;
+        margin-bottom: 0.5rem;
     }
 
     .voluncard__description {
-        font-size: 0.8em;
+        font-size: 0.6em;
+        width: 12rem;
+        margin-left: 1.5rem;
     }
 
     .voluncard__carousel {
-        width: 90%; /* Reduce width for smaller screens */
+        width: 80%; /* Reduce width for smaller screens */
     }
 
+    .voluncard__logos {
+        display: flex;
+        margin-bottom: 1em;
+        margin-top: 0rem;
+        margin-left: 1rem;
+        justify-content: center;
+        align-items: center;
+      }
+
     .voluncard__logo-image {
-        width: 30px;
-        height: 30px;
+        width: 80px;
+        height: 40px;
     }
 }
