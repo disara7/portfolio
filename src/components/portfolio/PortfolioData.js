@@ -10,6 +10,7 @@ import p9 from '../../assets/haven.png';
 import p10 from '../../assets/gjrti.png';
 import p11 from '../../assets/wiebanner.png';
 import blank from '../../assets/blank.png';
+import chemwaste from '../../assets/projectbanners/chemwaste.jpeg'
 
 const projects = [
 
@@ -40,6 +41,7 @@ const projects = [
     adobe: 'https://adobe-link',
     medium: 'https://medium-link',
     video: 'https://video-link',
+    longdescription: 'ShopSense is a system that includes a mobile application that uses just “taps” on the screen and AI assistance for online clothing shopping, aiming to promote Inclusivity and accessibility to the visually impaired community, and a website for clothing item sellers to sell their items to these users.',
   },
   {
     category: 'mobile',
@@ -53,6 +55,7 @@ const projects = [
     adobe: 'https://adobe-link',
     medium: 'https://medium-link',
     video: 'https://video-link',
+    longdescription: 'SUSL LMS Mobile app is developed to elevate your learning experience. With this, you can seamlessly access courses, assignments, quizzes, and lecture recordings on the go. You can create and submit assignments, participate in interactive quizzes, and engage with peers via the forum. This helps you stay up to date with real-time notifications and personalize your profile with ease. To revolutionize your education journey – SUSL LMS brings you convenient and enriched learning.',
   },
   {
     category: 'mobile',
@@ -66,7 +69,22 @@ const projects = [
     adobe: 'https://adobe-link',
     medium: 'https://medium-link',
     video: 'https://video-link',
+    longdescription: 'MyJourney is the next level travel planning app. It is a mobile application made to make travel planning easy depending on the category of tourist, and according to your budget. MyJourney categorizes tourists into six categories namely, Leisure tourist, Religious tourist, Cultural tourist, Eco tourist, Educational tourist, and Adventure tourist. The budget plan is given under three categories namely, Solo traveler, Couple and family and affordable accommodation could be booked through the app.',
   },
+  // {
+  //   category: 'mobile',
+  //   award: 'yes',
+  //   type: 'GROUP PROJECT | ONGOING',
+  //   image: p4,
+  //   altText: 'StyleUp - Clothing Rental Store',
+  //   title: 'StyleUp - Clothing Rental Store',
+  //   description: 'StyleUp is the one place to rent all your favorite styles as you desire from just around you, and even put cash in your pockets from your own closet.',
+  //   github: 'https://github.com/disara7/MyJourney',
+  //   adobe: 'https://adobe-link',
+  //   medium: 'https://medium-link',
+  //   video: 'https://video-link',
+  //   longdescription: 'StyleUp is the one place to rent all your favorite styles as you desire from just around you, and even put cash in your pockets from your own closet. StyleUp offers a variety of clothing items ranging from elegant party wear, smart formal wear, perfect sportswear to bizarre drama costumes.',
+  // },
 
   //Web projects
   {
@@ -81,6 +99,7 @@ const projects = [
     adobe: 'https://adobe-link',
     medium: 'https://medium-link',
     video: 'https://video-link',
+    longdescription: 'As our community project, me and my team is developing a fully customized web based Management Information System (MIS) [ERP System] from scratch for the Gem and Jewelry Research and Training Institute - Ministry of Industries, Sri Lanka.',
   },
   {
     category: 'web',
@@ -94,6 +113,7 @@ const projects = [
     adobe: 'https://adobe-link',
     medium: 'https://medium-link',
     video: 'https://video-link',
+    longdescription: 'UniStore is an innovative online web platform designed for university communities. It helps students exchange items and support each other’s businesses. The platform has two main sections: “Preloved” for second-hand items and “CraftsWorld” for handmade goods. UniStore encourages upcycling and helps students develop their entrepreneurial skills.',
   },
   {
     category: 'web',
@@ -120,6 +140,7 @@ const projects = [
     adobe: 'https://adobe-link',
     medium: 'https://medium-link',
     video: 'https://video-link',
+    longdescription: 'E-commerce platform with essential functionalities such as User Registration, User Profile Management Product Management (Add, Edit, View and Delete Products), and Order Management developed with Java, Spring boot, and Thymeleaf. Automated testing was done for this project using JUnit, Mockito, and Selenium, and JACOCO was used for test coverage analysis.'
   },
   {
     category: 'web',
@@ -205,6 +226,37 @@ const projects = [
     medium: 'https://medium-link',
     video: 'https://video-link',
   },
+
+   //UI/UX designs
+  //  {
+  //   category: 'ui',
+  //   award: 'no',
+  //   type: 'GROUP PROJECT | COMPLETED',
+  //   showImage: false,
+  //   image: chemwaste,
+  //   altText: 'ChemWaste - Sustainably Dispose Chemical Waste',
+  //   title: 'ChemWaste - Sustainably Dispose Chemical Waste',
+  //   description: 'ChemWaste connects labs and recyclers or other labs to properly dispose chemical waste that are generated in chemical laboratories sustainably.',
+  //   github: 'https://github.com/disara7/Tumor_identifying_AI',
+  //   adobe: 'https://adobe-link',
+  //   medium: 'https://medium-link',
+  //   video: 'https://video-link',
+  // },
+  // {
+  //   category: 'ui',
+  //   award: 'no',
+  //   type: 'GROUP PROJECT | COMPLETED',
+  //   showImage: false,
+  //   image: chemwaste,
+  //   altText: 'Sentry - A Solution to Human-Elephant Conflicts in Sri Lanka',
+  //   title: 'Sentry - A Solution to Human-Elephant Conflicts in Sri Lanka',
+  //   description: 'Sentry is a web-based solution to Human-Elephant Conflicts in Sri Lanka.',
+  //   github: 'https://github.com/disara7/Tumor_identifying_AI',
+  //   adobe: 'https://adobe-link',
+  //   medium: 'https://medium-link',
+  //   video: 'https://video-link',
+  //   longdescription: 'We identified Human-Elephant Conflicts as an environmental issue in Sri Lanka, which is currently a large threat in certain rural areas of Sri Lanka. Both people and elephants, very often lose their lives and properties in this conflict. So, we, the "Pixel Concepts" came up with Sentry, the web-based platform which works on an island wide level to track the areas with elephant attacks, find why this happens, make people aware of how to avoid these attacks and how to deal with the aftermath, and to allow the philanthropic hearts to help rebuild the shattered lives of the victims of these attacks. Sentry was designed after a detailed background research and a UX Research which involved interviews with potential users, and by following UI Design principles thoroughly, along with the complete procedure of UI design which involved traditional wireframing to creating high fidelity mock-ups with Adobe XD.'
+  // },
 ];
 
 export default projects;
