@@ -33,5 +33,21 @@
         justify-self: center;
         overflow-y: scroll;
     }
+
+    .volunlogos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        justify-content: left;
+      }
+      
+
+    .vlogos{
+        width: 7rem;
+    }
+
+    .vlogos img{
+        width: 5rem;
+    }
     
 }

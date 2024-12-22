@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-const VolunteerCard = ({ title, image, description, images, logo1, logo2 }) => {
+const VolunteerCard = ({ title, description, images, logo1, logo2 }) => {
     const carouselSettings = {
       dots: true,
       infinite: true,

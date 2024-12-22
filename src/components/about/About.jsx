@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './about.css';
 import './smalldevices.css';
 import './animations.css';
@@ -6,8 +6,19 @@ import './voluncard.css';
 import './voluncardres.css';
 import VolunteerCard from './VolunteerCard';
 import volunteerData from './VolunteerData';
+import YP from '../../assets/volunteering_logos/ypsl.png';
+import INSL from '../../assets/volunteering_logos/insl.png';
+import SIGHT from '../../assets/volunteering_logos/slsight.png';
+import Nenasa from '../../assets/volunteering_logos/nenasa.png';
+import IEEESL from '../../assets/volunteering_logos/ieeesl.png';
+import XTREME from '../../assets/volunteering_logos/xtreme.png';
+import SLSAC from '../../assets/volunteering_logos/slsac.png';
+import AIESEC from '../../assets/volunteering_logos/aiesec.png';
+import blank from '../../assets/blank.png';
 
 const About = () => {
+  const [popupData, setPopupData] = useState(null);
+
   useEffect(() => {
     const fadeElements = document.querySelectorAll('.fade-in');
 
@@ -36,6 +47,14 @@ const About = () => {
       window.removeEventListener('scroll', debouncedScroll);
     };
   }, []);
+
+  const handleVlogosClick = (index) => {
+    setPopupData(volunteerData[index]);
+  };
+
+  const closePopup = () => {
+    setPopupData(null);
+  };
 
   return (
     <section id='about'>
@@ -73,25 +92,40 @@ const About = () => {
               </div>
             </div>
             <h4 className='about__style fade-in volunteering'>Volunteering:</h4>
-
-            <div className="volun">
-            {volunteerData.map((volunteer, index) => (
-              <VolunteerCard 
-                key={index}
-                title={volunteer.title}
-                image={volunteer.image}
-                description={volunteer.description}
-                images={volunteer.images}
-                logo1={volunteer.logo1} 
-                logo2={volunteer.logo2}
-              />
-            ))}
+            <div className="volunlogos">
+              {volunteerData.map((volunteer, index) => (
+                <div
+                  key={index}
+                  className="vlogos"
+                  onClick={() => handleVlogosClick(index)}
+                >
+                  <img src={volunteer.logo1} alt={volunteer.title} />
+                </div>
+              ))}
             </div>
+
+            {popupData && (
+              <div className="popup">
+                <div className="popup-content">
+                  <button className="close-button" onClick={closePopup}>
+                    &times;
+                  </button>
+                  <VolunteerCard
+                    title={popupData.title}
+                    image={popupData.image}
+                    description={popupData.description}
+                    images={popupData.images}
+                    logo1={popupData.logo1}
+                    logo2={popupData.logo2}
+                  />
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>
     </section>
   );
-}
+};
 
 export default About;
