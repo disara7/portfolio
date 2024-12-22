@@ -55,7 +55,7 @@ const volunteerData = [
   {
     title: "AIESEC Volunteer",
     image: AIESEC,
-    description: "Volunteer role focused on community development and leadership.",
+    description: "Outgoing Global Talent (oGT) function - AIESEC in Sabaragamuwa University of Sri Lanka.",
     images: [AIESECImage, VolunteerImg1, VolunteerImg2],
     logo1: AIESEC,
     logo2: blank,
