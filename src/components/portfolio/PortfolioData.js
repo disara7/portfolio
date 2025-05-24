@@ -10,6 +10,9 @@ import p9 from '../../assets/haven.png';
 import p10 from '../../assets/gjrti.png';
 import p11 from '../../assets/wiebanner.png';
 import blank from '../../assets/blank.png';
+import p12 from '../../assets/projectbanners/ai.jpeg'
+import p13 from '../../assets/projectbanners/jarvis.jpeg'
+import p14 from '../../assets/projectbanners/sudoku.jpg'
 import chemwaste from '../../assets/projectbanners/chemwaste.jpeg'
 
 const projects = [
@@ -175,8 +178,34 @@ const projects = [
     category: 'other',
     award: 'no',
     type: 'INDIVIDUAL PROJECT | COMPLETED',
-    showImage: false,
+    image: p14,
+    altText: 'Killer Sudoku Helper',
+    title: 'Killer Sudoku Helper - Python + Next.js Project',
+    description: 'A killer sudoku helper created by connecting a Python Script as the Backend to a Next.js/Typescript Frontend.',
+    github: 'https://github.com/disara7',
+    adobe: 'https://adobe-link',
+    medium: 'https://medium-link',
+    video: 'https://video-link',
+  },
+  {
+    category: 'other',
+    award: 'yes',
+    type: 'GROUP PROJECT | COMPLETED',
     image: blank,
+    altText: 'Shut - Car Racing Simulation Game',
+    title: 'Shut - Car Racing Simulation Game',
+    description: 'To learn different Flutter things.',
+    github: 'https://github.com/disara7',
+    adobe: 'https://adobe-link',
+    medium: 'https://medium-link',
+    video: 'https://video-link',
+  },
+  {
+    category: 'other',
+    award: 'no',
+    type: 'INDIVIDUAL PROJECT | COMPLETED',
+    showImage: false,
+    image: p12,
     altText: 'Tumor Identifying AI Model',
     title: 'Tumor Identifying AI Model',
     description: 'An AI model created using Tensorflow/Keras and scikit-learn. This AI model is trained on real data from breast cancer diagnosis.',
@@ -190,7 +219,7 @@ const projects = [
     award: 'no',
     type: 'INDIVIDUAL PROJECT | COMPLETED',
     showImage: false,
-    image: blank,
+    image: p13,
     altText: 'JARVIS - AI Model',
     title: 'JARVIS - AI Model',
     description: 'This AI uses speech recognition and speech to text, to communicate with ChatGPT and talk back with ChatGPT\'s responses.',
@@ -213,19 +242,7 @@ const projects = [
     medium: 'https://medium-link',
     video: 'https://video-link',
   },
-  {
-    category: 'other',
-    award: 'yes',
-    type: 'GROUP PROJECT | COMPLETED',
-    image: blank,
-    altText: 'Shut - Car Racing Simulation Game',
-    title: 'Shut - Car Racing Simulation Game',
-    description: 'To learn different Flutter things.',
-    github: 'https://github.com/disara7',
-    adobe: 'https://adobe-link',
-    medium: 'https://medium-link',
-    video: 'https://video-link',
-  },
+  
 
    //UI/UX designs
   //  {
