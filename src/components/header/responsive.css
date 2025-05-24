@@ -1,7 +1,6 @@
 @media screen and (max-width: 600px) {
     header{
-        /* background-color: green; */
-        height: 45vh;
+        height: fit-content;
     }
     .fname {
         font-size: 6rem; 

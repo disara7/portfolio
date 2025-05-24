@@ -14,7 +14,7 @@ const Cv = () => {
       <a href={CV} download className='btn_icon'>
         <FiDownload size={24} />
       </a>
-      <a href="#contact" className='btn-icon'>
+      <a href="#contact" className='btn_icon'>
         <FiMail size={24} />
       </a>
     </div>

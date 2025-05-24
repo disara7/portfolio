@@ -1,26 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
-.about h2{
-  margin-top: 0rem;
+.about{
+  left: 15%;
 }
 
-.about{
-  background-color: yellow;
-  
-}
 .about__container {
     display: grid;
     grid-template-columns: 60% 35%;
     gap: 15%;
-    
-}
-
-.photo {
-  display: none;
 }
 
 .fullname{
-    margin-top: -1.5rem;
     margin-bottom: 1rem;
     font-size: 4rem;
     font-family: 'Anton', sans-serif;
@@ -32,21 +22,13 @@
     color: white;
 }
 
-.number h2{
-  margin-top: 10rem;
-}
-
 .number__description {
-  margin-top: 3rem;
     font-size: 2rem;
     color: white; 
 }
 
-
 .about__style {
-    margin-left: 10.2rem;
-    margin-bottom: 2rem;
-    width: 40rem;
+    width: 80%;
 }
 
 .about__style h4{
@@ -68,8 +50,6 @@
   margin-top: 2rem;
 }
 
-
-
 .cardd {
   width: 9rem;
   padding: 0.5rem; /* Adjust padding as needed */
@@ -83,12 +63,10 @@
 
 .cardsett{
   display: flex;
-  margin-left: 10rem;
   gap: 1.5rem;
 }
 
 .volunlogos {
-  margin-left: 10rem;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -105,7 +83,6 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: min-content;
   align-content: center;
-  /* height: min-content; */
   height: 5.4rem;
 }
 
