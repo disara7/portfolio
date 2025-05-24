@@ -1,6 +1,9 @@
 /* Import Poppins font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
+.contact{
+    background-color: lightcoral;
+}
 /* Form container with glass effect */
 #contactForm {
     width: 100%;
@@ -90,14 +93,6 @@ textarea.field {
     display: block;
     margin-bottom: 1.5rem;
 }
-
-/* Contact form section layout */
-.contact {
-    margin-left: 5rem;
-    margin-right: 5rem;
-    padding: 1rem;
-}
-
 
 
 
