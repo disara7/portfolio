@@ -1,12 +1,10 @@
 /* resposive */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .contact {
-        margin-left: -2rem;
-        margin-right: 2rem;
     }
 
     #contactForm {
-        padding: 1.5rem;
+        padding: 1rem;
         margin-left: 5rem;
         width: 19rem;
     }

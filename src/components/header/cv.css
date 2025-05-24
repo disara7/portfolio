@@ -1,46 +1,55 @@
-/* Base styles */
 .cv {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-    position: fixed;
-    top: 3rem;
-    right: 2rem;
-    align-items: flex-end;
-    z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  position: fixed;
+  top: 3rem;
+  right: 2rem;
+  align-items: flex-end;
+  z-index: 1000;
 }
 
+/* Base styles for all buttons */
 .cv a {
+  text-decoration: none;
+  color: white;
+  transition: background 0.3s, border-color 0.3s;
+  cursor: pointer;
+}
+
+.btn_full {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  padding: 0.8rem 1.2rem;
+  backdrop-filter: blur(10px);
+  font-size: 1rem;
+}
+
+.btn_full:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+.btn_icon {
+  display: none;
+  background: none;
+  border: white;
+  font-size: 0.8rem;
+}
+
+/* Media query: small screens */
+@media screen and (max-width: 600px) {
+  .cv .btn_full {
+    display: none;
+  }
+
+  .cv .btn_icon {
     display: inline-block;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 8px;
-    padding: 0.8rem 1.2rem;
-    backdrop-filter: blur(10px);
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
-    text-decoration: none;
-    transition: background 0.3s, border-color 0.3s;
-}
+  }
 
-.cv a:hover {
-    background: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.7);
-}
-
-/* For screens with max-width 920px */
-@media screen and (max-width: 920px) {
-    .cv {
-        top: 0;
-        right: 1rem; /* Adjust to keep links closer to the right */
-        align-items: flex-end; /* Ensure links stay aligned to the right */
-    }
-}
-
-@media screen and (max-width: 920px) {
-    .cv a{
-        display: flex;
-        flex-direction: column;
-    }
+  .cv {
+    gap: 1rem;
+    right: 1rem;
+  }
 }

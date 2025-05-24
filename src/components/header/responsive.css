@@ -1,0 +1,48 @@
+@media screen and (max-width: 600px) {
+    header{
+        /* background-color: green; */
+        height: 45vh;
+    }
+    .fname {
+        font-size: 6rem; 
+        z-index: -2;
+        top: 0rem;
+        padding-top: 40%;
+    }
+
+    .name__post {
+        margin-left: 14%;
+        gap: 0.5rem;
+        padding-top: 60%;
+    }
+
+    .creative {
+        font-size: 1.3rem;
+        padding-top: 0.3rem;
+    }
+
+    .eng, .product {
+        font-size: 1.1rem;
+    }
+
+    .me {
+        width: 15rem;
+        height: auto;
+        left: 20%;
+        top: 8%;
+        bottom: 0rem;
+        position: fixed;
+        z-index: -1;
+    }
+    .social_links {
+        z-index: 1;
+    }
+    .scroll-down-button{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+}

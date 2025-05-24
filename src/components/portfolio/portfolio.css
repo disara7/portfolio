@@ -77,13 +77,14 @@
   margin-right: 0.3rem;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .section__title {
     text-align: center;
   }
 
   .portfolio {
     margin-left: 0;
+    background-color: yellow;
   }
 
   .projects {
@@ -95,12 +96,13 @@
     width: 18rem;
   }
 
-  .portfolio_content {
-    margin-left: 4rem;
+  .portfolio_tabs {
+    margin-left: 2rem;
+    padding: 0 2rem;
   }
 }
 
-@media screen and (max-width: 670px) {
+/* @media screen and (max-width: 670px) {
   .section__title {
     margin-left: -7rem;
     text-align: center;
@@ -117,15 +119,8 @@
     grid-template-columns: 1fr;
   }
 
-  .portfolio_tabs {
-    margin-left: 2rem;
-    padding: 0 2rem;
-  }
-
-  .tab_button {
-    font-size: smaller;
-  }
-}
+  
+} */
 
 .portfolio_tabs {
   display: flex;

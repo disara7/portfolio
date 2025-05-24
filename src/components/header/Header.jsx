@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './header.css';
-import './hname.css';
-import './cv.css';
 import './scroll.css';
 import './responsive.css';
 import CV from './cv';
