@@ -109,13 +109,14 @@
 
 @media screen and (max-width: 670px) {
     .section__title{
-        margin-left: -3rem;
+        margin-left: -7rem;
         text-align: center;
         margin-bottom: 0rem;
      }
     .portfolio_card{
         margin-bottom: -1rem;
         width: 16.5rem;
+        font-size: smaller;
     }
     .projects{
         grid-template-columns: 1fr;
@@ -125,11 +126,20 @@
 .portfolio_tabs {
   display: flex;
   gap: 10px;
-  margin: 20px 0;
   flex-wrap: wrap;
   margin-left: 10rem;
   margin-top: -0.3rem;
   margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 670px) {
+    .portfolio_tabs{
+        margin-left: 2rem;
+        padding: 0 2rem;
+    }
+    .tab_button{
+        font-size: smaller;
+    }
 }
 
 .tab_button {

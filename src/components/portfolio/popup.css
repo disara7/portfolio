@@ -48,5 +48,8 @@
 
   .popup_content p{
     font-size: small;
-    margin-top: 1rem;
+  }
+
+  .popup_content h3{
+    padding: 1rem;
   }

@@ -3,6 +3,7 @@ import './portfolio.css';
 import './popup.css';
 import projects from './PortfolioData';
 import PortfolioCard from './PortfolioCard';
+import Popup from './Popup'; 
 
 const Portfolio = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -63,27 +64,7 @@ const Portfolio = () => {
       </div>
 
       {/* Popup */}
-      {selectedProject && (
-        <div className="popup">
-          <div className="popup_content">
-            <button className="close_button" onClick={closePopup}>
-              &times;
-            </button>
-            {selectedProject.image && (
-              <img src={selectedProject.image} alt={selectedProject.title} />
-            )}
-            <h3>{selectedProject.title}</h3>
-            <p>{selectedProject.longdescription}</p>
-            <a
-              href={selectedProject.link || selectedProject.github}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View Project
-            </a>
-          </div>
-        </div>
-      )}
+      <Popup project={selectedProject} onClose={closePopup} />
     </section>
   );
 };
