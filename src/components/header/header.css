@@ -70,6 +70,31 @@ header {
     color: var(--color-white); /* Ensures icons use the defined color */
 }
 
+.floating-icon {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  animation: fadePop 2s ease-out forwards;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 10;
+}
+
+@keyframes fadePop {
+  0% {
+    transform: scale(0.5) rotate(0deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2) rotate(var(--rotate));
+  }
+  100% {
+    transform: scale(1) rotate(var(--rotate));
+    opacity: 0;
+    top: calc(var(--y) + 100px);
+  }
+}
 
 
 /*===========SOCIAL LINKS==========*/
