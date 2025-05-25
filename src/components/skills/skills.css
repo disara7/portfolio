@@ -1,14 +1,13 @@
 .skills{
-  background-color: green;
+  padding-left: 15%;
 }
 
 .col {
     flex: 1;
     width: 30%;
-  }
+}
   
-.shape {
-  
+.shape {  
   margin: 0.15rem;
   background-color: purple;
 }
@@ -18,60 +17,47 @@
   flex-direction: row;
 }
   
-  .shape-square {
-    border-radius: 0.25rem;
-    height: 1.2rem;
-    width: 1.2rem;
-  }
+.shape-square {
+  border-radius: 0.25rem;
+  height: 1.2rem;
+  width: 1.2rem;
+}
 
-  .skill_table {
-    border: 1rem;
-    border-color: white;
-    margin-left: 10.2rem;
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 2.5rem;
-  }
+.skill_table {
+  border: 1rem;
+  border-color: white;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 2.5rem;
+}
 
-  td{
-    margin-left: 2rem;
-    margin-right: 5rem;
-  }
+td{
+  margin-left: 2rem;
+  margin-right: 5rem;
+}
 
-
-  /*===========FOR RESPONSIVENESS (SMALL DEVICES)==============*/
+/*===========FOR RESPONSIVENESS (SMALL DEVICES)==============*/
 
 @media screen and (max-width: 600px) {
-  .skills{
-    background-color: red;
-  }
   .skill_table{
-    margin-left: 4rem;
     margin-bottom: 1rem;
+    padding-bottom: 0rem;
   }
-
   .skill_table table{
     margin-bottom: 1rem;
   }
-
   .skill_table td{
-    width: 8rem;
-    font-size: 0.7rem;
+    width: 9rem;
+    font-size: small;
   }
-
   .skill_table {
     display: flex;
     flex-direction: column;
   }
-  .skills__container{
-    margin-left: 0rem;
-    
+  .shape-square{  
+    border-radius: 0.25rem;
+    height: 1rem;
+    width: 1rem;
   }
-  .shape-square{
-   
-      border-radius: 0.25rem;
-      height: 1rem;
-      width: 1rem;
-    }
-  }
+}
 

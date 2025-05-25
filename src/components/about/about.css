@@ -73,7 +73,6 @@
   justify-content: left;
 }
 
-
 .vlogos{
   padding: 1rem;
   background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
@@ -104,14 +103,12 @@
 }
 
 .popup-content {
-  /* background: #fff; */
-  padding: 20px;
+  padding: 10%;
   border-radius: 10px;
   width: 80%;
   max-width: 600px;
   text-align: left;
   position: relative;
-  margin-left: -35rem;
 }
 
 .close-button {

@@ -1,21 +1,18 @@
 .voluncard {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2em;
-    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
-    border-radius: 10px;
-    margin-bottom: 1em;
-    margin-left: 10rem;
-    height: fit-content;
-    width: 45rem;
-    backdrop-filter: blur(10px); /* Creates the glass effect */
-    -webkit-backdrop-filter: blur(10px); /* For Safari */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
-    border: 1px solid rgba(255, 255, 255, 0.3); /* Optional: light border */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2em;
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+  border-radius: 10px;
+  margin-bottom: 1em;
+  height: fit-content;
+  width: 45rem;
+  backdrop-filter: blur(10px); /* Creates the glass effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Optional: light border */
 }
-
-
 
 .volun {
   height: 40vh;

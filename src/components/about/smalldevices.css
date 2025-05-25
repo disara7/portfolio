@@ -1,6 +1,5 @@
 @media screen and (max-width: 600px) {
     .about{
-        /* background-color: blue; */
         left: 12%;
         margin-top: -4rem;
     }
@@ -8,13 +7,13 @@
         width: 125%;
         text-align: center;
         font-size: small;
-        
     }
     .fullname{
         font-size: 1.8rem;
     }
     .cardsett{
         gap: 0.5rem;
+        margin-left: 7%;
     }
     .number {
         font-size: 2.5rem;
@@ -26,26 +25,21 @@
         font-size: small;
         text-align: center;
     }
-     
-
     .volun{
-        margin-left: 18rem;
         justify-self: center;
         overflow-y: scroll;
     }
-
     .volunlogos {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
         justify-content: left;
-      }
-    .vlogos{
-        width: 7rem;
+        margin-top: 1rem;
     }
-
+    .vlogos{
+        width: 8rem;
+    }
     .vlogos img{
         width: 5rem;
     } 
-    
 }

@@ -21,11 +21,10 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 10rem;
 }
 
 .portfolio {
-  background-color: blue;
+  padding-left: 15%;
 }
 
 .projects {
@@ -77,56 +76,10 @@
   margin-right: 0.3rem;
 }
 
-@media screen and (max-width: 600px) {
-  .section__title {
-    text-align: center;
-  }
-
-  .portfolio {
-    margin-left: 0;
-    background-color: yellow;
-  }
-
-  .projects {
-    grid-template-columns: 1fr;
-  }
-
-  .portfolio_card {
-    margin-bottom: -1rem;
-    width: 18rem;
-  }
-
-  .portfolio_tabs {
-    margin-left: 2rem;
-    padding: 0 2rem;
-  }
-}
-
-/* @media screen and (max-width: 670px) {
-  .section__title {
-    margin-left: -7rem;
-    text-align: center;
-    margin-bottom: 0;
-  }
-
-  .portfolio_card {
-    margin-bottom: -1rem;
-    width: 16.5rem;
-    font-size: smaller;
-  }
-
-  .projects {
-    grid-template-columns: 1fr;
-  }
-
-  
-} */
-
 .portfolio_tabs {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
-  margin-left: 10rem;
   margin-top: -0.3rem;
   margin-bottom: 2rem;
 }
@@ -154,3 +107,40 @@
   background-color: #333;
   color: #fff;
 }
+
+
+@media screen and (max-width: 600px) {
+  .portfolio {
+    padding-left: 16% ;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio_card {
+    margin-bottom: -1rem;
+    width: 18rem;
+  }
+
+  .portfolio_tabs {
+    gap: 5px;
+  }
+
+  .tab_button {
+    padding: 6px 10px;
+  }
+
+  .portfolio_content{
+    margin-top: -0.5rem;
+  }
+
+  .portfolio_card{
+    height: max-content;
+    width: 80%;
+    margin-bottom: -1rem;
+  }
+}
+
+
+
