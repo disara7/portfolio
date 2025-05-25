@@ -1,20 +1,19 @@
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 600px) {
     .about{
-        margin-top: -20rem;
-        margin-left: -7.5rem;
-        margin-bottom: 20rem;
+        left: 12%;
+        margin-top: -4rem;
     }
     .about__style{
-        width: 18rem;
+        width: 125%;
+        text-align: center;
         font-size: small;
-        
     }
     .fullname{
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
-
     .cardsett{
         gap: 0.5rem;
+        margin-left: 7%;
     }
     .number {
         font-size: 2.5rem;
@@ -22,32 +21,25 @@
         margin-top: 0;
         display: block;
     }
-
-    .number__description {
+    .cardd {
         font-size: small;
         text-align: center;
     }
-
     .volun{
-        margin-left: 18rem;
         justify-self: center;
         overflow-y: scroll;
     }
-
     .volunlogos {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
         justify-content: left;
-      }
-      
-
-    .vlogos{
-        width: 7rem;
+        margin-top: 1rem;
     }
-
+    .vlogos{
+        width: 8rem;
+    }
     .vlogos img{
         width: 5rem;
-    }
-    
+    } 
 }

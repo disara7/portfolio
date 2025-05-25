@@ -1,94 +1,63 @@
 .skills{
-  margin-top: -10rem;
-  margin-left: 1rem;
+  padding-left: 15%;
 }
+
 .col {
     flex: 1;
     width: 30%;
-  }
-
-  .skills__container{
-    margin-left: 5rem;
-  }
+}
   
-  .shape {
-    /* margin: 25px auto 50px; */
-    margin: 0.15rem;
-    background-color: purple;
-  }
+.shape {  
+  margin: 0.15rem;
+  background-color: purple;
+}
 
-  .skill_box{
-    display: flex;
-    flex-direction: row;
-  }
+.skill_box{
+  display: flex;
+  flex-direction: row;
+}
   
-  .shape-square {
-    border-radius: 0.25rem;
-    height: 1.2rem;
-    width: 1.2rem;
-  }
+.shape-square {
+  border-radius: 0.25rem;
+  height: 1.2rem;
+  width: 1.2rem;
+}
 
-  .skill_table {
-    border: 1rem;
-    border-color: white;
-    margin-left: 10.2rem;
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 2.5rem;
-    
-  }
+.skill_table {
+  border: 1rem;
+  border-color: white;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 2.5rem;
+}
 
-  td{
-    margin-left: 2rem;
-    margin-right: 5rem;
-  }
+td{
+  margin-left: 2rem;
+  margin-right: 5rem;
+}
 
+/*===========FOR RESPONSIVENESS (SMALL DEVICES)==============*/
 
-  /*===========FOR RESPONSIVENESS (SMALL DEVICES)==============*/
-
-@media screen and (max-width: 700px) {
-  .skills{
-    margin-top: -10rem;
-  }
+@media screen and (max-width: 600px) {
   .skill_table{
-    margin-left: 4rem;
     margin-bottom: 1rem;
+    padding-bottom: 0rem;
   }
-
   .skill_table table{
     margin-bottom: 1rem;
   }
-
   .skill_table td{
-    width: 8rem;
-    font-size: 0.7rem;
+    width: 9rem;
+    font-size: small;
   }
-
   .skill_table {
     display: flex;
     flex-direction: column;
   }
-  .skills__container{
-    margin-left: 0rem;
-    
+  .shape-square{  
+    border-radius: 0.25rem;
+    height: 1rem;
+    width: 1rem;
   }
-  .shape-square{
-   
-      border-radius: 0.25rem;
-      height: 1rem;
-      width: 1rem;
-    }
-  }
-
-  @media screen and (max-width: 670px) {
-    .skills{
-      margin-top: 23rem;
-      /* margin-bottom: 23rem; */
-    }
-
-    .skills h2{
-      margin-bottom: 0rem;
-    }
-  }
-
+}
 

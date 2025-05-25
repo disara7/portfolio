@@ -1,145 +1,87 @@
 .portfolio_card {
-    height: 22rem;
-    width: 20rem;
-    background-color: rgba(255, 255, 255, 0.2); /* Adjust opacity for glass effect */
-    border-radius: 1rem;
-    margin-top: 2rem;
-    margin-bottom: 0rem;
-    padding: 1.5rem;
-    align-items: center;
-    border: 1px solid rgba(255, 255, 255, 0.2); /* Light border for glass effect */
-    backdrop-filter: blur(10px); /* Apply blur for glass effect */
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
-    transition: box-shadow 0.3s ease; /* Smooth transition */
+  height: 22rem;
+  width: 20rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  padding: 1.5rem;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
 }
 
 .portfolio_card:hover {
-    box-shadow: 0 0 15px 5px rgba(179, 41, 179, 0.699); /* Purple glowing border on hover */
+  box-shadow: 0 0 15px 5px rgba(179, 41, 179, 0.699);
 }
 
-
-.portfolio_content{
-    margin-left: 10rem;
-}
 .portfolio_content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Aligns content to the left */
-  }
-
-.portfolio{
-    margin-left: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.projects{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    margin-bottom: 3rem;
+.portfolio {
+  padding-left: 15%;
 }
 
-.portfolio_card h4{
-    text-align: center;
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 3rem;
 }
 
-.portfolio_card h3{
-    text-align: left;
-    font-size: 0.6rem;
-    margin-bottom: 0.5rem;
-    margin-top: -0.5rem;
+.portfolio_card h4 {
+  text-align: center;
 }
 
-.portfolio_card p{
-    text-align: center;
-    font-size: 0.8rem;
-    color: --color-white;
-    margin-top: 1rem;
+.portfolio_card h3 {
+  text-align: left;
+  font-size: 0.6rem;
+  margin-bottom: 0.5rem;
+  margin-top: -0.5rem;
 }
 
-.portfolio_card img{
-    border-radius: 0.5rem;
-    margin-bottom: 1rem;
-    height: 6.5rem;
+.portfolio_card p {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--color-white);
+  margin-top: 1rem;
 }
 
-.links{
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    margin-top: 1rem;
+.portfolio_card img {
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  height: 6.5rem;
 }
 
-.aw{
-    display: flex;
-    align-items: center;
+.links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
 }
 
-.iconstyle{
-    color: rgb(255, 217, 0);
-    margin-top: -0.9rem;
-    margin-right: 0.3rem;
-}
-/*===========FOR RESPONSIVENESS (SMALL DEVICES)==============*/
-
-@media screen and (max-width: 700px) {
-    /* .container {
-        background-color: black;
-    } */
-     .section__title{
-        /* margin-left: -3rem; */
-        text-align: center;
-     }
-
-    .portfolio{
-        margin-left: 0rem;
-    }
-    .projects{
-        grid-template-columns: 1fr;
-    }
-
-    .portfolio_card{
-        margin-bottom: -1rem;
-        width: 18rem;
-    }
-
-    .portfolio_content{
-        margin-left: 4rem;
-    }
+.aw {
+  display: flex;
+  align-items: center;
 }
 
-@media screen and (max-width: 670px) {
-    .section__title{
-        margin-left: -7rem;
-        text-align: center;
-        margin-bottom: 0rem;
-     }
-    .portfolio_card{
-        margin-bottom: -1rem;
-        width: 16.5rem;
-        font-size: smaller;
-    }
-    .projects{
-        grid-template-columns: 1fr;
-    }
+.iconstyle {
+  color: rgb(255, 217, 0);
+  margin-top: -0.9rem;
+  margin-right: 0.3rem;
 }
 
 .portfolio_tabs {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
-  margin-left: 10rem;
   margin-top: -0.3rem;
   margin-bottom: 2rem;
-}
-
-@media screen and (max-width: 670px) {
-    .portfolio_tabs{
-        margin-left: 2rem;
-        padding: 0 2rem;
-    }
-    .tab_button{
-        font-size: smaller;
-    }
 }
 
 .tab_button {
@@ -161,8 +103,44 @@
   transform: scale(1.05);
 }
 
-
 .tab_button.active {
   background-color: #333;
   color: #fff;
 }
+
+
+@media screen and (max-width: 600px) {
+  .portfolio {
+    padding-left: 16% ;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio_card {
+    margin-bottom: -1rem;
+    width: 18rem;
+  }
+
+  .portfolio_tabs {
+    gap: 5px;
+  }
+
+  .tab_button {
+    padding: 6px 10px;
+  }
+
+  .portfolio_content{
+    margin-top: -0.5rem;
+  }
+
+  .portfolio_card{
+    height: max-content;
+    width: 80%;
+    margin-bottom: -1rem;
+  }
+}
+
+
+

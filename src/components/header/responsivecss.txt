@@ -1,0 +1,147 @@
+@media screen and (max-width: 920px) {
+    header {
+        top: 0;
+        height: min-content;
+        width: 100%;
+        margin-bottom: 0rem;
+        
+    }
+    .me {
+        width: 80%; 
+        margin: 0;
+        position: static; 
+        top: 0;
+        z-index: -1;
+        padding: 0rem;
+        margin-top: 1rem;
+        margin-bottom: 5rem;
+    }
+    .fname {
+        font-size: 7rem; 
+        margin: 0;
+        text-align: center;
+        margin-left: 1rem;
+        margin-bottom: 12rem;
+        
+    }
+    .name__post{
+        margin-bottom: 30rem;
+        margin-left: 1rem;
+        
+    }
+    
+    .creative {
+        font-family: 'Lobster', sans-serif;
+        font-size: 1.5rem;
+        margin-top: 0rem;
+    }
+    
+    .eng, .product {
+        font-family: sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        margin-top: 0.5rem;
+    }
+    
+    .scroll-down-button {
+        display: none;
+    }
+}
+
+/* For phone screens up to 768px */
+@media screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        text-align: center;
+    }
+    
+    header {
+        margin-top: -7rem;
+        height: auto;
+        width: 100%;
+        
+    }
+    
+    .me {
+        width: 100%;
+        position: static;
+        padding: 0;
+        margin-top: -25%;
+    }
+    
+    .fname {
+        font-size: 8rem; 
+        text-align: center;
+        margin-top: -40%;
+    }
+    
+    .name__post {
+        font-size: 2rem;
+        margin-top: -2rem; 
+        text-align: center;
+    }
+    
+    .name__description {
+        font-size: 0.8rem;
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .cv {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-direction: row;
+    }
+}
+
+/* For extra small phone screens up to 667px */
+@media screen and (max-width: 667px) {
+    header {
+        
+        height: auto;
+        width: 100%;
+    }
+
+    .header__container {
+        top: 0;
+        /* background-color: red; */
+        height: 100vh;
+        margin-bottom: 2rem;
+    }
+
+    .me {
+        width: 80%;
+        padding: 1rem;
+        margin-top: 22rem;
+    }
+
+    .fname {
+        font-size: 7rem; 
+        text-align: center;
+        margin-left: 1rem;
+        margin-top: 13rem;
+    }
+
+    .scroll-down-button {
+        display: none;
+    }
+}
+
+/* Additional screen width adjustments for smaller layouts */
+@media screen and (max-width: 740px) {
+    header {
+        margin-top: -4rem;
+        margin-bottom: 4rem;
+    }
+
+    .fname {
+        font-size: 7rem;
+    }
+}

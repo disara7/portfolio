@@ -1,5 +1,5 @@
   .blog{
-    margin-left: 6rem;
+    padding-left: 15%;
   }
   
   .blogcard {
@@ -13,7 +13,6 @@
     color: #ffffff;
     font-family: Arial, sans-serif;
     transition: all 0.3s ease-in-out;
-    margin-left: 10rem;
     margin-top: 2rem;
   }
   
