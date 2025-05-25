@@ -6,6 +6,7 @@ import CV from './cv';
 import ME from '../../assets/disara.png';   
 import Socials from './Socials';
 import { FaAnglesDown } from "react-icons/fa6";
+import StackIcon from "tech-stack-icons";
 
 const Header = () => {
   const [color, setColor] = useState('rgb(255, 255, 255)');
@@ -16,12 +17,32 @@ const Header = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   
   const handleScroll = () => {
-    const scrollPosition = window.scrollY;
-    const maxScroll = 300;
-    const colorValue = Math.min(200, (scrollPosition / maxScroll) * 200);
-    const newColor = `rgb(${255 - colorValue}, ${255 - colorValue}, ${255 - colorValue})`;
-    setColor(newColor);
+  const scrollPosition = window.scrollY;
+
+  // Background color change logic
+  const maxScroll = 300;
+  const colorValue = Math.min(200, (scrollPosition / maxScroll) * 200);
+  const newColor = `rgb(${255 - colorValue}, ${255 - colorValue}, ${255 - colorValue})`;
+  setColor(newColor);
+
+  // Floating icon logic
+  const randomIndex = Math.floor(Math.random() * iconList.length);
+  const iconName = iconList[randomIndex];
+  const randomX = Math.random() * window.innerWidth;
+  const randomY = Math.random() * window.innerHeight;
+  const randomRotate = `${Math.floor(Math.random() * 40 - 20)}deg`;
+
+  const newIcon = {
+    id: Date.now(),
+    name: iconName,
+    x: randomX,
+    y: randomY,
+    rotate: randomRotate,
   };
+
+  setFloatingIcons((prev) => [...prev.slice(-10), newIcon]); // Keep max 10 for performance
+};
+
 
   useEffect(() => {
     const typeEffect = () => {
@@ -37,7 +58,7 @@ const Header = () => {
           setCurrentText((prev) => prev.slice(0, -1));
           setCharIndex((prev) => prev - 1);
         } else {
-          setIsDeleting(false); // Start typing the next text
+          setIsDeleting(false);
           setTextIndex((prev) => (prev + 1) % texts.length);
         }
       }
@@ -60,12 +81,39 @@ const Header = () => {
     }
   };
 
+  const iconList = [
+  "analytics", "android", "amznwebserv", "atlassian", "aws", "azure", "bitbucket", "canva",
+  "c++", "cloudflare", "css3", "dart", "docker", "ec2", "figma", "firebase", "flutter",
+  "git", "github", "homebrew", "html5", "java", "js", "materialui", "miro", "mongodb",
+  "nextjs", "mysql", "nodejs", "npm", "postman", "prisma", "ps", "python", "reactjs",
+  "tailwindcss", "typescript", "vscode", "wordpress", "xd"
+];
+
+const [floatingIcons, setFloatingIcons] = useState([]);
+
   return (
     <header>
       <div className="container header__container">
         <div className="me">
           <img src={ME} alt="Disara" />
         </div>
+        
+        {floatingIcons.map((icon) => (
+          <div
+            key={icon.id}
+            className="floating-icon"
+            style={{
+              top: icon.y,
+              left: icon.x,
+              '--rotate': icon.rotate,
+              '--y': `${icon.y}px`
+            }}
+          >
+            <StackIcon name={icon.name} />
+          </div>
+        ))}
+
+
         <h1
           className="fname"
           style={{ color, transition: 'color 0.2s ease' }}
@@ -75,7 +123,7 @@ const Header = () => {
         <div className="name__post">
           <h5 className='creative'>Creatively </h5>
           <h5 className='eng'>engineering </h5>
-          <h5 className='product'>{currentText}</h5> {/* Display the current text */}
+          <h5 className='product'>{currentText}</h5> 
         </div>
         <h5 className="name__description"></h5>
         

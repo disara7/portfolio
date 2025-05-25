@@ -4,20 +4,29 @@ import { BiLogoAdobe } from 'react-icons/bi';
 import { FaMedium } from 'react-icons/fa';
 import { MdVideoLibrary } from 'react-icons/md';
 import { IoMdTrophy } from "react-icons/io";
+import StackIcon from 'tech-stack-icons'; 
 import './portfolio.css';
 
 const PortfolioCard = ({ project }) => {
   return (
     <div className="portfolio_card">
-        <div className="aw">
+      <div className="aw">
         {project.award === 'yes' && <div className="iconstyle"><IoMdTrophy /></div>}
-            <h3>{project.type}</h3>
-        </div>
-      
+        <h3>{project.type}</h3>
+      </div>
+
       <img src={project.image} alt={project.altText} />
-      
+
+      <div className="project-tech-stack">
+        {project.tech && project.tech.map((icon, index) => (
+          <StackIcon key={`tech-icon-${index}`} name={icon} style={{ width: '1.5rem', marginRight: '0.5rem'}} />
+        ))}
+      </div>
+
       <h4>{project.title}</h4>
-      <p>{project.description}</p>
+
+      <p className="card-desc">{project.description}</p>
+
       <div className="links">
         {project.github && (
           <div className="relatedlinks">

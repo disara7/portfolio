@@ -4,6 +4,7 @@ import { BsGithub } from 'react-icons/bs';
 import { BiLogoAdobe } from 'react-icons/bi';
 import { FaMedium } from 'react-icons/fa';
 import { MdVideoLibrary } from 'react-icons/md';
+import StackIcon from 'tech-stack-icons'; 
 import './popup.css';
 
 const Popup = ({ project, onClose }) => {
@@ -21,6 +22,11 @@ const Popup = ({ project, onClose }) => {
         )}
 
         <h3>{project.title}</h3>
+        <div className="project-tech-stack">
+        {project.tech && project.tech.map((icon, index) => (
+          <StackIcon key={`tech-icon-${index}`} name={icon} style={{ width: '1.5rem', marginRight: '0.5rem'}} />
+        ))}
+      </div>
         <p>{project.description}</p>
 
         <div className="links">
