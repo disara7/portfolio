@@ -3,14 +3,11 @@
     display: flex; 
     justify-content: center; 
     align-items: center; 
-    background-color: aqua;
 }
 
-/* For phone screens */
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 600px) {
     .footer{
         padding: 5rem;
         text-align: center;
-        margin-bottom: 3rem;
     }
 }
