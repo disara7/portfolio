@@ -1,11 +1,15 @@
-/* resposive */
 @media (max-width: 600px) {
-    .contact {
+    .contact .section__title{
+        padding-left: 40%;
     }
 
     #contactForm {
+        margin-left: 5%;
         padding: 1rem;
-        margin-left: 5rem;
-        width: 19rem;
+        width: 80%;
+    }
+
+    #contactForm span, .field, .submit{
+        font-size: smaller;
     }
 }
