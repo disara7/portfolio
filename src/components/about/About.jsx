@@ -66,7 +66,14 @@ const About = () => {
             <h3 className='about__style fullname fade-in'>
               {ABOUT.name}
             </h3>
-            <p className='about__style fade-in'>{ABOUT.description[0]}<br/><br/>{ABOUT.description[1]}</p>
+            <div className="about-description fade-in">
+              <p className="about__style">
+                {ABOUT.description[0]}
+                <br />
+                <br />
+                {ABOUT.description[1]}
+              </p>
+            </div>
             <br />
             <h4 className='about__style fade-in'>{ABOUT.experienceTitle}</h4>
             <ul className='experience fade-in about__style'>

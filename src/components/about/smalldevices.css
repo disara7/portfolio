@@ -8,6 +8,59 @@
         text-align: center;
         font-size: small;
     }
+    .about-description{
+        width: 100%;
+    }
+    .fullname{
+        font-size: 1.8rem;
+    }
+    .cardsett{
+        gap: 0.5rem;
+        margin-left: 7%;
+    }
+    .number {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-top: 0;
+        display: block;
+    }
+    .cardd {
+        font-size: small;
+        text-align: center;
+    }
+    .volun{
+        justify-self: center;
+        overflow-y: scroll;
+    }
+    .volunlogos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        justify-content: left;
+        margin-top: 1rem;
+    }
+    .vlogos{
+        width: 8rem;
+    }
+    .vlogos img{
+        width: 5rem;
+    } 
+}
+
+
+@media screen and (max-width: 450px) {
+    .about{
+        left: 12%;
+        margin-top: -4rem;
+    }
+    .about__style{
+        width: 125%;
+        text-align: center;
+        font-size: small;
+    }
+    .about-description{
+        width: 100%;
+    }
     .fullname{
         font-size: 1.8rem;
     }
