@@ -68,16 +68,6 @@ const About = () => {
             </h3>
             <p className='about__style fade-in'>{ABOUT.description[0]}<br/><br/>{ABOUT.description[1]}</p>
             <br />
-            <h4 className='about__style fade-in'>{ABOUT.experienceTitle}</h4>
-            <ul className='experience fade-in about__style'>
-              {ABOUT.experience.map((item, index) => (
-                <React.Fragment key={index}>
-                  <li>{item}</li>
-                  {index < ABOUT.experience.length - 1 && <br />}
-                </React.Fragment>
-              ))}
-            </ul>
-            <br />
             <h4 className='about__style fade-in'>{ABOUT.educationTitle}</h4>
             <ul className='educard fade-in about__style'>
               {ABOUT.education.map((item, index) => (
