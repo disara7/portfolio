@@ -35,6 +35,14 @@
   font-weight: bold;
 }
 
+.experience {
+  padding: 0.2rem;
+}
+
+.experience li {
+  text-align: left;
+}
+
 .educard li {
   background-color: rgba(255, 255, 255, 0.2); /* White with transparency for the glass effect */
   backdrop-filter: blur(10px); /* Blur effect */
