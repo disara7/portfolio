@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.185642f7.css",
-    "main.js": "/portfolio/static/js/main.1032b404.js",
+    "main.css": "/portfolio/static/css/main.5354fcb7.css",
+    "main.js": "/portfolio/static/js/main.1dc0691d.js",
     "static/media/sac3.JPG": "/portfolio/static/media/sac3.d16922c78dbedee20531.JPG",
     "static/media/disara.png": "/portfolio/static/media/disara.5ea3947f1dc9865f9989.png",
     "static/media/haven.png": "/portfolio/static/media/haven.aa8368beeabcdbf0b749.png",
@@ -9,9 +9,9 @@
     "static/media/rotaract.png": "/portfolio/static/media/rotaract.0710d41b6df43b994b19.png",
     "static/media/socslogo.png": "/portfolio/static/media/socslogo.21e0bda274dd78d1804b.png",
     "static/media/trophybanner.png": "/portfolio/static/media/trophybanner.e3f3921352d391bd26f2.png",
+    "static/media/Disara_Mapalagama_CV.pdf": "/portfolio/static/media/Disara_Mapalagama_CV.922f0b95e70d83c5efb8.pdf",
     "static/media/myportfolio.png": "/portfolio/static/media/myportfolio.e455ca0131d65229e828.png",
     "static/media/pic4.jpg": "/portfolio/static/media/pic4.e33407b1c377c9d49d7b.jpg",
-    "static/media/Disara_Mapalagama_CV.pdf": "/portfolio/static/media/Disara_Mapalagama_CV.8325e8b21fb1e3f97d8f.pdf",
     "static/media/Image3.png": "/portfolio/static/media/Image3.8a3deda248caf53bcec2.png",
     "static/media/jarvis.jpeg": "/portfolio/static/media/jarvis.a0899ba92c58f4e50eeb.jpeg",
     "static/media/wielogo.png": "/portfolio/static/media/wielogo.5e3c14153be9bef11526.png",
@@ -43,11 +43,11 @@
     "static/media/slick.ttf": "/portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/portfolio/index.html",
-    "main.185642f7.css.map": "/portfolio/static/css/main.185642f7.css.map",
-    "main.1032b404.js.map": "/portfolio/static/js/main.1032b404.js.map"
+    "main.5354fcb7.css.map": "/portfolio/static/css/main.5354fcb7.css.map",
+    "main.1dc0691d.js.map": "/portfolio/static/js/main.1dc0691d.js.map"
   },
   "entrypoints": [
-    "static/css/main.185642f7.css",
-    "static/js/main.1032b404.js"
+    "static/css/main.5354fcb7.css",
+    "static/js/main.1dc0691d.js"
   ]
 }
