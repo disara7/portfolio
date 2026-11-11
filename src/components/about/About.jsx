@@ -15,7 +15,7 @@ const About = () => {
       <h2 className='section__title about__title'>{ABOUT.sectionTitle}</h2>
 
       <div className='about__grid'>
-        {/* ---------- Left: name, bio + stats ---------- */}
+        {/* ---------- Left: name, bio, stats + education ---------- */}
         <div className='about__intro'>
           <h3 className='fullname'>{ABOUT.name}</h3>
           {ABOUT.description.map((paragraph, index) => (
@@ -32,25 +32,8 @@ const About = () => {
               </div>
             ))}
           </div>
-        </div>
 
-        {/* ---------- Right: experience + education ---------- */}
-        <div className='about__details'>
-          <div className='about__block'>
-            <h3 className='about__block-title'>{ABOUT.experienceTitle}</h3>
-            {ABOUT.experience.map((job) => (
-              <div className='about__row' key={`${job.title}-${job.period}`}>
-                <span className='about__row-meta'>{job.period}</span>
-                <div className='about__row-body'>
-                  <h4 className='about__row-title about__row-title--lg'>{job.title}</h4>
-                  <p className='about__row-accent'>{job.company}</p>
-                  <p className='about__row-desc'>{job.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className='about__block'>
+          <div className='about__block about__panel about__education'>
             <h3 className='about__block-title'>{ABOUT.educationTitle}</h3>
             {ABOUT.education.map((edu) => (
               <div className='about__row' key={edu.title}>
@@ -58,6 +41,27 @@ const About = () => {
                 <div className='about__row-body'>
                   <h4 className='about__row-title'>{edu.title}</h4>
                   <p className='about__row-sub'>{edu.institution}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* ---------- Right: work experience ---------- */}
+        <div className='about__details'>
+          <div className='about__block about__panel about__experience'>
+            <h3 className='about__block-title'>{ABOUT.experienceTitle}</h3>
+            {ABOUT.experience.map((job) => (
+              <div className='about__row' key={`${job.title}-${job.period}`}>
+                <span className='about__row-meta'>{job.period}</span>
+                <div className='about__row-body'>
+                  <h4 className='about__row-title about__row-title--lg'>{job.title}</h4>
+                  <p className='about__row-accent'>{job.company}</p>
+                  <ul className='about__row-desc'>
+                    {job.description.map((point) => (
+                      <li key={point}>{point}</li>
+                    ))}
+                  </ul>
                 </div>
               </div>
             ))}

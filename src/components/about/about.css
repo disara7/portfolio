@@ -84,7 +84,7 @@
 }
 
 /* ---------- Right column ---------- */
-.about__details .about__block {
+.about__panel {
   width: fit-content;
   max-width: 100%;
   padding: 1.25rem 1.5rem 0.25rem;
@@ -94,12 +94,19 @@
   backdrop-filter: blur(6px);
 }
 
-.about__details .about__row:last-child {
+.about__panel .about__row:last-child {
   border-bottom: none;
 }
 
-.about__block + .about__block {
+.about__education {
   margin-top: 2rem;
+}
+
+/* Desktop only: keep the work experience card narrower than the column */
+@media screen and (min-width: 1025px) {
+  .about__experience {
+    max-width: 34rem;
+  }
 }
 
 .about__block-title {
@@ -153,9 +160,23 @@
 
 .about__row-desc {
   margin: 0.6rem 0 0;
+  padding-left: 1rem;
+  list-style: disc;
   font-size: 0.78rem;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.65);
+}
+
+.about__row-desc li {
+  list-style: disc;
+}
+
+.about__row-desc li + li {
+  margin-top: 0.3rem;
+}
+
+.about__row-desc li::marker {
+  color: var(--about-accent);
 }
 
 /* ---------- Volunteering ---------- */

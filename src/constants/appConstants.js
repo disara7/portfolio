@@ -8,18 +8,36 @@ export const ABOUT = {
   ],
 
   experienceTitle: 'Work Experience',
+  // Newest first. Each `description` entry renders as one bullet point.
   experience: [
     {
-      period: 'Sep 2025 – Present',
+      period: 'Aug 2026 – Present',
+      title: 'AI Solutions Builder / Web Developer',
+      company: 'SolarIT Solutions',
+      description: [
+        'Develop web experiences using React, Vite, WordPress and WooCommerce, focusing on UI/UX.',
+        'Engage directly with clients and stakeholders through design reviews and requirement discussions.',
+        'Use AI-assisted tools such as Claude Code and Lovable for rapid prototyping and development.',
+      ],
+    },
+    {
+      period: 'Sep 2025 – Aug 2026',
       title: 'Associate Software Engineer',
       company: 'Dutton Labs LK',
-      description: 'React.js, Next.js, Node.js, AWS, Strapi, Docker, Jira, Bitbucket, Agile',
+      description: [
+        'Worked on web applications using React, Next.js, TypeScript, Node.js and Strapi.',
+        'Built REST APIs and BFF services integrating CMS and databases.',
+        'Investigated database deadlocks, production API failures, deployment issues and abnormal traffic patterns using application logs, monitoring and debugging tools.',
+      ],
     },
     {
       period: 'Mar 2025 – Aug 2025',
       title: 'Software Engineer – Intern',
       company: 'Dutton Labs LK',
-      description: 'React.js, Next.js, Node.js, AWS, Strapi, Postman, JUnit, Agile',
+      description: [
+        'Developed REST API integrations, frontend features and database functionality.',
+        'Gained hands-on experience with AWS, Docker, Git/Bitbucket, Postman, testing and Agile development practices while working on full-stack web applications using React.js, Next.js, Node.js, Strapi CMS and MySQL.',
+      ],
     },
   ],
 
