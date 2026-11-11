@@ -1,45 +1,52 @@
 @media screen and (max-width: 600px) {
-    .about{
-        left: 12%;
-        margin-top: -4rem;
-    }
-    .about__style{
-        width: 125%;
-        text-align: center;
-        font-size: small;
-    }
-    .fullname{
-        font-size: 1.8rem;
-    }
-    .cardsett{
-        gap: 0.5rem;
-        margin-left: 7%;
-    }
-    .number {
-        font-size: 2.5rem;
-        text-align: center;
-        margin-top: 0;
-        display: block;
-    }
-    .cardd {
-        font-size: small;
-        text-align: center;
-    }
-    .volun{
-        justify-self: center;
-        overflow-y: scroll;
-    }
-    .volunlogos {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        justify-content: left;
-        margin-top: 1rem;
-    }
-    .vlogos{
-        width: 8rem;
-    }
-    .vlogos img{
-        width: 5rem;
-    } 
+  .about {
+    padding: 3rem 1.25rem 3rem 18%;
+  }
+
+  .fullname {
+    font-size: 1.8rem;
+  }
+
+  .about__bio {
+    font-size: 0.85rem;
+  }
+
+  .about__stats {
+    gap: 0.5rem;
+  }
+
+  .about__stat {
+    flex: 1 1 0;
+    padding: 0.75rem;
+  }
+
+  .about__stat-value {
+    font-size: 2rem;
+  }
+
+  .about__details .about__block {
+    padding: 1rem 1rem 0.25rem;
+  }
+
+  .about__row {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+    padding: 1rem 0;
+  }
+
+  /* Too many logos to fit one row on a phone: scroll sideways instead of wrapping */
+  .volunlogos {
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding-bottom: 0.25rem;
+  }
+
+  .volunlogos::-webkit-scrollbar {
+    display: none;
+  }
+
+  .vlogos {
+    flex: 0 0 4.5rem;
+    height: 3rem;
+  }
 }

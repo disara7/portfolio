@@ -1,124 +1,104 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './about.css';
 import './smalldevices.css';
-import './animations.css';
 import './voluncard.css';
 import './voluncardres.css';
 import VolunteerCard from './VolunteerCard';
 import volunteerData from './VolunteerData';
-import YP from '../../assets/volunteering_logos/ypsl.png';
-import INSL from '../../assets/volunteering_logos/insl.png';
-import SIGHT from '../../assets/volunteering_logos/slsight.png';
-import Nenasa from '../../assets/volunteering_logos/nenasa.png';
-import IEEESL from '../../assets/volunteering_logos/ieeesl.png';
-import XTREME from '../../assets/volunteering_logos/xtreme.png';
-import SLSAC from '../../assets/volunteering_logos/slsac.png';
-import AIESEC from '../../assets/volunteering_logos/aiesec.png';
-import blank from '../../assets/blank.png';
 import { ABOUT } from '../../constants/appConstants';
 
 const About = () => {
   const [popupData, setPopupData] = useState(null);
 
-  useEffect(() => {
-    const fadeElements = document.querySelectorAll('.fade-in');
-
-    const handleScroll = () => {
-      fadeElements.forEach((element) => {
-        const rect = element.getBoundingClientRect();
-        if (rect.top <= window.innerHeight - 50) {
-          element.classList.add('visible');
-        }
-      });
-    };
-
-    const debounce = (func, delay) => {
-      let timeout;
-      return function (...args) {
-        clearTimeout(timeout);
-        timeout = setTimeout(() => func.apply(this, args), delay);
-      };
-    };
-
-    const debouncedScroll = debounce(handleScroll, 100);
-
-    window.addEventListener('scroll', debouncedScroll);
-
-    return () => {
-      window.removeEventListener('scroll', debouncedScroll);
-    };
-  }, []);
-
-  const handleVlogosClick = (index) => {
-    setPopupData(volunteerData[index]);
-  };
-
-  const closePopup = () => {
-    setPopupData(null);
-  };
-
   return (
-    <section id='about'>
-      <div className="about fade-in">
-        <h2 className='section__title fade-in'>{ABOUT.sectionTitle}</h2>
-        <div className="container about__container fade-in">
-          <div className="about__content fade-in">
-            <h3 className='about__style fullname fade-in'>
-              {ABOUT.name}
-            </h3>
-            <p className='about__style fade-in'>{ABOUT.description[0]}<br/><br/>{ABOUT.description[1]}</p>
-            <br />
-            <h4 className='about__style fade-in'>{ABOUT.educationTitle}</h4>
-            <ul className='educard fade-in about__style'>
-              {ABOUT.education.map((item, index) => (
-                <React.Fragment key={index}>
-                  <li>{item}</li>
-                  {index < ABOUT.education.length - 1 && <br />}
-                </React.Fragment>
-              ))}
-            </ul>
-            <br />
-            <div className="cardsett fade-in">
-              {ABOUT.stats.map((stat) => (
-                <div className="cardd" key={stat.label}>
-                  <h2 className="number">{stat.value}</h2>
-                  <p className="number_description">{stat.label}</p>
-                </div>
-              ))}
-            </div>
-            <h4 className='about__style fade-in volunteering'>{ABOUT.volunteeringTitle}</h4>
-            <div className="volunlogos">
-              {volunteerData.map((volunteer, index) => (
-                <div
-                  key={index}
-                  className="vlogos"
-                  onClick={() => handleVlogosClick(index)}
-                >
-                  <img src={volunteer.logo1} alt={volunteer.title} />
-                </div>
-              ))}
-            </div>
+    <section id='about' className='about'>
+      <h2 className='section__title about__title'>{ABOUT.sectionTitle}</h2>
 
-            {popupData && (
-              <div className="popup">
-                <div className="popup-content">
-                  <button className="close-button" onClick={closePopup}>
-                    &times;
-                  </button>
-                  <VolunteerCard
-                    title={popupData.title}
-                    image={popupData.image}
-                    description={popupData.description}
-                    images={popupData.images}
-                    logo1={popupData.logo1}
-                    logo2={popupData.logo2}
-                  />
+      <div className='about__grid'>
+        {/* ---------- Left: name, bio + stats ---------- */}
+        <div className='about__intro'>
+          <h3 className='fullname'>{ABOUT.name}</h3>
+          {ABOUT.description.map((paragraph, index) => (
+            <p key={index} className='about__bio'>{paragraph}</p>
+          ))}
+
+          <div className='about__stats'>
+            {ABOUT.stats.map((stat) => (
+              <div className='about__stat' key={stat.label}>
+                <span className='about__stat-value'>
+                  {stat.value}<span className='about__plus'>+</span>
+                </span>
+                <span className='about__stat-label'>{stat.label}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* ---------- Right: experience + education ---------- */}
+        <div className='about__details'>
+          <div className='about__block'>
+            <h3 className='about__block-title'>{ABOUT.experienceTitle}</h3>
+            {ABOUT.experience.map((job) => (
+              <div className='about__row' key={`${job.title}-${job.period}`}>
+                <span className='about__row-meta'>{job.period}</span>
+                <div className='about__row-body'>
+                  <h4 className='about__row-title about__row-title--lg'>{job.title}</h4>
+                  <p className='about__row-accent'>{job.company}</p>
+                  <p className='about__row-desc'>{job.description}</p>
                 </div>
               </div>
-            )}
+            ))}
+          </div>
+
+          <div className='about__block'>
+            <h3 className='about__block-title'>{ABOUT.educationTitle}</h3>
+            {ABOUT.education.map((edu) => (
+              <div className='about__row' key={edu.title}>
+                <span className='about__row-meta'>{edu.level}</span>
+                <div className='about__row-body'>
+                  <h4 className='about__row-title'>{edu.title}</h4>
+                  <p className='about__row-sub'>{edu.institution}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
+
+      {/* ---------- Volunteering ---------- */}
+      <div className='about__block about__volunteering'>
+        <h3 className='about__block-title'>{ABOUT.volunteeringTitle}</h3>
+        <div className='volunlogos'>
+          {volunteerData.map((volunteer, index) => (
+            <button
+              type='button'
+              key={index}
+              className='vlogos'
+              onClick={() => setPopupData(volunteerData[index])}
+            >
+              <img src={volunteer.logo1} alt={volunteer.title} />
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {popupData && (
+        <div className='popup'>
+          <div className='popup-content'>
+            <button className='close-button' onClick={() => setPopupData(null)}>
+              &times;
+            </button>
+            <VolunteerCard
+              title={popupData.title}
+              image={popupData.image}
+              description={popupData.description}
+              images={popupData.images}
+              logo1={popupData.logo1}
+              logo2={popupData.logo2}
+            />
+          </div>
+        </div>
+      )}
     </section>
   );
 };

@@ -1,94 +1,206 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+/* ================= ABOUT ================= */
 
-.about{
-  left: 15%;
+.about {
+  /* Lighter tint of --color-primary so small accent text stays readable on black */
+  --about-accent: var(--color-primary);
+  --about-accent-text: #d06bdf;
+  --about-line: rgba(255, 255, 255, 0.1);
+  --about-muted: rgba(255, 255, 255, 0.55);
+
+  position: relative;
+  overflow: hidden;
+  padding: 5rem 6% 5rem 15%;
 }
 
-.about__container {
-    display: grid;
-    grid-template-columns: 60% 35%;
-    gap: 15%;
+/* Section title + name: same style as before the redesign */
+.about__title {
+  margin: 0 0 1rem;
 }
 
-.fullname{
-    margin-bottom: 1rem;
-    font-size: 4rem;
-    font-family: 'Anton', sans-serif;
+.fullname {
+  margin: 0 0 1rem;
+  font-size: 4rem;
+  font-family: 'Anton', sans-serif;
+  font-weight: 400;
+  line-height: 1.1;
+  color: var(--color-white);
 }
 
-.number {
-    font-family: 'Anton', sans-serif;
-    font-size: 4rem;
-    color: white;
+/* ---------- Two-column grid ---------- */
+.about__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: 4rem;
 }
 
-.number__description {
-    font-size: 2rem;
-    color: white; 
+/* ---------- Left column ---------- */
+.about__bio {
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 30rem;
 }
 
-.about__style {
-    width: 80%;
-}
-
-.about__style h4{
-  font-weight: bold;
-}
-
-.educard li {
-  background-color: rgba(255, 255, 255, 0.2); /* White with transparency for the glass effect */
-  backdrop-filter: blur(10px); /* Blur effect */
-  padding: 0.8rem;
-  border-radius: 0.5rem;
-  width: fit-content;
-  font-size: small;
-  margin-bottom: -0.8rem;
-  border: 1px solid rgba(255, 255, 255, 0.3); /* Optional: Light border for more glass-like appearance */
-}
-
-.volunteering{
+.about__stats {
+  display: flex;
+  gap: 0.75rem;
   margin-top: 2rem;
 }
 
-.cardd {
-  width: 9rem;
-  padding: 0.5rem; /* Adjust padding as needed */
-  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
-  border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for glass effect */
-  border-radius: 8px; /* Rounded corners for smoothness */
-  backdrop-filter: blur(10px); /* Adds the glassy blur effect */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds depth */
-  text-align: left;
-}
-
-.cardsett{
+.about__stat {
+  flex: 0 1 6.5rem;
   display: flex;
-  gap: 1.5rem;
+  flex-direction: column;
+  padding: 0.9rem 0.9rem 1rem;
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.09);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(6px);
+  transition: var(--transition);
 }
 
+.about__stat:hover {
+  border-color: var(--about-accent);
+  transform: translateY(-3px);
+}
+
+.about__stat-value {
+  font-family: 'Anton', sans-serif;
+  font-size: 2.6rem;
+  line-height: 1.1;
+  color: var(--color-white);
+}
+
+.about__plus {
+  color: var(--about-accent);
+}
+
+.about__stat-label {
+  margin-top: 0.4rem;
+  font-size: 0.7rem;
+  line-height: 1.35;
+  color: var(--about-muted);
+}
+
+/* ---------- Right column ---------- */
+.about__details .about__block {
+  width: fit-content;
+  max-width: 100%;
+  padding: 1.25rem 1.5rem 0.25rem;
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(6px);
+}
+
+.about__details .about__row:last-child {
+  border-bottom: none;
+}
+
+.about__block + .about__block {
+  margin-top: 2rem;
+}
+
+.about__block-title {
+  margin: 0;
+  padding-bottom: 0.9rem;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--about-muted);
+  border-bottom: 1px solid var(--about-line);
+}
+
+.about__row {
+  display: grid;
+  grid-template-columns: 7.5rem minmax(0, 1fr);
+  gap: 1.5rem;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--about-line);
+}
+
+.about__row-meta {
+  padding-top: 0.2rem;
+  font-size: 0.72rem;
+  color: var(--about-muted);
+}
+
+.about__row-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--color-white);
+}
+
+.about__row-title--lg {
+  font-size: 1.15rem;
+}
+
+.about__row-accent {
+  margin: 0.2rem 0 0;
+  font-size: 0.8rem;
+  color: var(--about-accent-text);
+}
+
+.about__row-sub {
+  margin: 0.15rem 0 0;
+  font-size: 0.75rem;
+  color: var(--about-muted);
+}
+
+.about__row-desc {
+  margin: 0.6rem 0 0;
+  font-size: 0.78rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+/* ---------- Volunteering ---------- */
+.about__volunteering {
+  margin-top: 4rem;
+}
+
+.about__volunteering .volunlogos {
+  margin-top: 1.25rem;
+}
+
+/* All logos on one row, sharing the width equally */
 .volunlogos {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: left;
+  flex-wrap: nowrap;
+  gap: 0.5rem;
 }
 
-.vlogos{
-  padding: 1rem;
-  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
-  border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for glass effect */
-  border-radius: 8px; /* Rounded corners for smoothness */
-  backdrop-filter: blur(10px); /* Adds the glassy blur effect */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: min-content;
-  align-content: center;
-  height: 5.4rem;
+.vlogos {
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 7rem;
+  height: 3.5rem;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font: inherit;
+  background: none;
+  border: none;
+  transition: var(--transition);
 }
 
-.vlogos img{
-  width: 7rem;
+.vlogos:hover {
+  transform: translateY(-3px) scale(1.05);
 }
 
+.vlogos img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* ---------- Volunteer popup ---------- */
 .popup {
   position: fixed;
   top: 0;
@@ -121,5 +233,16 @@
   cursor: pointer;
   color: rgba(255, 255, 255, 0.785);
   z-index: 1000;
-  
+}
+
+/* ---------- Medium screens ---------- */
+@media screen and (max-width: 1024px) {
+  .about__grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .about__bio {
+    max-width: none;
+  }
 }

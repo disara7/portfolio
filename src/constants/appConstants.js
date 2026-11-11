@@ -3,28 +3,57 @@ export const ABOUT = {
   name: 'Disara Mapalagama',
 
   description: [
-    'I am a 24-year-old Software Engineering undergraduate who started my coding journey when I was 16. I have always wanted to think differently and apply my knowledge to give creative solutions to problems.',
-    'I have a creative problem-solving approach, an artistic mindset, and a proven ability to learn quickly. I have led award-winning hackathon projects, combining technical skills and design thinking. Passionate about efficient, user-focused systems, I excel in teamwork and solving real-world challenges.',
+    'I am a 26-year old Software Engineering graduate passionate about combining technology, creativity, and design to solve real-world problems. Experienced in full-stack development, frontend engineering, and UI/UX design, with a focus on building intuitive, engaging, and user-centered digital experiences.',
+    'I bring an artistic mindset, creative problem-solving skills, and adaptability, backed by experience leading award-winning hackathon projects and collaborating with clients and cross-functional teams. Always eager to explore emerging technologies and turn innovative ideas into meaningful solutions.'
   ],
 
-  educationTitle: 'Education:',
+  experienceTitle: 'Work Experience',
+  experience: [
+    {
+      period: 'Sep 2025 – Present',
+      title: 'Associate Software Engineer',
+      company: 'Dutton Labs LK',
+      description: 'React.js, Next.js, Node.js, AWS, Strapi, Docker, Jira, Bitbucket, Agile',
+    },
+    {
+      period: 'Mar 2025 – Aug 2025',
+      title: 'Software Engineer – Intern',
+      company: 'Dutton Labs LK',
+      description: 'React.js, Next.js, Node.js, AWS, Strapi, Postman, JUnit, Agile',
+    },
+  ],
+
+  educationTitle: 'Education',
   education: [
-    'BSc. (Hons) in Software Engineering - Sabaragamuwa University of Sri Lanka',
-    'Diploma in Business Management - ESOFT Metro Campus, Kandy',
-    "GCE (A/L) ICT, Combined Mathematics, Physics - Girls' High School, Kandy",
+    {
+      level: 'Undergraduate',
+      title: 'BSc. (Hons) in Software Engineering',
+      institution: 'Sabaragamuwa University of Sri Lanka',
+    },
+    {
+      level: 'Diploma',
+      title: 'Diploma in Business Management',
+      institution: 'ESOFT Metro Campus, Kandy',
+    },
+    {
+      level: 'Advanced Level',
+      title: 'GCE (A/L) ICT, Combined Mathematics, Physics',
+      institution: "Girls' High School, Kandy",
+    },
   ],
 
+  // `value` is the number; a "+" accent is added by the component.
   stats: [
     {
-      value: '8+',
+      value: '8',
       label: 'Years of Experience',
     },
     {
-      value: '15+',
+      value: '15',
       label: 'Projects',
     },
     {
-      value: '25+',
+      value: '25',
       label: 'Awards and Honors',
     },
   ],
