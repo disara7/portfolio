@@ -14,6 +14,9 @@ import p12 from '../../assets/projectbanners/ai.jpeg'
 import p13 from '../../assets/projectbanners/jarvis.jpeg'
 import p14 from '../../assets/projectbanners/sudoku.jpg'
 import chemwaste from '../../assets/projectbanners/chemwaste.jpeg'
+import resq from '../../assets/projectbanners/resqbanner.png'
+import wattsbanner from '../../assets/projectbanners/wattsbanner.png'
+import heicbanner from '../../assets/projectbanners/heicbanner.png'
 
 const projects = [
 
@@ -28,8 +31,8 @@ const projects = [
     title: 'Trophy - Employee Loyalty Rewarding System',
     description: '“Trophy” is a non-monetary token-based loyalty rewarding system to improve a company’s employees’ work experience.',
     github: 'https://github.com/disara7/Trophy',
-    adobe: 'https://adobe-link',
-    medium: 'https://medium-link',
+    adobe: 'https://xd.adobe.com/view/328d180a-a7f1-42e0-99ed-93de14882578-67de/',
+    medium: 'https://medium.com/@disaradm07/trophy-employee-loyalty-app-ui-ux-case-study-32f781794a92?sharedUserId=disaradm07',
     video: 'https://video-link',
     tech: ['flutter', 'dart', 'firebase', 'xd', 'git', 'miro'],
   },
@@ -120,7 +123,7 @@ const projects = [
     description: 'An e-commerce platform for university students to buy and sell second-hand items.',
     github: 'https://github.com/disara7/UniStore-web-project',
     adobe: 'https://adobe-link',
-    medium: 'https://medium-link',
+    medium: 'https://medium.com/@disaradm07/the-story-of-unistore-how-we-developed-an-online-marketplace-in-3-months-97d217d3261c?sharedUserId=disaradm07',
     video: 'https://video-link',
     tech: ['html5', 'css3', 'reactjs', 'firebase', 'git'],
     longdescription: 'UniStore is an innovative online web platform designed for university communities. It helps students exchange items and support each other’s businesses. The platform has two main sections: “Preloved” for second-hand items and “CraftsWorld” for handmade goods. UniStore encourages upcycling and helps students develop their entrepreneurial skills.',
@@ -198,6 +201,19 @@ const projects = [
     medium: 'https://medium-link',
     video: 'https://video-link',
     tech: ['html5', 'css3', 'nextjs', 'python', 'git'],
+  },
+  {
+    category: 'other',
+    award: 'no',
+    type: 'INDIVIDUAL PROJECT | COMPLETED',
+    image: heicbanner,
+    altText: 'HEIC to JPG/PNG Photo Converter',
+    title: 'HEIC to JPG/PNG Photo Converter',
+    description: 'Node.js server to convert HEIC images to JPG/PNG',
+    longdescription: 'The server uses a Node.js library called heic-convert, which handles Apple’s modern HEIC image format — the one that saves space but refuses to play nice with most non-Apple devices. I paired that with Express.js to set up a lightweight backend API that can scan a folder full of HEIC files and convert them all in one go.',
+    medium: 'https://medium.com/@disaradm07/why-pay-for-an-app-when-you-could-do-it-yourself-for-free-heic-x-hevc-video-extensions-8bc133406fb7?sharedUserId=disaradm07',
+    github: 'https://github.com/disara7/photo_converter',
+    tech: ['node', 'git'],
   },
   {
     category: 'other',
@@ -285,7 +301,7 @@ const projects = [
     title: 'Sentry - A Solution to Human-Elephant Conflicts in Sri Lanka',
     description: 'Sentry is a web-based solution to Human-Elephant Conflicts in Sri Lanka.',
     adobe: 'https://adobe-link',
-    medium: 'https://medium-link',
+    medium: 'https://medium.com/@disaradm07/sentry-website-for-human-elephant-conflicts-in-sri-lanka-ui-ux-case-study-44180ad7cf5e?sharedUserId=disaradm07',
     video: 'https://video-link',
     tech: ['xd', 'miro'],
     longdescription: 'We identified Human-Elephant Conflicts as an environmental issue in Sri Lanka, which is currently a large threat in certain rural areas of Sri Lanka. Both people and elephants, very often lose their lives and properties in this conflict. So, we, the "Pixel Concepts" came up with Sentry, the web-based platform which works on an island wide level to track the areas with elephant attacks, find why this happens, make people aware of how to avoid these attacks and how to deal with the aftermath, and to allow the philanthropic hearts to help rebuild the shattered lives of the victims of these attacks. Sentry was designed after a detailed background research and a UX Research which involved interviews with potential users, and by following UI Design principles thoroughly, along with the complete procedure of UI design which involved traditional wireframing to creating high fidelity mock-ups with Adobe XD.'
@@ -310,13 +326,27 @@ const projects = [
     award: 'no',
     type: 'GROUP PROJECT | COMPLETED',
     showImage: false,
-    image: blank,
+    image: resq,
+    altText: 'ResQ - Disaster Management App',
+    title: 'ResQ - Disaster Management App',
+    description: '“ResQ” is a mobile application that supports and streamlines the disaster management process in Sri Lanka.',
+    adobe: 'https://xd.adobe.com/view/1eeb373f-b350-417f-ab67-1f52f9c15c65-4bb8/',
+    medium: 'https://medium.com/@disaradm07/resq-disaster-management-app-ui-ux-case-study-d2511a13041d?sharedUserId=disaradm07',
+    tech: ['xd', 'miro'],
+    longdescription: '“ResQ” is a mobile application to support the disaster management process in Sri Lanka by providing easy access to emergency contacts, a volunteer force, a donation gateway, a constantly updating newsfeed about different types of disasters, safety tips and precautions, and real time alerts. Also, since ResQ is designed for Sri Lankan citizens, the app is multilingual. (UI comes in English, Sinhala and Tamil.)'
+  },
+  {
+    category: 'ui',
+    award: 'no',
+    type: 'GROUP PROJECT | COMPLETED',
+    showImage: false,
+    image: wattsbanner,
     altText: 'Watts - Gamified Power Saving Application',
     title: 'Watts - Gamified Power Saving Application',
     description: 'Watts is a gamified mobile application that encourages power saving in households.',
-    adobe: 'https://adobe-link',
-    medium: 'https://medium-link',
-    video: 'https://video-link',
+    adobe: 'https://xd.adobe.com/view/a98dfa71-6b30-4a92-98fe-a902146970d9-fcde/',
+    medium: 'https://medium.com/@disaradm07/watts-gamified-power-saving-mobile-app-ui-ux-case-study-f3f4c57db871?sharedUserId=disaradm07',
+    video: 'https://drive.google.com/file/d/1UzoBmcn9g861td_-LwbM7BN54CE07-r5/view',
     tech: ['xd', 'miro'],
     longdescription: 'We identified Human-Elephant Conflicts as an environmental issue in Sri Lanka, which is currently a large threat in certain rural areas of Sri Lanka. Both people and elephants, very often lose their lives and properties in this conflict. So, we, the "Pixel Concepts" came up with Sentry, the web-based platform which works on an island wide level to track the areas with elephant attacks, find why this happens, make people aware of how to avoid these attacks and how to deal with the aftermath, and to allow the philanthropic hearts to help rebuild the shattered lives of the victims of these attacks. Sentry was designed after a detailed background research and a UX Research which involved interviews with potential users, and by following UI Design principles thoroughly, along with the complete procedure of UI design which involved traditional wireframing to creating high fidelity mock-ups with Adobe XD.'
   },
