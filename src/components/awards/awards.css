@@ -1,118 +1,200 @@
-.timeline-block {
-  width: -webkit-calc(50% - 8px);
-  width: -moz-calc(50% - 8px);
-  width: calc(50% - 8px);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -moz-box-pack: justify;
-  justify-content: space-between;
-  clear: both;
+/* ================= AWARDS TIMELINE ================= */
+
+.awards {
+  padding-left: 15%;
+  padding-right: 5%;
 }
 
-.timeline-block-right {
-  float: right;
+/* Scrollable viewport with soft fade at top & bottom */
+.timeline__scroll {
+  max-width: 60rem;
+  height: 32rem;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 2.5rem, #000 calc(100% - 2.5rem), transparent 100%);
+          mask-image: linear-gradient(to bottom, transparent 0, #000 2.5rem, #000 calc(100% - 2.5rem), transparent 100%);
 }
 
-.awards{
-  padding-left: 26%;
-}
-
-.timeline-block-left {
-  float: left;
-  direction: rtl
-}
-
-.marker {
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  border: 2px solid #acacac;
-  background: #9905a7;
-  margin-top: 10px;
-  z-index: 9999
-}
-
-.timeline-content {
-  width: 95%;
-  padding: 0 15px;
-  color: #666
-}
-
-.timeline-content h3 {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  font-size: 22px;
-  font-weight: 500;
-  color: --color-white;
-  width: 19.5rem;
-}
-
-.timeline-content span {
-  font-size: 15px;
-  color: #a4a4a4;
-}
-
-.timeline-content p {
-  margin-top: 1rem;
-  font-size: 12px;
-  line-height: 1.5em;
-  word-spacing: 1px;
-  color: #888;
-  width: 20rem;
-}
-
-.timestyle {
-  margin-left: -1rem;
-  padding-left: 1rem;
-  width: 60rem;
-}
-
-.scrollsection {
-  height: 25rem;
-  overflow-y: scroll; 
-  width: 70rem;
-  scrollbar-width: none; 
-  -ms-overflow-style: none; 
-  margin-left: -25%;
-}
-
-.scrollsection::-webkit-scrollbar {
+.timeline__scroll::-webkit-scrollbar {
   display: none;
 }
 
+.timeline {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 2.5rem 0;
+}
 
- /*===========FOR RESPONSIVENESS (SMALL DEVICES)==============*/
+/* The centre line */
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  transform: translateX(-50%);
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--color-primary) 4%,
+    var(--color-bg-variant) 96%,
+    transparent
+  );
+}
 
- @media screen and (max-width: 600px) {
-  .awards{
-    padding-left: 0rem;
-    padding-right: 10%;
+.timeline__item {
+  position: relative;
+  width: 50%;
+  padding-bottom: 2.5rem;
+}
+
+.timeline__item--left {
+  padding-right: 2.5rem;
+  text-align: right;
+}
+
+.timeline__item--right {
+  margin-left: 50%;
+  padding-left: 2.5rem;
+}
+
+/* Dot sitting on the line */
+.timeline__marker {
+  position: absolute;
+  top: 1.35rem;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--color-bg);
+  border: 3px solid var(--color-primary);
+  box-shadow: 0 0 0 4px rgba(153, 5, 167, 0.2);
+  z-index: 1;
+  transition: var(--transition);
+}
+
+.timeline__item--left .timeline__marker {
+  right: 0;
+  transform: translateX(50%);
+}
+
+.timeline__item--right .timeline__marker {
+  left: 0;
+  transform: translateX(-50%);
+}
+
+/* Card */
+.timeline__card {
+  position: relative;
+  padding: 1rem 1.25rem;
+  border-radius: 0.75rem;
+  background: #1a1220;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+  transition: var(--transition);
+}
+
+/* Little connector from card to the line */
+.timeline__card::after {
+  content: '';
+  position: absolute;
+  top: 1.95rem;
+  width: 2.5rem;
+  height: 1px;
+  background: rgba(153, 5, 167, 0.5);
+}
+
+.timeline__item--left .timeline__card::after {
+  right: -2.5rem;
+}
+
+.timeline__item--right .timeline__card::after {
+  left: -2.5rem;
+}
+
+.timeline__item:hover .timeline__card {
+  border-color: var(--color-primary);
+  background: #241430;
+  transform: translateY(-3px);
+}
+
+.timeline__item:hover .timeline__marker {
+  background: var(--color-primary);
+  box-shadow: 0 0 0 6px rgba(153, 5, 167, 0.3), 0 0 16px var(--color-primary);
+}
+
+.timeline__date {
+  display: inline-block;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.timeline__title {
+  margin: 0.35rem 0 0.5rem;
+  font-size: 1.1rem;
+  line-height: 1.35;
+  color: var(--color-white);
+}
+
+.timeline__desc {
+  margin: 0;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  color: #9a9a9a;
+}
+
+/*===========FOR RESPONSIVENESS (SMALL DEVICES)==============*/
+/* Line moves to the left; all cards stack on the right of it */
+
+@media screen and (max-width: 700px) {
+  .awards {
+    padding-left: 18%;
+    padding-right: 6%;
   }
 
-  .awards .section__title {
-    padding-right: 30%;
+  .timeline__scroll {
+    height: 28rem;
   }
 
-  .scrollsection{
-    margin-left: -18%;
-    overflow-y:scroll;
-    width: 80%;
+  .timeline::before {
+    left: 7px;
+    transform: none;
   }
 
-  .timeline-content p{
-    width: 40%;
-    font-size: 0.5rem;
-  }
-
-  .timeline-content h3{
+  .timeline__item,
+  .timeline__item--left,
+  .timeline__item--right {
     width: 100%;
-    font-size: 1rem;
+    margin-left: 0;
+    padding-left: 2rem;
+    padding-right: 0;
+    padding-bottom: 1.75rem;
+    text-align: left;
   }
-  .timeline-block-left{
-    margin-left: 2rem;
+
+  .timeline__item--left .timeline__marker,
+  .timeline__item--right .timeline__marker {
+    left: 8px;
+    right: auto;
+    transform: translateX(-50%);
   }
- }
+
+  .timeline__item--left .timeline__card::after,
+  .timeline__item--right .timeline__card::after {
+    left: -1.5rem;
+    right: auto;
+    width: 1.5rem;
+  }
+
+  .timeline__title {
+    font-size: 0.95rem;
+  }
+
+  .timeline__desc {
+    font-size: 0.75rem;
+  }
+}

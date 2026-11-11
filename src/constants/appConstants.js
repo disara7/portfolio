@@ -95,3 +95,106 @@ export const SKILLS = {
     ],
   ],
 };
+
+export const AWARDS = {
+  sectionTitle: 'Awards',
+
+  // Newest first; cards alternate left/right of the timeline line.
+  items: [
+    {
+      date: 'DECEMBER 2023',
+      title: '2nd Runners Up - Code With WIE 2023',
+      description: "Mine and my friend Minuri Hewage's latest project 'Haven'. Organized by IEEE Sri Lanka Section - Women In Engineering",
+    },
+    {
+      date: 'AUGUST 2023',
+      title: '1st Runners Up - iX 23 | XR Based Designathon',
+      description: 'Team Pixel Concepts. 24-Hour designathon held at the IIT premises. Our XR based UI/UX design solution "WellnessGrocers" was highly praised for its realistic-ness.',
+    },
+    {
+      date: 'JULY 2023',
+      title: 'Winner - Lazarus 2.0 Eidos | Ideathon Competition',
+      description: 'MyJourney (Modern AI-Powered Travel Planning Mobile App) by Team Regex Native (Disara Mapalagama and Minuri Hewage) was awarded the prize for the most outstanding innovative idea at the ideathon organized by IEEE PES - SLIIT',
+    },
+    {
+      date: 'MAY 2023',
+      title: '2nd Runner Up - HerStage | All Island Competition for Women Entrepreneurs',
+      description: 'Myself and my friend Minuri Hewage placed third in the all-island competition for women entrepreneurs organized by Youth4SriLanka - AIESEC Sri Lanka, with our business idea "MyJourney - the modern travel planning mobile application".',
+    },
+    {
+      date: 'MARCH 2023',
+      title: '1st Runner Up - Codecon 3.0 | Inter-University Hackathon',
+      description: 'Team Regex Native (Disara Mapalagama, Minuri Hewage), with our solution to the economic crisis in Sri Lanka: "MyJourney - the modern travel planning mobile application"',
+    },
+    {
+      date: 'JANUARY 2023',
+      title: 'Finalist - IEEE INSL 2022 | Idea Stage',
+      description: 'Me and my team AltInnovate made it to the top 10 teams of IEEE INSL 2022 - Idea Stage category with our business idea "StyleUp - Clothing rental mobile application".',
+    },
+    {
+      date: 'JANUARY 2023',
+      title: 'Merit Award - Codefest 2023 | Inter-University Hackathon',
+      description: '24-Hour hackathon organized by Faculty of Computing - SLIIT',
+    },
+    {
+      date: 'OCTOBER 2022',
+      title: "Winner - IEEE INSL '22 Provincial Competition (Sabaragamuwa Province)",
+      description: 'Organized by IEEE Innovation Nation Sri Lanka. Me and my team AltInnovate became the winner of the provincial competition Sabaragamuwa Province of IEEE INSL 2022 - Idea Stage category with our business idea "StyleUp - Clothing rental mobile application".',
+    },
+    {
+      date: 'JULY 2022',
+      title: 'Semi Finalists - IDEALIZE 2022 | Inter-University Hackathon',
+      description: 'StyleUp - Mobile Application by MiNd HaCkErS. Organized by AIESEC in University of Moratuwa',
+    },
+    {
+      date: 'MAY 2022',
+      title: '2nd Runners Up - HackTron v1.0 – Game Development Bootcamp & Hackathon 2021',
+      description: 'Shut - PC car simulator game. Organized by IEEE Computer Society of SLTC',
+    },
+    {
+      date: 'FEBRUARY 2022',
+      title: 'Finalists - Designathon 2022 | Codefest Inter-University Hackathon',
+      description: 'Organized by Department of Computer Science & Software Engineering - SLIIT',
+    },
+    {
+      date: '2022',
+      title: "Finalists - Hack Like a Girl | Women's Hackathon 2022 by SLASSCOM in collaboration with IFC",
+      description: 'Me and my team MiNd HaCkErS participated and got selected to the final 15 teams with our business idea "MedAura - the pharmacy connecting and organ donor-donee connecting platform"',
+    },
+    {
+      date: 'JUNE 2018',
+      title: "3rd Place - Conexion '18 | Inter-School ICT Quiz Competition",
+      description: "Inter-school ICT Quiz competition organized for the ICT Day of Mahamaya Girls' College, Kandy.",
+    },
+    {
+      date: 'NOVEMBER 2017',
+      title: '1st Place - Delito Cibernetico 2017 | Inter-School Web Designing Competition',
+      description: 'Inter-School Web Designing competition organized for the annual ICT day of Hillwood College Kandy, under the theme "Cybersecurity"',
+    },
+    {
+      date: 'OCTOBER 2017',
+      title: '1st Place - Evolution Tecnica 17 | Inter-School Web Designing Competition',
+      description: "Inter-School Web Designing Competition organized for the Annual ICT day of St. Sylvester's College, Kandy.",
+    },
+    {
+      date: 'OCTOBER 2017',
+      title: '1st Place - Evolution Tecnica 17 | Inter-School ICT Quiz Competition',
+      description: "Inter-School Quiz Competition organized for the Annual ICT day of St. Sylvester's College, Kandy.",
+    },
+    {
+      date: 'OCTOBER 2017',
+      title: "2nd Place - Sagacious '17 | Inter-School Web Designing Competition",
+      description: "Inter-School Web Designing competition organized for the Annual ICT Day of Pushpadana Girls' College, Kandy.",
+    },
+    {
+      date: 'AUGUST 2017',
+      title: '2nd Place - Inter-School Web Designing Competition',
+      description: "Inter school web designing competition organized for the annual IT Day of St. Anthony's Girls' College, Kandy.",
+    },
+    {
+      date: 'JANUARY 2017',
+      title: '1st Round - IT MasterMind Quiz Programme 2017 | Season 02',
+      description: 'Issued by CSSL and ESOFT Metro Campus. Passed the written test held at ESOFT Metro Campus Kandy, leading the team of three and got selected for the first round of the competition that aired on ITN.',
+    },
+  ],
+};
