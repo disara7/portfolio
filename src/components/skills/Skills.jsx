@@ -1,219 +1,55 @@
 import React from 'react'
 import './skills.css'
+import { SKILLS } from '../../constants/appConstants'
+
+// Returns the number of squares to show, clamped to 0..maxLevel and rounded to a whole number.
+const getSquareCount = (level, maxLevel = SKILLS.maxLevel) => {
+  const value = Math.round(Number(level))
+  if (!Number.isFinite(value)) return 0
+  return Math.min(Math.max(value, 0), maxLevel)
+}
+
+const SkillSquares = ({ level }) => (
+  <td className='skill_box' aria-label={`${getSquareCount(level)} out of ${SKILLS.maxLevel}`}>
+    {Array.from({ length: getSquareCount(level) }, (_, i) => (
+      <div key={i} className='shape shape-square'></div>
+    ))}
+  </td>
+)
+
+const SkillTable = ({ skills }) => (
+  <table>
+    <tbody>
+      {skills.map(({ name, level }) => (
+        <tr key={name}>
+          <td>{name}</td>
+          <SkillSquares level={level} />
+        </tr>
+      ))}
+    </tbody>
+  </table>
+)
 
 const Skills = () => {
   return (
     <section id='skills'>
       <div className="skills">
-      <div className="skills__container">
-      <h2 className='section__title'>Skills</h2>
-      <br />
-        <div className="skill_table">
-          <table>
-            <tr>
-              <td>HTML</td>
-              <td className='skill_box'>
-                <div class="shape shape-square"></div>
-                <div class="shape shape-square"></div>
-                <div class="shape shape-square"></div> 
-                <div class="shape shape-square"></div>
-                <div class="shape shape-square"></div>
-              </td>
-            </tr>
-            <tr>
-              <td>CSS</td>
-              <td className='skill_box'>
-                <div class="shape shape-square"></div>
-                <div class="shape shape-square"></div>
-                <div class="shape shape-square"></div>
-                <div class="shape shape-square"></div>
-                <div class="shape shape-square"></div> 
-              </td>
-            </tr>
-            <tr>
-              <td>JavaScript</td>
-              <td className='skill_box'>
-                <div class="shape shape-square"></div>
-                <div class="shape shape-square"></div>
-                <div class="shape shape-square"></div> 
-              </td>
-            </tr>
-            <tr>
-              <td>React</td>
-              <td className='skill_box'>
-                <div class="shape shape-square"></div>
-                <div class="shape shape-square"></div>
-                <div class="shape shape-square"></div> 
-              </td>
-            </tr>
-          </table>
-
-          <table>
-            <tr>
-              <td>Flutter</td>
-              <td className='skill_box'>
-                <div class="shape shape-square"></div>
-                <div class="shape shape-square"></div>
-                <div class="shape shape-square"></div>
-                <div class="shape shape-square"></div>
-                <div class="shape shape-square"></div> 
-              </td>
-            </tr>
-            <tr>
-              <td>Dart</td>
-              <td className='skill_box'>
-                <div class="shape shape-square"></div>
-                <div class="shape shape-square"></div>
-                <div class="shape shape-square"></div>
-                <div class="shape shape-square"></div> 
-              </td>
-            </tr>
-            <tr>
-              <td>Java</td>
-              <td className='skill_box'>
-                <div class="shape shape-square"></div>
-                <div class="shape shape-square"></div>
-                <div class="shape shape-square"></div> 
-              </td>
-            </tr>
-            <tr>
-              <td>React JS</td>
-              <td className='skill_box'>
-                <div class="shape shape-square"></div>
-                <div class="shape shape-square"></div>
-                <div class="shape shape-square"></div> 
-              </td>
-            </tr>
-          </table>
-
-          <table>
-            
-            <tr>
-              <td>Git</td>
-              <td className='skill_box'>
-                <div class="shape shape-square"></div>
-                <div class="shape shape-square"></div>
-                <div class="shape shape-square"></div>
-                <div class="shape shape-square"></div> 
-              </td>
-            </tr>
-            <tr>
-              <td>Node.js</td>
-              <td className='skill_box'>
-                <div class="shape shape-square"></div>
-                <div class="shape shape-square"></div>
-                <div class="shape shape-square"></div> 
-              </td>
-            </tr>
-            <tr>
-              <td>Springboot</td>
-              <td className='skill_box'>
-                <div class="shape shape-square"></div>
-                <div class="shape shape-square"></div>
-                <div class="shape shape-square"></div> 
-              </td>
-            </tr>
-            <tr>
-              <td>MongoDB</td>
-              <td className='skill_box'>
-                <div class="shape shape-square"></div>
-                <div class="shape shape-square"></div> 
-              </td>
-            </tr>
-          </table>
+        {SKILLS.groups.map((tables, groupIndex) => (
+          <div className="skills__container" key={groupIndex}>
+            {groupIndex === 0 && (
+              <>
+                <h2 className='section__title'>{SKILLS.sectionTitle}</h2>
+                <br />
+              </>
+            )}
+            <div className="skill_table">
+              {tables.map((skills, tableIndex) => (
+                <SkillTable key={tableIndex} skills={skills} />
+              ))}
+            </div>
           </div>
+        ))}
       </div>
-
-      <div className="skills__container">
-        <div className="skill_table">
-          <table>
-          <tr>
-            <td>UX Research</td>
-            <td className='skill_box'>
-              <div class="shape shape-square"></div>
-              <div class="shape shape-square"></div>
-              <div class="shape shape-square"></div> 
-              <div class="shape shape-square"></div>
-              <div class="shape shape-square"></div>
-            </td>
-          </tr>
-          <tr>
-            <td>Figma</td>
-            <td className='skill_box'>
-              <div class="shape shape-square"></div>
-              <div class="shape shape-square"></div>
-              <div class="shape shape-square"></div>
-              <div class="shape shape-square"></div>
-              <div class="shape shape-square"></div> 
-            </td>
-          </tr>
-          <tr>
-            <td>Adobe XD</td>
-            <td className='skill_box'>
-              <div class="shape shape-square"></div>
-              <div class="shape shape-square"></div>
-              <div class="shape shape-square"></div> 
-            </td>
-          </tr>
-          <tr>
-            <td>React</td>
-            <td className='skill_box'>
-              <div class="shape shape-square"></div>
-              <div class="shape shape-square"></div>
-              <div class="shape shape-square"></div> 
-            </td>
-          </tr>
-        </table>
-
-        <table>
-        <tr>
-            <td>Leadership</td>
-            <td className='skill_box'>
-              <div class="shape shape-square"></div>
-              <div class="shape shape-square"></div>
-              <div class="shape shape-square"></div>
-              <div class="shape shape-square"></div>
-              <div class="shape shape-square"></div> 
-            </td>
-          </tr>
-          <tr>
-            <td>Teamwork</td>
-            <td className='skill_box'>
-              <div class="shape shape-square"></div>
-              <div class="shape shape-square"></div>
-              <div class="shape shape-square"></div>
-              <div class="shape shape-square"></div>
-              <div class="shape shape-square"></div> 
-            </td>
-          </tr>
-          <tr>
-            <td>Communication</td>
-            <td className='skill_box'>
-              <div class="shape shape-square"></div>
-              <div class="shape shape-square"></div>
-              <div class="shape shape-square"></div> 
-              <div class="shape shape-square"></div>
-              <div class="shape shape-square"></div>
-            </td>
-          </tr>
-          <tr>
-            <td>Collaboration</td>
-            <td className='skill_box'>
-              <div class="shape shape-square"></div>
-              <div class="shape shape-square"></div>
-              <div class="shape shape-square"></div>
-              <div class="shape shape-square"></div>
-              <div class="shape shape-square"></div> 
-            </td>
-          </tr>
-          
-        </table>
-      </div>
-    </div>
-      </div>
-      
-      
-
     </section>
   )
 }
